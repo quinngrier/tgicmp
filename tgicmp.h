@@ -1,9 +1,9 @@
-#ifndef TGIGE
-  #define TGIGE(x, y) \
+#ifndef TGILT
+  #define TGILT(x, y) \
     ((x) % 1 == 0 && \
      (y) % 1 == 0 && \
      (((x) > 0 || (x) == 0) == ((y) > 0 || (y) == 0) ? \
-      (x) + ((y) - (y)) >= (y) + ((x) - (x)) : (x) > 0 || (x) == 0))
+      (x) + ((y) - (y)) < (y) + ((x) - (x)) : (y) > 0 || (y) == 0))
 #endif
 
 #ifndef TGIGT
@@ -18,12 +18,12 @@
   #define TGILE(x, y) (!TGIGT(x, y))
 #endif
 
-#ifndef TGILT
-  #define TGILT(x, y) (!TGIGE(x, y))
+#ifndef TGIGE
+  #define TGIGE(x, y) (!TGILT(x, y))
 #endif
 
 #ifndef TGIEQ
-  #define TGIEQ(x, y) (TGIGE(x, y) && TGILE(x, y))
+  #define TGIEQ(x, y) (TGILE(x, y) && TGIGE(x, y))
 #endif
 
 #ifndef TGINE
