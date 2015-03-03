@@ -1,4 +1,34 @@
-Type generic integer comparisons
+One of the difficulties with the C language is its surprising behavior
+when comparing integers with different types. A simple example is the
+comparison -1 < 0u, which is true in the abstract but false in C. This
+is because of the usual arithmetic conversions, which are a subtle set
+of rules that C follows to consolidate two arithmetic operands with
+different types. In this example, the left side has type int and the
+right side has type unsigned int, and the usual arithmetic conversions
+dictate that the left side be converted to the type of the right side.
+Because conversions from signed to unsigned integer types are modular,
+the comparison is equivalent to UINT_MAX < 0u, which is false.
+
+This difficulty is usually avoided by not mixing signed and unsigned
+integer types, but this can be undesirable when writing generic code
+intended to operate on arbitrary integer types. For this purpose, this
+directory provides the header file tgicmp.h, which defines six macros
+that implement the four relational operators (<, >, <=, and >=) and the
+two equality operators (== and !=) with abstract semantics for operands
+with arbitrary integer types.
+
+The six macros are TGILT, TGIGT, TGILE, TGIGE, TGIEQ, and TGINE, which
+correspond to the six operators. Each macro takes two arguments x and y,
+each of which must be an expression with integer type but may otherwise
+have any type and value. The expansion is a parenthesized expression
+with type int and value 1 if x op y is true in the abstract or 0 if not,
+where op is the corresponding operator. If x and y are suitable for use
+in #if preprocessing directives, so is the expansion. If x and y are
+integer constant expressions, so is the expansion. The expansion may
+evaluate each of x and y more than once.
+
+The header file is safe to include more than once. The only reserved
+identifiers are the six macro names.
 
 The authors of this file have waived all copyright and
 related or neighboring rights to the extent permitted by
