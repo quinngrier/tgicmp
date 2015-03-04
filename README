@@ -1,3 +1,5 @@
+Type-generic integer comparisons in C
+
 One of the difficulties with the C language is its surprising behavior
 when comparing integers with different types. A simple example is the
 comparison -1 < 0u, which is true in the abstract but false in C. This
