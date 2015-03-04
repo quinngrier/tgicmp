@@ -8,6 +8,12 @@ type unsigned int, causing the usual arithmetic conversions to convert
 the left to the type of the right. Since signed to unsigned conversions
 are modular, the comparison becomes UINT_MAX < 0u, which is false.
 
+The complete definition of the usual arithmetic conversions is given by
+the C standard. When comparing integers, the key observation is that the
+result matches that in the abstract except possibly when one operand has
+negative value and the other has unsigned type. In this case, the value
+may be converted to an unsigned type, possibly changing the result.
+
 This difficulty is usually avoided by not mixing signed and unsigned
 integer types, but this can be undesirable when writing generic code
 intended to operate on arbitrary integer types. For this purpose, this
