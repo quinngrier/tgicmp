@@ -2,12 +2,11 @@ One of the difficulties with the C language is its surprising behavior
 when comparing integers with different types. A simple example is the
 comparison -1 < 0u, which is true in the abstract but false in C. This
 is because of the usual arithmetic conversions, which are a subtle set
-of rules that C follows to consolidate two arithmetic operands with
-different types. In this example, the left side has type int and the
-right side has type unsigned int, and the usual arithmetic conversions
-dictate that the left side be converted to the type of the right side.
-Because conversions from signed to unsigned integer types are modular,
-the comparison is equivalent to UINT_MAX < 0u, which is false.
+of rules that C uses to consolidate operands with different types. In
+this example, the left operand has type int and the right operand has
+type unsigned int, causing the usual arithmetic conversions to convert
+the left to the type of the right. Since signed to unsigned conversions
+are modular, the comparison becomes UINT_MAX < 0u, which is false.
 
 This difficulty is usually avoided by not mixing signed and unsigned
 integer types, but this can be undesirable when writing generic code
