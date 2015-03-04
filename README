@@ -14,13 +14,23 @@ result is always abstract except perhaps when one operand has negative
 value and the other has unsigned type. In this case, the value may be
 converted to an unsigned type, which may change the result.
 
-This difficulty is usually avoided by not mixing signed and unsigned
-integer types, but this can be undesirable when writing generic code
-intended to operate on arbitrary integer types. For this purpose, this
-directory provides the header file tgicmp.h, which defines six macros
-that implement the four relational operators (<, >, <=, and >=) and the
-two equality operators (== and !=) with abstract semantics for operands
-with arbitrary integer types.
+This difficulty is usually avoided by simply not comparing signed and
+unsigned integers. Following this advice is usually easy, but sometimes
+it would be nice if there were a workaround. Fortunately, there is.
+
+Suppose that x and y are integers with any types and values. We would
+like to compute the abstract x < y. It follows from the key observation
+that x < 0 and y < 0 are abstract. This lets us test if x and y are both
+negative or not negative: (x < 0) == (y < 0). In this case, it follows
+from the key observation that x < y is abstract. Otherwise, if exactly
+one of x and y is negative, x < 0 is also the abstract x < y. Putting it
+together, (x < 0) == (y < 0) ? x < y : x < 0 is the abstract x < y. The
+> operator can be computed similarly, and the <=, >=, ==, and !=
+operators can be computed from the < and > operators.
+
+For convenience, we provide the header file tgicmp.h, which defines six
+macros that implement the six comparison operators <, >, <=, >=, ==, and
+!= as described.
 
 The six macros are TGILT, TGIGT, TGILE, TGIGE, TGIEQ, and TGINE, which
 correspond to the six operators. Each macro takes two arguments x and y,
