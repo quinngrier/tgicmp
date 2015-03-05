@@ -4,9 +4,9 @@ One of the difficulties with C is its surprising behavior when comparing
 integers with different types. For example, -1 < 0u is conceptually true
 but actually false. This is because of the usual arithmetic conversions,
 which are the rules for consolidating operands with different types. In
-this example, the left operand has type int and the right unsigned int,
-causing the int to be converted to unsigned int. Because this conversion
-is modular, the comparison becomes UINT_MAX < 0u, which is false.
+this example, the operands have types int and unsigned int, causing the
+int to be converted to unsigned int. Because this conversion is modular,
+the comparison becomes UINT_MAX < 0u, which is false.
 
 Definition. A comparison is normal if its conceptual result matches its
 actual result.
