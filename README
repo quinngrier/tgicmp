@@ -1,13 +1,12 @@
 Type-generic integer comparisons in C
 
 One of the difficulties with C is its surprising behavior when comparing
-integers with different types. For example, the comparison -1 < 0u is
-true in the abstract but false in reality. This is because of the usual
-arithmetic conversions, which are the set of rules used to consolidate
-operands with different types. In our example, the left operand has type
-int and the right operand has type unsigned int, causing the left to be
-converted to the type of the right. Since signed to unsigned conversions
-are modular, the comparison becomes UINT_MAX < 0u, which is false.
+integers with different types. For example, -1 < 0u is conceptually true
+but actually false. This is because of the usual arithmetic conversions,
+which are the rules for consolidating operands with different types. In
+this example, the left operand has type int and the right unsigned int,
+causing the int to be converted to unsigned int. Because this conversion
+is modular, the comparison becomes UINT_MAX < 0u, which is false.
 
 The complete definition of the usual arithmetic conversions is given by
 the C standard. When comparing integers, the key observation is that the
