@@ -12,11 +12,9 @@ following definition.
 Definition. An integer comparison is normal if its conceptual result
 matches its actual result.
 
-The complete definition of the usual arithmetic conversions is given by
-the C standard. When comparing integers, the key observation is that the
-result is always abstract except perhaps when one operand has negative
-value and the other has unsigned type. In this case, the value may be
-converted to an unsigned type, which may change the result.
+Whether an integer comparison is normal depends on the values and types
+of its operands. A careful analysis of the usual arithmetic conversions
+leads to the following theorem.
 
 Theorem 1. If an integer comparison is not normal, then one operand has
 negative value and the other has unsigned type.
