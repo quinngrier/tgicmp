@@ -9,14 +9,14 @@ int to be converted to unsigned int. Because this conversion is modular,
 the comparison becomes UINT_MAX < 0u, which is false. This leads to the
 following definition.
 
-Definition. An integer comparison is normal if its conceptual result
+Definition 1. An integer comparison is normal if its conceptual result
 matches its actual result.
 
 Whether an integer comparison is normal depends on the values and types
 of its operands. A careful analysis of the usual arithmetic conversions
 leads to the following theorem.
 
-Theorem 1. If an integer comparison is not normal, then one operand has
+Theorem 2. If an integer comparison is not normal, then one operand has
 negative value and the other has unsigned type.
 
 In practice it is best to avoid integer comparisons that are not normal.
@@ -25,7 +25,7 @@ type and the other has unsigned type. Indeed, most compilers can be
 instructed to produce warnings if this advice is not followed. The
 following corollary shows that this advice is true.
 
-Corollary 2. If the operands of an integer comparison both have signed
+Corollary 3. If the operands of an integer comparison both have signed
 type or both have unsigned type, then the comparison is normal.
 
 Suppose that x and y are integers with any types and values. We would
