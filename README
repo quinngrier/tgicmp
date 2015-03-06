@@ -28,6 +28,11 @@ following corollary shows why this advice is true.
 Corollary 3. If the operands of an integer comparison both have signed
 type or both have unsigned type, then the comparison is normal.
 
+Proof. If both operands have signed type, then neither has unsigned
+type, and the comparison is normal by the contrapositive of Theorem 2.
+If both have unsigned type, then neither has negative value, and the
+comparison is again normal by the contrapositive of Theorem 2. QED
+
 Suppose that x and y are integers with any types and values. We would
 like to compute the abstract x < y. It follows from the key observation
 that x < 0 and y < 0 are abstract. This lets us test if x and y are both
