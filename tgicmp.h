@@ -6,10 +6,7 @@
 #endif
 
 #ifndef TGIGT
-  #define TGIGT(x, y) \
-    ((x) % 1 == 0 && \
-     (y) % 1 == 0 && \
-     (((x) < 0) == ((y) < 0) ? (x) > (y) : (y) < 0))
+  #define TGIGT(x, y) TGILT(y, x)
 #endif
 
 #ifndef TGILE
