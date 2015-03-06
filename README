@@ -23,6 +23,9 @@ This difficulty is usually avoided by simply not comparing signed and
 unsigned integers. Following this advice is usually easy, but sometimes
 it would be nice if there were a workaround. Fortunately, there is.
 
+Corollary 2. If the operands of an integer comparison both have signed
+type or both have unsigned type, then the comparison is normal.
+
 Suppose that x and y are integers with any types and values. We would
 like to compute the abstract x < y. It follows from the key observation
 that x < 0 and y < 0 are abstract. This lets us test if x and y are both
