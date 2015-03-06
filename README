@@ -38,6 +38,14 @@ situations where it can be difficult. Fortunately, there is a way to
 compute the conceptual result of an integer comparison regardless of
 normality.
 
+Corollary 4. If one operand of an integer comparison has signed type and
+nonnegative value, then the comparison is normal.
+
+Proof. If the other operand has signed type, then neither has unsigned
+type, and the comparison is normal by the contrapositive of Theorem 2.
+If it has unsigned type, then neither has negative value, and the
+comparison is again normal by the contrapositive of Theorem 2. QED
+
 Suppose that x and y are integers with any types and values. We would
 like to compute the abstract x < y. It follows from the key observation
 that x < 0 and y < 0 are abstract. This lets us test if x and y are both
