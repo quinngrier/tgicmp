@@ -12,7 +12,7 @@ following definition.
 Definition 1. An integer comparison is normal if its conceptual result
 matches its actual result.
 
-The normality of an integer comparison depends on the values and types
+The normality of an integer comparison depends on the types and values
 of its operands. Analysis of the usual arithmetic conversions leads to
 the following theorem.
 
