@@ -33,6 +33,11 @@ type, and the comparison is normal by the contrapositive of Theorem 2.
 If both have unsigned type, then neither has negative value, and the
 comparison is again normal by the contrapositive of Theorem 2. QED
 
+Although Corollary 3 is usually easy to follow in practice, there are
+situations where it can be difficult. Fortunately, there is a way to
+compute the conceptual result of an integer comparison regardless of
+normality.
+
 Suppose that x and y are integers with any types and values. We would
 like to compute the abstract x < y. It follows from the key observation
 that x < 0 and y < 0 are abstract. This lets us test if x and y are both
