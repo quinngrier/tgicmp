@@ -19,9 +19,11 @@ leads to the following theorem.
 Theorem 1. If an integer comparison is not normal, then one operand has
 negative value and the other has unsigned type.
 
-This difficulty is usually avoided by simply not comparing signed and
-unsigned integers. Following this advice is usually easy, but sometimes
-it would be nice if there were a workaround. Fortunately, there is.
+In practice it is best to avoid integer comparisons that are not normal.
+The usual advice is to avoid comparisons where one operand has signed
+type and the other has unsigned type. Indeed, most compilers can be
+instructed to produce warnings if this advice is not followed. The
+following corollary shows that this advice is true.
 
 Corollary 2. If the operands of an integer comparison both have signed
 type or both have unsigned type, then the comparison is normal.
