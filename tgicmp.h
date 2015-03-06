@@ -14,7 +14,7 @@
 #endif
 
 #ifndef TGIGE
-  #define TGIGE(x, y) (!TGILT(x, y))
+  #define TGIGE(x, y) TGILE(y, x)
 #endif
 
 #ifndef TGIEQ
