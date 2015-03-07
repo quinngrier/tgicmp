@@ -37,8 +37,8 @@ situations where it can be difficult. Fortunately, there is a way to
 compute the conceptual result of an integer comparison regardless of
 normality.
 
-Corollary 4. If one operand of an integer comparison has signed type and
-nonnegative value, then the comparison is normal.
+Corollary 4. If one operand of an integer comparison has signed type but
+not negative value, then the comparison is normal.
 
 Proof. If the other operand has signed type, then both have signed type,
 and the result follows from Theorem 2. If it has unsigned type, then
