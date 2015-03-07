@@ -25,8 +25,8 @@ type and the other has unsigned type. Indeed, most compilers can be
 instructed to produce warnings if this advice is not followed. The
 following corollary shows why this advice is true.
 
-Corollary 3. If the operands of an integer comparison both have signed
-type or both have unsigned type, then the comparison is normal.
+Corollary 3. If both operands of an integer comparison have signed type
+or both have unsigned type, then the comparison is normal.
 
 Proof. If both operands have signed type, then the result follows from
 Theorem 2. If both have unsigned type, then neither has negative value,
