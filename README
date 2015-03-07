@@ -1,4 +1,4 @@
-Type generic integer comparisons in C
+Comparing integers in C
 
 One of the difficulties with C is its surprising behavior when comparing
 integers with different types. For example, -1 < 0u is conceptually true
