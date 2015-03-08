@@ -12,11 +12,11 @@ following definition.
 Definition 1. An integer comparison is normal if its conceptual result
 matches its actual result.
 
-The normality of an integer comparison depends entirely on the effects
-of the usual arithmetic conversions, which in turn depend entirely on
-the types and values of the operands. In some cases, the value of one
-operand cannot be preserved, and normality may be lost. A thorough
-analysis leads to the following theorem.
+In general, the normality of an integer comparison depends on the effect
+of the usual arithmetic conversions, which in turn depends on the types
+and values of the operands. In some cases, the value of one operand is
+lost, and normality may also be lost. A thorough analysis of when this
+may occur leads to the following theorem.
 
 Theorem 2. If both operands of an integer comparison have signed type or
 neither has negative value, then the comparison is normal.
