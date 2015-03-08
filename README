@@ -54,6 +54,14 @@ apply, the rank of S is larger than that of U, C99 6.3.1.1p1 implies
 that the S and U' have the same rank, and C99 6.2.5p8 and C99 6.2.5p9
 imply that both conversions preserve value. QED
 
+Note that the converse of Theorem 2 is not true: -2 < UINT_MAX is normal
+but does not satisfy the assumption of the theorem. The normality here
+is surprising because -2 is converted to unsigned int and its value is
+lost, which suggests that normality should also be lost. However, the
+comparison becomes UINT_MAX - 1 < UINT_MAX, which happens to preserve
+the original conceptual result. In general, the value of one operand
+being lost is not enough to cause normality to be lost.
+
 In practice it is best to avoid integer comparisons that are not normal.
 The usual advice is to avoid comparisons where one operand has signed
 type and the other has unsigned type. Indeed, most compilers can be
