@@ -22,7 +22,7 @@ Theorem 2. If both operands of an integer comparison have signed type or
 neither has negative value, then the comparison is normal.
 
 Proof. The idea of this proof applies to all versions of the C standard,
-but C99 will be used for reference.
+but C99 will be used as the point of reference.
 
 The usual arithmetic conversions, which are given in C99 6.3.1.8p1, have
 five cases for an integer comparison. Each case converts neither, one,
