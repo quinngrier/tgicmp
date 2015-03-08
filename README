@@ -15,8 +15,8 @@ matches its actual result.
 In general, the normality of an integer comparison depends on the effect
 of the usual arithmetic conversions, which in turn depends on the types
 and values of the operands. In some cases, the value of one operand is
-lost, and normality may also be lost. A thorough analysis of when this
-may occur leads to the following theorem.
+lost through conversion, which in turn may cause normality to be lost.
+Thorough analysis of how this occurs leads to the following theorem.
 
 Theorem 2. If both operands of an integer comparison have signed type or
 neither has negative value, then the comparison is normal.
