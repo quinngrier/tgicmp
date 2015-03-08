@@ -26,11 +26,16 @@ standard will be used as the point of reference. The official copy of
 this standard must be purchased, but several drafts, which have only
 minor differences, are freely available and should be easy to find.
 
-The usual arithmetic conversions, which are given in C99 6.3.1.8p1, have
-five cases for an integer comparison. Each case converts neither, one,
-or both operands to another type. For the comparison to be normal, it
-suffices to show that all conversions preserve value. The integer
-promotions are irrelevant because they always preserve value.
+It follows from C99 6.5.8p3 and C99 6.5.9p4 that the usual arithmetic
+conversions are performed on the operands of an integer comparison
+before the actual comparison occurs. To show that the comparison is
+normal, it suffices to show that these conversions preserve value.
+
+The usual arithmetic conversions are given in C99 6.3.1.8p1. For two
+integer operands, the integer promotions are first performed on both
+operands, and C99 6.3.1.1p3 plainly states that this preserves value.
+Then one of five cases is chosen based on the types of the operands.
+Each case converts neither, one, or both operands to another type.
 
 In case 1, no conversions occur.
 
