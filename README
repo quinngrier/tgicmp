@@ -23,8 +23,8 @@ Proof. The idea of this proof applies to all versions of the C standard,
 but C99 will be used for reference.
 
 The usual arithmetic conversions, which are given in C99 6.3.1.8p1, have
-five cases for integer operands. Each case converts neither, one, or
-both operands to another type. For the comparison to be normal, it
+five cases for an integer comparison. Each case converts neither, one,
+or both operands to another type. For the comparison to be normal, it
 suffices to show that all conversions preserve value. The integer
 promotions are irrelevant because they always preserve value.
 
