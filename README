@@ -37,7 +37,7 @@ operands, and C99 6.3.1.1p3 plainly states that this preserves value.
 Then one of five cases is chosen based on the types of the operands.
 Each case converts neither, one, or both operands to another type.
 
-In case 1, no conversions occur.
+In case 1, the operands have the same type and no conversions occur.
 
 In case 2, C99 6.2.5p8 implies that the conversion preserves value.
 
