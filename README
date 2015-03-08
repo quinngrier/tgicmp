@@ -78,6 +78,14 @@ and Theorem 2 implies that the comparison is normal. If it has unsigned
 type, then neither has negative value, and Theorem 2 implies that the
 comparison is normal. QED
 
+Corollary 5. If both operands of an integer comparison have negative
+value or neither has negative value, then the comparison is normal.
+
+Proof. If both operands have negative value, then both have signed type,
+and Theorem 2 implies that the comparison is normal. If neither has
+negative value, then Theorem 2 implies that the comparison is normal.
+QED
+
 Suppose that x and y are integers with any types and values. We would
 like to compute the abstract x < y. It follows from the key observation
 that x < 0 and y < 0 are abstract. This lets us test if x and y are both
