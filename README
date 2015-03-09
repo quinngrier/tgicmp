@@ -15,8 +15,13 @@ matches its actual result.
 In general, the normality of an integer comparison depends on the effect
 of the usual arithmetic conversions, which in turn depends on the types
 and values of the operands. In some cases, the value of one operand is
-lost through conversion, which in turn may cause normality to be lost.
-Thorough analysis of how this occurs leads to the following theorem.
+changed by the conversions, which may cause normality to be lost.
+
+A thorough analysis of how this occurs leads to the following lemmas and
+theorem. The ideas apply to all versions of C, but the C99 standard will
+be used as the point of reference. The official copy of this standard
+must be purchased, but several drafts with only minor differences are
+freely available and should be easy to find.
 
 Lemma Z. If T and U are distinct unsigned integer types and neither T
 nor U is _Bool, then T and U have different ranks.
@@ -49,11 +54,7 @@ than the rank of U', and the result follows from C99 6.2.5p8. QED
 Theorem 2. If both operands of an integer comparison have signed type or
 neither has negative value, then the comparison is normal.
 
-Proof. The idea of this proof applies to all versions of C, but the C99
-standard will be used as the point of reference. The official copy of
-this standard must be purchased, but several drafts, which have only
-minor differences, are freely available and should be easy to find.
-
+Proof.
 It follows from C99 6.5.8p3 and C99 6.5.9p4 that the usual arithmetic
 conversions are performed on the operands of an integer comparison
 before the actual comparison occurs. To show that the comparison is
