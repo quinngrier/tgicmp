@@ -18,6 +18,16 @@ and values of the operands. In some cases, the value of one operand is
 lost through conversion, which in turn may cause normality to be lost.
 Thorough analysis of how this occurs leads to the following theorem.
 
+Lemma Z. Unsigned integer types other than _Bool have different ranks.
+
+Proof. Let T and U be distinct unsigned integer types other than _Bool.
+Because T is not _Bool, C99 6.2.5p6 implies that there exists a signed
+integer type T' corresponding to T, and C99 6.3.1.1p1 bullet 4 implies
+that T and T' have the same rank. Analogously, there exists a signed
+integer type U' corresponding to U. Obviously T' and U' are distinct.
+If, to the contrary, T and U have the same rank, then so do T' and U',
+contradicting C99 6.3.1.1p1 bullet 1. QED
+
 Theorem 2. If both operands of an integer comparison have signed type or
 neither has negative value, then the comparison is normal.
 
