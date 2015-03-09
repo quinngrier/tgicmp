@@ -21,13 +21,13 @@ Thorough analysis of how this occurs leads to the following theorem.
 Lemma Z. If T and U are distinct unsigned integer types and neither T
 nor U is _Bool, then T and U have different ranks.
 
-Proof.
-Because T is not _Bool, C99 6.2.5p6 implies that there exists a signed
-integer type T' corresponding to T, and C99 6.3.1.1p1 bullet 4 implies
-that T and T' have the same rank. Analogously, there exists a signed
-integer type U' corresponding to U. As T and U are distinct, so are T'
-and U'. If, to the contrary, T and U have the same rank, then so do T'
-and U', contradicting C99 6.3.1.1p1 bullet 1. QED
+Proof. Since T is not _Bool, there exists a signed integer type T' that
+corresponds to T by C99 6.2.5p6, and T and T' have the same rank by C99
+6.3.1.1p1 item 4. Similarly, there exists a signed integer type U' that
+corresponds to U, and U and U' have the same rank. Since T and U are
+distinct, so are T' and U'. If, on the contrary, T and U have the same
+rank, then all four types have the same rank. In particular, T' and U'
+have the same rank, contradicting C99 6.3.1.1p1 item 1. QED
 
 Lemma X. If the rank of an integer type T is less than or equal to the
 rank of an unsigned integer type U and neither T nor U is _Bool, then
