@@ -18,9 +18,10 @@ and values of the operands. In some cases, the value of one operand is
 lost through conversion, which in turn may cause normality to be lost.
 Thorough analysis of how this occurs leads to the following theorem.
 
-Lemma Z. Unsigned integer types other than _Bool have different ranks.
+Lemma Z. If T and U are distinct unsigned integer types and neither T
+nor U is _Bool, then T and U have different ranks.
 
-Proof. Let T and U be distinct unsigned integer types other than _Bool.
+Proof.
 Because T is not _Bool, C99 6.2.5p6 implies that there exists a signed
 integer type T' corresponding to T, and C99 6.3.1.1p1 bullet 4 implies
 that T and T' have the same rank. Analogously, there exists a signed
