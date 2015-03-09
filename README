@@ -37,7 +37,7 @@ then the result is trivial. Otherwise, if T is unsigned, then Lemma Z
 implies that the rank of T is strictly less than the rank of U, and the
 result follows from C99 6.2.5p8. Otherwise, T is signed. Because U is
 not _Bool, C99 6.2.5p6 implies that there exists a signed integer type
-U' that corresponds to U, and C99 6.2.5p9 implies that the nonnegative
+U' corresponding to U, and C99 6.2.5p9 implies that the nonnegative
 range of U' is a subrange of the range of U. It suffices to show that
 the range of T is a subrange of the range of U'. Because U' corresponds
 to U, C99 6.3.1.1p1 bullet 4 implies that U and U' have the same rank,
