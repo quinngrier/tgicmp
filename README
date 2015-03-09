@@ -28,6 +28,25 @@ integer type U' corresponding to U. As T and U are distinct, so are T'
 and U'. If, to the contrary, T and U have the same rank, then so do T'
 and U', contradicting C99 6.3.1.1p1 bullet 1. QED
 
+Lemma X. If the rank of an integer type T is less than or equal to the
+rank of an unsigned integer type U and neither T nor U is _Bool, then
+the nonnegative range of T is a subrange of the range of U.
+
+Proof. Suppose that the assumption holds. If T and U are the same type,
+then the result is trivial. Otherwise, if T is unsigned, then Lemma Z
+implies that the rank of T is strictly less than the rank of U, and the
+result follows from C99 6.2.5p8. Otherwise, T is signed. Because U is
+not _Bool, C99 6.2.5p6 implies that there exists a signed integer type
+U' that corresponds to U, and C99 6.2.5p9 implies that the nonnegative
+range of U' is a subrange of the range of U. It suffices to show that
+the range of T is a subrange of the range of U'. Because U' corresponds
+to U, C99 6.3.1.1p1 bullet 4 implies that U and U' have the same rank,
+which is assumed to be greater than or equal to the rank of T. If the
+rank of U' equals the rank of T, then C99 6.3.1.1p1 bullet 1 implies
+that T and U' are the same type, and the result is trivial. Otherwise,
+the rank of U' is strictly greater than the rank of T, and the result
+follows from C99 6.2.5p8. QED
+
 Theorem 2. If both operands of an integer comparison have signed type or
 neither has negative value, then the comparison is normal.
 
