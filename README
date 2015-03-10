@@ -72,8 +72,8 @@ that the conversions preserve the values of the operands.
 
 The usual arithmetic conversions are defined by C99 6.3.1.8p1. There are
 two steps for integer operands: the integer promotions are performed on
-the operands, and one of five cases is applied based on the (new) types
-of the operands.
+the operands, and one of five cases is performed based on the types of
+the promoted operands.
 
 The integer promotions are defined by C99 6.3.1.1p2. These preserve the
 values of the operands as stated by C99 6.3.1.1p3. The types of the
