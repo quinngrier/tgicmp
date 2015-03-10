@@ -15,7 +15,7 @@ matches its actual result.
 In general, the normality of an integer comparison depends on the effect
 of the usual arithmetic conversions, which in turn depends on the types
 and values of the operands. In some cases, the value of one operand is
-changed by the conversions, which may cause normality to be lost.
+changed by the conversions, and normality may be lost.
 
 A thorough analysis of how this occurs leads to the following lemmas and
 theorem. The ideas apply to all versions of C, but the C99 standard will
