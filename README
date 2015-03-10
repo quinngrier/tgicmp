@@ -29,10 +29,13 @@ nor U is _Bool, then T and U have different ranks.
 Proof. Since T is not _Bool, there exists a signed integer type T' that
 corresponds to T by C99 6.2.5p6, and T and T' have the same rank by C99
 6.3.1.1p1 item 4. Similarly, there exists a signed integer type U' that
-corresponds to U, and U and U' have the same rank. Since T and U are
-distinct, so are T' and U'. If, on the contrary, T and U have the same
-rank, then all four types have the same rank. In particular, T' and U'
-have the same rank, contradicting C99 6.3.1.1p1 item 1. QED
+corresponds to U, and U and U' have the same rank. T' and U' must be
+different types, for if they were the same type, then T and U would be
+the same type by C99 6.2.5p6, which would contradict the assumption that
+T and U are different types. Now, if T and U had the same rank, then all
+four types would have the same rank. In particular, T' and U' would have
+the same rank, which would contradict C99 6.3.1.1p1 item 1. Thus T and U
+must have different ranks. QED
 
 Lemma X. If T is an integer type, U is an unsigned integer type, neither
 T nor U is _Bool, and the rank of T is at most the rank of U, then the
