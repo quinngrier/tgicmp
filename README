@@ -81,14 +81,28 @@ the operands may change, but this is inconsequential except that if an
 operand has type _Bool, then it is converted to int, guaranteeing that
 neither operand has type _Bool after promotion.
 
-Each of the five cases converts neither, one, or both operands to a new
-type. In case 1, neither operand is converted. In case 2, one operand is
-converted, and its value is preserved by C99 6.2.5p8. In case 3, one
-operand is converted, but it has nonnegative value by assumption, and
-its value is preserved by Lemma X. In case 4, one operand is converted,
-and its value is preserved by the case itself. In case 5, both operands
-are converted, but both have nonnegative value by assumption, and their
-values are preserved by Lemma X. QED
+The aforementioned five cases are defined within the usual arithmetic
+conversions themselves. Let T and U be the types of the operands.
+
+In case 1, T and U are the same type and no action is taken.
+
+In case 2, T and U are different types, both T and U are signed or both
+are unsigned, the rank of T is less than the rank of U, and the operand
+with type T is converted to U. The value is preserved by C99 6.2.5p8.
+
+In case 3, T and U are different types, T is signed, U is unsigned, the
+rank of T is at most the rank of U, and the operand with type T is
+converted to U. The value is nonnegative by the assumption of the
+theorem and is preserved by Lemma X.
+
+In case 4, a conversion occurs and the value is preserved by the wording
+of the case itself.
+
+In case 5, T and U are different types, T is signed, U is unsigned, the
+rank of T is larger than the rank of U, and both operands are converted
+to the unsigned type T' that corresponds to T. Both values are
+nonnegative by the assumption of the theorem and are preserved by Lemma
+X. QED
 
 Note that the converse of Theorem 2 is not true: -2 < UINT_MAX is normal
 but does not satisfy the assumption of the theorem. The normality here
