@@ -52,41 +52,31 @@ the result follows trivially. Otherwise, the rank of T is strictly less
 than the rank of U', and the result follows from C99 6.2.5p8. QED
 
 Theorem 2. If both operands of an integer comparison have signed type or
-neither has negative value, then the comparison is normal.
+both have nonnegative value, then the comparison is normal.
 
-Proof.
-It follows from C99 6.5.8p3 and C99 6.5.9p4 that the usual arithmetic
-conversions are performed on the operands of an integer comparison
-before the actual comparison occurs. To show that the comparison is
-normal, it suffices to show that these conversions preserve value.
+Proof. It follows from C99 6.5.8p3 and C99 6.5.9p4 that the usual
+arithmetic conversions are performed on the operands before their values
+are compared. To show that the comparison is normal, it suffices to show
+that the conversions preserve the values of the operands.
 
-The usual arithmetic conversions are given in C99 6.3.1.8p1. For two
-integer operands, the integer promotions are first performed on both
-operands, and C99 6.3.1.1p3 plainly states that this preserves value.
-Then one of five cases is chosen based on the types of the operands.
-Each case converts neither, one, or both operands to another type.
+The usual arithmetic conversions are defined by C99 6.3.1.8p1. There are
+two steps for integer operands: the integer promotions are performed on
+the operands, and one of five cases is applied based on the (new) types
+of the operands.
 
-In case 1, the operands have the same type and no conversions occur.
+The integer promotions are defined by C99 6.3.1.1p2. These preserve the
+values of the operands as stated by C99 6.3.1.1p3. The types of the
+operands may change, but this is inconsequential except that if an
+operand has type _Bool, it is converted to int.
 
-In case 2, C99 6.2.5p8 implies that the conversion preserves value.
-
-In case 3, the assumption of the theorem implies that neither operand
-has negative value. Let S be the signed type and U be the unsigned type.
-If S corresponds to U as described by C99 6.2.5p6, then C99 6.2.5p9
-implies that the conversion preserves value. Otherwise, C99 6.2.5p6
-implies that there exists another signed type S' that corresponds to U,
-C99 6.3.1.1p1 implies that S' and U have the same rank, the case itself
-and C99 6.3.1.1p1 imply that this rank is larger than that of S, and C99
-6.2.5p8 and C99 6.2.5p9 imply that the conversion preserves value.
-
-In case 4, the case itself implies that the conversion preserves value.
-
-In case 5, the assumption of the theorem implies that neither operand
-has negative value. Let S be the signed type, U be the unsigned type,
-and U' be the unsigned type corresponding to S. Because case 3 did not
-apply, the rank of S is larger than that of U, C99 6.3.1.1p1 implies
-that the S and U' have the same rank, and C99 6.2.5p8 and C99 6.2.5p9
-imply that both conversions preserve value. QED
+Each of the five cases converts neither, one, or both operands to a new
+type. In case 1, neither operand is converted. In case 2, one operand is
+converted, and its value is preserved by C99 6.2.5p8. In case 3, one
+operand is converted, but it has nonnegative value by assumption, and
+its value is preserved by Lemma X. In case 4, one operand is converted,
+and its value is preserved by the case itself. In case 5, both operands
+are converted, but both have nonnegative value by assumption, and their
+values are preserved by Lemma X. QED
 
 Note that the converse of Theorem 2 is not true: -2 < UINT_MAX is normal
 but does not satisfy the assumption of the theorem. The normality here
