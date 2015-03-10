@@ -54,7 +54,7 @@ and the result follows from C99 6.2.5p8. QED
 
 Lemma X. If T is an integer type, U is an unsigned integer type, neither
 T nor U is _Bool, and the rank of T is at most the rank of U, then the
-nonnegative range of T is a subrange of the range of U.
+nonnegative range of T is at most the range of U.
 
 Proof. If T and U are the same type, then the result follows trivially.
 Otherwise, if T is unsigned, then T and U have different ranks by Lemma
