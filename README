@@ -23,7 +23,7 @@ be used as the point of reference. The official copy of this standard
 must be purchased, but several drafts with only minor differences are
 freely available and should be easy to find.
 
-Lemma Z. If T and U are distinct unsigned integer types and neither T
+Lemma Z. If T and U are different unsigned integer types and neither T
 nor U is _Bool, then T and U have different ranks.
 
 Proof. Since T is not _Bool, there exists a signed integer type T' that
