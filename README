@@ -38,22 +38,28 @@ four types would have the same rank. In particular, T' and U' would have
 the same rank, which would contradict C99 6.3.1.1p1 item 1. Thus T and U
 must have different ranks. QED
 
+Lemma Y. If T is a signed integer type, U is an unsigned integer type, U
+is not _Bool, and the rank of T is at most the rank of U, then the
+nonnegative range of T is at most the range of U.
+
+Proof. Since U is not _Bool, there exists a signed integer type U' that
+corresponds to U by C99 6.2.5p6. The nonnegative range of U' is at most
+the range of U by C99 6.2.5p9, so it suffices to show that the range of
+T is at most the range of U'. Since U and U' have the same rank by C99
+6.3.1.1p1 item 4, the rank of T is at most the rank of U'. If T and U'
+have the same rank, then T and U' are the same type by C99 6.3.1.1p1
+item 1, and the result follows trivially. Otherwise, the rank of T is
+less than the rank of U', and the result follows from C99 6.2.5p8. QED
+
 Lemma X. If T is an integer type, U is an unsigned integer type, neither
 T nor U is _Bool, and the rank of T is at most the rank of U, then the
 nonnegative range of T is a subrange of the range of U.
 
 Proof. If T and U are the same type, then the result follows trivially.
 Otherwise, if T is unsigned, then T and U have different ranks by Lemma
-Z, so the rank of T is strictly less than the rank of U, and the result
-follows from C99 6.2.5p8. Otherwise, T is signed. Since U is not _Bool,
-there exists a signed integer type U' that corresponds to U by C99
-6.2.5p6, and the nonnegative range of U' is a subrange of the range of U
-by C99 6.2.5p9, so it suffices to show that the range of T is a subrange
-of the range of U'. Since U and U' have the same rank by C99 6.3.1.1p1
-item 4, the rank of T is at most the rank of U'. If T and U' have the
-same rank, then T and U' are the same type by C99 6.3.1.1p1 item 1, and
-the result follows trivially. Otherwise, the rank of T is strictly less
-than the rank of U', and the result follows from C99 6.2.5p8. QED
+Z, so the rank of T is less than the rank of U, and the result follows
+from C99 6.2.5p8. Otherwise, T is signed, and the result follows from
+Lemma Y. QED
 
 Theorem 2. If both operands of an integer comparison have signed type or
 both have nonnegative value, then the comparison is normal.
