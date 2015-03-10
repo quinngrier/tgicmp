@@ -36,7 +36,7 @@ be the same type by C99 6.2.5p6, which would contradict the assumption
 that T and U are different types. Now, if T and U had the same rank,
 then all four types would have the same rank. In particular, T' and U'
 would have the same rank, which would contradict C99 6.3.1.1p1 item 1.
-So T and U must have different ranks. QED
+Therefore T and U must have different ranks. QED
 
 Lemma Y. If T is a signed integer type, U is an unsigned integer type, U
 is not _Bool, and the rank of T is at most the rank of U, then the
