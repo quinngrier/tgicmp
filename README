@@ -76,9 +76,10 @@ the operands, and one of five cases is performed based on the types of
 the promoted operands.
 
 The integer promotions are defined by C99 6.3.1.1p2. These preserve the
-values of the operands as stated by C99 6.3.1.1p3. The types of the
-operands may change, but this is inconsequential except that if an
-operand has type _Bool, then it is converted to int.
+values of the operands as clearly stated by C99 6.3.1.1p3. The types of
+the operands may change, but this is inconsequential except that if an
+operand has type _Bool, then it is converted to int, guaranteeing that
+neither operand has type _Bool after promotion.
 
 Each of the five cases converts neither, one, or both operands to a new
 type. In case 1, neither operand is converted. In case 2, one operand is
