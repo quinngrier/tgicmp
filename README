@@ -45,11 +45,12 @@ nonnegative range of T is at most the range of U.
 Proof. Since U is not _Bool, there exists a signed integer type U' that
 corresponds to U by C99 6.2.5p6. The nonnegative range of U' is at most
 the range of U by C99 6.2.5p9, so it suffices to show that the range of
-T is at most the range of U'. Since U and U' have the same rank by C99
-6.3.1.1p1 item 4, the rank of T is at most the rank of U'. If T and U'
-have the same rank, then T and U' are the same type by C99 6.3.1.1p1
-item 1, and the result follows trivially. Otherwise, the rank of T is
-less than the rank of U', and the result follows from C99 6.2.5p8. QED
+T is at most the range of U'. Since the rank of T is at most the rank of
+U by assumption and U and U' have the same rank by C99 6.3.1.1p1 item 4,
+the rank of T is at most the rank of U'. If T and U' have the same rank,
+then T and U' are the same type by C99 6.3.1.1p1 item 1, and the result
+follows trivially. Otherwise, the rank of T is less than the rank of U',
+and the result follows from C99 6.2.5p8. QED
 
 Lemma X. If T is an integer type, U is an unsigned integer type, neither
 T nor U is _Bool, and the rank of T is at most the rank of U, then the
