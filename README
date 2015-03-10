@@ -19,7 +19,7 @@ changed by the conversions, and normality may be lost.
 
 A thorough analysis of how this occurs leads to the following lemmas and
 theorem. The ideas apply to all versions of C, but the C99 standard will
-be used as the point of reference. The official copy of this standard
+be used as the point of reference. The official version of this standard
 must be purchased, but several drafts with only minor differences are
 freely available and should be easy to find. A draft is not included
 along with this file because the copyright information is unclear.
