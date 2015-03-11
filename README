@@ -43,6 +43,15 @@ arithmetic conversions.
 Definition 3.6. An integer comparison is weakly consistent if it is
 consistent but not strongly consistent.
 
+Example 3.7. The following table illustrates integer comparisons with
+various properties.
+
+     Comparison   | Expectation | Result  | Consistent? | Strongly?
+   ---------------|-------------|---------|-------------|-----------
+    -1 < 0        |      1      |    1    |     Yes     |    Yes
+    -1 < 0u       |      1      |    0    |     No      |    N/A
+    -2 < UINT_MAX |      1      |    1    |     Yes     |    No
+
 In general, the normality of an integer comparison depends on the effect
 of the usual arithmetic conversions, which in turn depends on the types
 and values of the operands. In some cases, the value of one operand is
