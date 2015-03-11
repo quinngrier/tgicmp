@@ -11,7 +11,7 @@ following definition.
 
 2. Theory
 
-Definition A.A. An integer comparison is a relational or equality
+Definition 2.1. An integer comparison is a relational or equality
 expression whose operands have integer type.
 
 Definition X.X. The expectation of an integer comparison for specific
