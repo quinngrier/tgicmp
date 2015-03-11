@@ -9,6 +9,9 @@ int to be converted to unsigned int. Because this conversion is modular,
 the comparison becomes UINT_MAX < 0u, which is false. This leads to the
 following definition.
 
+Definition B. An integer comparison is a relational or equality
+expression whose operands have integer type.
+
 Definition 1. An integer comparison is normal if its conceptual result
 matches its actual result.
 
