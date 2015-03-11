@@ -12,9 +12,9 @@ following definition.
 Definition B. An integer comparison is a relational or equality
 expression whose operands have integer type.
 
-Definition X.X. The expectation of an integer comparison for a specific
-choice of values for its operands is what its result would be if the
-usual arithmetic conversions were not performed on its operands.
+Definition X.X. The expectation of an integer comparison for specific
+values of its operands is what its result would be if the usual
+arithmetic conversions were not performed on its operands.
 
 Definition 1. An integer comparison is normal if its conceptual result
 matches its actual result.
