@@ -24,8 +24,8 @@ must be purchased, but several drafts with only minor differences are
 freely available and should be easy to find. A draft is not included
 along with this file because the copyright information is unclear.
 
-Lemma Z. If T and U are different unsigned integer types and neither T
-nor U is _Bool, then T and U have different ranks.
+Lemma Z. If T and U are different unsigned integer types and neither is
+_Bool, then T and U have different ranks.
 
 Proof. By C99 6.2.5p6, there exists signed integer types T' and U' that
 correspond to T and U, respectively. T' and U' must be different types,
