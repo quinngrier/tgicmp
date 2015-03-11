@@ -30,6 +30,9 @@ Definition 3.2. The expectation of an integer comparison is what its
 result would be if the usual arithmetic conversions were not performed
 on its operands.
 
+Definition 3.3. An expression realizes an integer comparison if the
+result of the expression is the expectation of the comparison.
+
 Definition A.C. An integer comparison is consistent for specific values
 of its operands if its expectation matches its result.
 
