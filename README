@@ -33,8 +33,8 @@ on its operands.
 Definition 3.3. An expression realizes an integer comparison if the
 result of the expression is the expectation of the comparison.
 
-Definition A.C. An integer comparison is consistent for specific values
-of its operands if its expectation matches its result.
+Definition 3.4. An integer comparison is consistent if it realizes
+itself.
 
 In general, the normality of an integer comparison depends on the effect
 of the usual arithmetic conversions, which in turn depends on the types
