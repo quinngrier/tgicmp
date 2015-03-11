@@ -62,10 +62,10 @@ Lemma Y. QED
 Theorem 2. If both operands of an integer comparison have signed type or
 both have nonnegative value, then the comparison is normal.
 
-Proof. It follows from C99 6.5.8p3 and C99 6.5.9p4 that the usual
-arithmetic conversions are performed on the operands before their values
-are compared. To show that the comparison is normal, it suffices to show
-that the conversions preserve the values of the operands.
+Proof. By C99 6.5.8p3 and C99 6.5.9p4, the usual arithmetic conversions
+are performed on the operands before their values are compared. To show
+that the comparison is normal, it suffices to show that the conversions
+preserve the values of the operands.
 
 The usual arithmetic conversions are defined by C99 6.3.1.8p1. There are
 two steps for integer operands: the integer promotions are performed on
