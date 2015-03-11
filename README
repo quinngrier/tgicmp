@@ -9,7 +9,7 @@ int to be converted to unsigned int. Because this conversion is modular,
 the comparison becomes UINT_MAX < 0u, which is false. This leads to the
 following definition.
 
-2. Theory
+3. Theory
 
 This section acts as an annex to the C standard that rigorously develops
 the mechanics of type-generic integer comparisons. This applies to all
@@ -21,7 +21,7 @@ but several drafts with only minor differences are freely available and
 should be easy to find. A draft would be included along with this file,
 but the copyright information is unclear.
 
-Definition 2.1. An integer comparison is a relational or equality
+Definition 3.1. An integer comparison is a relational or equality
 expression whose operands have integer type.
 
 Definition X.X. The expectation of an integer comparison for specific
