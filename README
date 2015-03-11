@@ -143,6 +143,10 @@ and Theorem 2 implies that the comparison is normal. If neither has
 negative value, then Theorem 2 implies that the comparison is normal.
 QED
 
+Theorem K. If x and y are integers with any types and values, then the
+actual result of (x < 0) == (y < 0) ? x < y : x < 0 matches the
+conceptual result of x < y.
+
 Suppose that x and y are integers with any types and values. We would
 like to compute the abstract x < y. It follows from the key observation
 that x < 0 and y < 0 are abstract. This lets us test if x and y are both
