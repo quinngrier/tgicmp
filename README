@@ -1,5 +1,7 @@
 Comparing integers in C
 
+1. Introduction
+
 One of the difficulties with C is its surprising behavior when comparing
 integers with different types. For example, -1 < 0u is conceptually true
 but actually false. This is because of the usual arithmetic conversions,
