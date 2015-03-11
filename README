@@ -11,6 +11,16 @@ following definition.
 
 2. Theory
 
+This section acts as an annex to the C standard that rigorously develops
+the mechanics of type-generic integer comparisons. This applies to all
+revisions of the C standard up to and including the 2011 revision, but
+the 1999 revision (C99) will be used for reference. Some concepts were
+not present in the seminal 1990 revision, but the results still apply
+with suitable changes. The official version of C99 must be purchased,
+but several drafts with only minor differences are freely available and
+should be easy to find. A draft would be included along with this file,
+but the copyright information is unclear.
+
 Definition 2.1. An integer comparison is a relational or equality
 expression whose operands have integer type.
 
@@ -25,13 +35,6 @@ In general, the normality of an integer comparison depends on the effect
 of the usual arithmetic conversions, which in turn depends on the types
 and values of the operands. In some cases, the value of one operand is
 changed by the conversions, and normality may be lost.
-
-A thorough analysis of how this occurs leads to the following lemmas and
-theorem. The ideas apply to all versions of C, but the C99 standard will
-be used as the point of reference. The official version of this standard
-must be purchased, but several drafts with only minor differences are
-freely available and should be easy to find. A draft is not included
-along with this file because the copyright information is unclear.
 
 Lemma Z. If T and U are different unsigned integer types and neither is
 _Bool, then T and U have different ranks.
