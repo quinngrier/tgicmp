@@ -16,8 +16,8 @@ Definition X.X. The expectation of an integer comparison for specific
 values of its operands is what its result would be if the usual
 arithmetic conversions were not performed on its operands.
 
-Definition 1. An integer comparison is normal if its conceptual result
-matches its actual result.
+Definition X.X. An integer comparison is consistent for specific values
+of its operands if its expectation matches its result.
 
 In general, the normality of an integer comparison depends on the effect
 of the usual arithmetic conversions, which in turn depends on the types
