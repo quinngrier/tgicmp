@@ -48,8 +48,8 @@ various properties.
 
      Comparison   | Expectation | Result  | Consistent? | Strongly?
    ---------------|-------------|---------|-------------|-----------
-    -1 < 0        |      1      |    1    |     Yes     |    Yes
-    -1 < 0u       |      1      |    0    |     No      |    N/A
+    -2 < 0        |      1      |    1    |     Yes     |    Yes
+    -2 < 0u       |      1      |    0    |     No      |    N/A
     -2 < UINT_MAX |      1      |    1    |     Yes     |    No
 
 In general, the normality of an integer comparison depends on the effect
