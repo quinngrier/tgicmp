@@ -17,6 +17,12 @@ unsigned type. Such a conversion is always modular, and the negative
 value becomes its least residue. Depending on the values, the actual
 result of the comparison can differ from the conceptual result.
 
+The usual advice is to avoid comparisons where one operand has signed
+type and the other has unsigned type. This is usually easy to follow,
+but there can be difficult situations. Fortunately, there is a way to
+compute the conceptual result of a comparison regardless of the types
+and values of its operands.
+
 3. Theory
 
 This section acts as an annex to the C standard that rigorously develops
@@ -143,23 +149,12 @@ comparison becomes UINT_MAX - 1 < UINT_MAX, which happens to preserve
 the original conceptual result. In general, the value of one operand
 being lost is not enough to cause normality to be lost.
 
-In practice it is best to avoid integer comparisons that are not normal.
-The usual advice is to avoid comparisons where one operand has signed
-type and the other has unsigned type. Indeed, most compilers can be
-instructed to produce warnings if this advice is not followed. The
-following corollary shows why this advice is true.
-
 Corollary 3. If both operands of an integer comparison have signed type
 or both have unsigned type, then the comparison is normal.
 
 Proof. If both operands have signed type, then Theorem 2 implies that
 the comparison is normal. If both have unsigned type, then neither has
 negative value, and Theorem 2 implies that the comparison is normal. QED
-
-Although Corollary 3 is usually easy to follow in practice, there are
-situations where it can be difficult. Fortunately, there is a way to
-compute the conceptual result of an integer comparison regardless of
-normality.
 
 Corollary 4. If one operand of an integer comparison has signed type but
 not negative value, then the comparison is normal.
