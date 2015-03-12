@@ -23,6 +23,16 @@ but there can be difficult situations. Fortunately, there is a way to
 compute the conceptual result of an integer comparison no matter what
 types and values are involved.
 
+Let x and y be integers with any types and values, with the goal being
+to compute the conceptual result of x < y. Notice that x < 0 and y < 0
+are always conceptual, so (x < 0) == (y < 0) tests if both x and y are
+negative or both are nonnegative. In this case, x < y itself is always
+conceptual. Otherwise, exactly one of x and y is negative, so x < 0 is
+the conceptual result of x < y. Combining these two possibilities into
+one computation produces (x < 0) == (y < 0) ? x < y : x < 0, which is
+always the conceptual result of x < y. The other comparison operators
+can be computed from this one.
+
 3. Theory
 
 This section acts as an annex to the C standard that rigorously develops
@@ -175,16 +185,6 @@ QED
 Theorem K. If x and y are integers with any types and values, then the
 actual result of (x < 0) == (y < 0) ? x < y : x < 0 matches the
 conceptual result of x < y.
-
-Suppose that x and y are integers with any types and values. We would
-like to compute the abstract x < y. It follows from the key observation
-that x < 0 and y < 0 are abstract. This lets us test if x and y are both
-negative or not negative: (x < 0) == (y < 0). In this case, it follows
-from the key observation that x < y is abstract. Otherwise, if exactly
-one of x and y is negative, x < 0 is also the abstract x < y. Putting it
-together, (x < 0) == (y < 0) ? x < y : x < 0 is the abstract x < y. The
-> operator can be computed similarly, and the <=, >=, ==, and !=
-operators can be computed from the < and > operators.
 
 For convenience, we provide the header file tgicmp.h, which defines six
 macros that implement the six comparison operators <, >, <=, >=, ==, and
