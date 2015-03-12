@@ -20,8 +20,8 @@ result of the comparison can differ from the conceptual result.
 The usual advice is to avoid comparisons where one operand has signed
 type and the other has unsigned type. This is usually easy to follow,
 but there can be difficult situations. Fortunately, there is a way to
-compute the conceptual result of a comparison regardless of the types
-and values of its operands.
+compute the conceptual result of an integer comparison no matter what
+types and values are involved.
 
 3. Theory
 
