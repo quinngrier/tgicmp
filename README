@@ -58,11 +58,6 @@ various properties.
     -2 < 0u       |      1      |    0    |     No      |    N/A
     -2 < UINT_MAX |      1      |    1    |     Yes     |    No
 
-In general, the normality of an integer comparison depends on the effect
-of the usual arithmetic conversions, which in turn depends on the types
-and values of the operands. In some cases, the value of one operand is
-changed by the conversions, and normality may be lost.
-
 Lemma Z. If T and U are different unsigned integer types and neither is
 _Bool, then T and U have different ranks.
 
