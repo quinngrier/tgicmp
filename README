@@ -32,7 +32,8 @@ conceptual. Otherwise, exactly one of x and y is negative, so x < 0 is
 the conceptual result of x < y. Combining these two possibilities into
 one computation produces (x < 0) == (y < 0) ? x < y : x < 0, which is
 always the conceptual result of x < y. The other comparison operators
-can be computed from this one.
+can be computed from this one. For the complete formal development of
+this idea, see Section 3.
 
 Included along with this file is a header named tgicmp.h that defines
 six macros for performing these type-generic integer comparisons. The
