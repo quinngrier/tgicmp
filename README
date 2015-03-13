@@ -34,6 +34,12 @@ one computation produces (x < 0) == (y < 0) ? x < y : x < 0, which is
 always the conceptual result of x < y. The other comparison operators
 can be computed from this one.
 
+Included along with this file is a header named tgicmp.h that defines
+six macros for performing these type-generic integer comparisons. The
+macros are named TGI{LT,GT,LE,GE,EQ,NE} and correspond in the obvious
+way to the comparison operators. Each takes two arguments and returns
+the appropriate result.
+
 3. Theory
 
 This section acts as an annex to the C standard that rigorously develops
@@ -186,10 +192,6 @@ QED
 Theorem K. If x and y are integers with any types and values, then the
 actual result of (x < 0) == (y < 0) ? x < y : x < 0 matches the
 conceptual result of x < y.
-
-For convenience, we provide the header file tgicmp.h, which defines six
-macros that implement the six comparison operators <, >, <=, >=, ==, and
-!= as described.
 
 The six macros are TGILT, TGIGT, TGILE, TGIGE, TGIEQ, and TGINE, which
 correspond to the six operators. Each macro takes two arguments x and y,
