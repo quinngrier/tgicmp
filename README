@@ -44,7 +44,7 @@ see Section 2.
 
 2. Header specification
 
-3. Theory
+3. Formal development
 
 This section acts as an annex to the C standard that rigorously develops
 the mechanics of type-generic integer comparisons. This applies to all
