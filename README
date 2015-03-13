@@ -39,7 +39,8 @@ Included along with this file is a header named tgicmp.h that defines
 six macros for performing these type-generic integer comparisons. The
 macros are named TGI{LT,GT,LE,GE,EQ,NE} and correspond in the obvious
 way to the comparison operators. Each takes two arguments and returns
-the appropriate result.
+the appropriate result. For the complete specification of the header,
+see Section 2.
 
 3. Theory
 
