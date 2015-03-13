@@ -42,6 +42,8 @@ way to the comparison operators. Each takes two arguments and returns
 the appropriate result. For the complete specification of the header,
 see Section 2.
 
+2. Header specification
+
 3. Theory
 
 This section acts as an annex to the C standard that rigorously develops
