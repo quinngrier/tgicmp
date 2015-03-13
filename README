@@ -56,25 +56,17 @@ but several drafts with only minor differences are freely available and
 should be easy to find. A draft would be included along with this file,
 but the copyright information is unclear.
 
-Definition 3.1. An integer comparison is a relational or equality
-expression whose operands have integer type.
-
-Definition 3.2. The expectation of an integer comparison is what its
-result would be if the usual arithmetic conversions were not performed
-on its operands.
-
-Definition 3.3. An expression realizes an integer comparison if the
-result of the expression is the expectation of the comparison.
-
-Definition 3.4. An integer comparison is consistent if it realizes
-itself.
-
-Definition 3.5. An integer comparison is strongly consistent if it is
-consistent and the values of its operands are unchanged by the usual
-arithmetic conversions.
-
-Definition 3.6. An integer comparison is weakly consistent if it is
-consistent but not strongly consistent.
+A relational or equality expression whose operands have integer type is
+called an integer comparison. The result of an integer comparison as if
+the usual arithmetic conversions were not performed on its operands is
+called the conceptual result of the comparison. An expression is said to
+conceptualize an integer comparison if the result of the expression is
+the conceptual result of the comparison. An integer comparison is said
+to be conceptual if it conceptualizes itself. An integer comparison is
+said to be strongly conceptual if it is conceptual and neither operand
+has its value changed by the usual arithmetic conversions. An integer
+comparison is said to be weakly conceptual if it is conceptual but not
+strongly conceptual.
 
 Example 3.7. The following table illustrates integer comparisons with
 various properties.
