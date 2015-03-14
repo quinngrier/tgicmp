@@ -69,13 +69,12 @@ conceptual if not.
 
 Here are some examples of integer comparisons with various properties:
 
-      Integer     |        | Conceptual |             |  Strongly
-     comparison   | Result |   result   | Conceptual? | conceptual?
-   ---------------+--------+------------+-------------+-------------
-    -2 < 0        |   1    |     1      |     Yes     |     Yes
-    -2 < 0u       |   0    |     1      |     No      |     N/A
-    -2 < UINT_MAX |   1    |     1      |     Yes     |     No
-     2 < UINT_MAX |   1    |     1      |     Yes     |     Yes
+    Integer comparison | Result | Conceptual result | Conceptuality
+   --------------------+--------+-------------------+---------------
+      -2 < 0           |   1    |         1         |    Strong
+      -2 < 0u          |   0    |         1         |     None
+      -2 < UINT_MAX    |   1    |         1         |     Weak
+       2 < UINT_MAX    |   1    |         1         |    Strong
 
 Lemma Z. If T and U are different unsigned integer types and neither is
 _Bool, then T and U have different ranks.
