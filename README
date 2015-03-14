@@ -62,11 +62,10 @@ the usual arithmetic conversions were not performed on its operands is
 called the conceptual result of the comparison. An expression is said to
 conceptualize an integer comparison if the result of the expression is
 the conceptual result of the comparison. An integer comparison is said
-to be conceptual if it conceptualizes itself. An integer comparison is
-said to be strongly conceptual if it is conceptual and neither operand
-has its value changed by the usual arithmetic conversions. An integer
-comparison is said to be weakly conceptual if it is conceptual but not
-strongly conceptual.
+to be conceptual if it conceptualizes itself. If an integer comparison
+is conceptual, it is said to be strongly conceptual if neither operand
+has its value changed by the usual arithmetic conversions, and weakly
+conceptual if not.
 
 Here are some examples of integer comparisons with various properties:
 
