@@ -68,14 +68,14 @@ has its value changed by the usual arithmetic conversions. An integer
 comparison is said to be weakly conceptual if it is conceptual but not
 strongly conceptual.
 
-Example 3.7. The following table illustrates integer comparisons with
-various properties.
+Here are some examples of integer comparisons with various properties:
 
-     Comparison   | Expectation | Result  | Consistent? | Strongly?
-   ---------------|-------------|---------|-------------|-----------
-    -2 < 0        |      1      |    1    |     Yes     |    Yes
-    -2 < 0u       |      1      |    0    |     No      |    N/A
-    -2 < UINT_MAX |      1      |    1    |     Yes     |    No
+      Integer     |        | Conceptual |             |  Strongly
+     comparison   | Result |   result   | Conceptual? | conceptual?
+   ---------------+--------+------------+-------------+-------------
+    -2 < 0        |   1    |     1      |     Yes     |     Yes
+    -2 < 0u       |   0    |     1      |     No      |     N/A
+    -2 < UINT_MAX |   1    |     1      |     Yes     |     No
 
 Lemma Z. If T and U are different unsigned integer types and neither is
 _Bool, then T and U have different ranks.
