@@ -46,15 +46,13 @@ see Section 2.
 
 3. Formal development
 
-This section acts as an annex to the C standard that rigorously develops
-the mechanics of type-generic integer comparisons. This applies to all
-revisions of the C standard up to and including the 2011 revision, but
-the 1999 revision (C99) will be used for reference. Some concepts were
-not present in the seminal 1990 revision, but the results still apply
-with suitable changes. The official version of C99 must be purchased,
-but several drafts with only minor differences are freely available and
-should be easy to find. A draft would be included along with this file,
-but the copyright information is unclear.
+This section rigorously develops the ideas behind type-generic integer
+comparisons. The 2011 revision of the C standard (C11) will be assumed.
+The key ideas also apply to the 1990 and 1999 revisions of the standard,
+but some changes may be necessary. The official version of C11 can only
+be purchased, but several drafts with only minor differences are freely
+available and should be easy to find. A draft would be included along
+with this file, but the copyright information is unclear.
 
 A relational or equality expression whose operands have integer type is
 called an integer comparison. The result of an integer comparison as if
