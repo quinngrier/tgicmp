@@ -44,6 +44,11 @@ see Section 2.
 
 2. Header specification
 
+The tgicmp.h header defines six macros for performing type-generic
+integer comparisons. If the header is included, it reserves the macro
+names for use as specified. The header can be included multiple times
+without any problems.
+
 3. Formal development
 
 This section rigorously develops the ideas behind type-generic integer
