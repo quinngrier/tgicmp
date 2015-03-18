@@ -86,8 +86,8 @@ Here are some examples of integer comparisons with various properties:
 
     Integer comparison | Result | Conceptual result | Conceptuality
    --------------------+--------+-------------------+---------------
-      -2 < 0           |   1    |         1         |    Strong
-      -2 < 0u          |   0    |         1         |     None
+      -1 < 0           |   1    |         1         |    Strong
+      -1 < 0u          |   0    |         1         |     None
       -2 < UINT_MAX    |   1    |         1         |     Weak
       -1 < UINT_MAX    |   0    |         1         |     None
        2 < UINT_MAX    |   1    |         1         |    Strong
