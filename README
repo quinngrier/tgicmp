@@ -90,7 +90,7 @@ Here are some examples of integer comparisons with various properties:
       -1 < 0u          |   0    |         1         |     None
       -2 < UINT_MAX    |   1    |         1         |     Weak
       -1 < UINT_MAX    |   0    |         1         |     None
-       2 < UINT_MAX    |   1    |         1         |    Strong
+       0 < 0u          |   0    |         0         |    Strong
 
 Lemma Z. If T and U are different unsigned integer types and neither is
 _Bool, then T and U have different ranks.
