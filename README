@@ -203,19 +203,6 @@ Theorem K. If x and y are integers with any types and values, then the
 actual result of (x < 0) == (y < 0) ? x < y : x < 0 matches the
 conceptual result of x < y.
 
-The six macros are TGILT, TGIGT, TGILE, TGIGE, TGIEQ, and TGINE, which
-correspond to the six operators. Each macro takes two arguments x and y,
-each of which must be an expression with integer type but may otherwise
-have any type and value. The expansion is a parenthesized expression
-with type int and value 1 if x op y is true in the abstract or 0 if not,
-where op is the corresponding operator. If x and y are suitable for use
-in #if preprocessing directives, so is the expansion. If x and y are
-integer constant expressions, so is the expansion. The expansion may
-evaluate each of x and y more than once.
-
-The header file is safe to include more than once. The only reserved
-identifiers are the six macro names.
-
 The authors of this file have waived all copyright and
 related or neighboring rights to the extent permitted by
 law as described by the CC0 1.0 Universal Public Domain
