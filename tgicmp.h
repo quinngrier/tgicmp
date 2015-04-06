@@ -1,7 +1,7 @@
 #ifndef TGILT
   #define TGILT(x, y) \
-    ((x) % 1 == 0 && \
-     (y) % 1 == 0 && \
+    ((x) % 1 || \
+     (y) % 1 || \
      (((x) < 0) == ((y) < 0) ? (x) < (y) : (x) < 0))
 #endif
 
