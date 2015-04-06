@@ -14,8 +14,8 @@ This difficulty can only arise when one operand has unsigned type and
 the other has signed type and negative value. Depending on the types,
 the usual arithmetic conversions can convert the negative value to an
 unsigned type. Such a conversion is always modular, and the negative
-value becomes a least residue. Depending on the values, the actual
-result of the comparison can stray from the conceptual result.
+value changes into a nonnegative value. Depending on the values, the
+actual result of the comparison can stray from the conceptual result.
 
 The usual advice is to avoid comparisons where one operand has signed
 type and the other has unsigned type. Compilers can usually be set to
