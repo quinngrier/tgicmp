@@ -92,82 +92,12 @@ Here are some examples of integer comparisons with various properties:
       -1 < UINT_MAX    |         1         |   0    |     None
       -2 < UINT_MAX    |         1         |   1    |     Weak
 
-Lemma Z. If T and U are different unsigned integer types and neither is
-_Bool, then T and U have different ranks.
-
-Proof. By C99 6.2.5p6, there exists signed integer types T' and U' that
-correspond to T and U, respectively. T' and U' must be different types,
-for if they were the same type, then T and U would be the same type by
-C99 6.2.5p6. By C99 6.3.1.1p1 item 4, T and T' have the same rank, and
-so do U and U'. Now, if T and U had the same rank, then all four types
-would have the same rank. In particular, T' and U' would have the same
-rank, which would contradict C99 6.3.1.1p1 item 1. QED
-
-Lemma Y. If T is a signed integer type, U is an unsigned integer type, U
-is not _Bool, and the rank of T is at most the rank of U, then the
-nonnegative range of T is at most the range of U.
-
-Proof. Since U is not _Bool, there exists a signed integer type U' that
-corresponds to U by C99 6.2.5p6. The nonnegative range of U' is at most
-the range of U by C99 6.2.5p9, so it suffices to show that the range of
-T is at most the range of U'. Since the rank of T is at most the rank of
-U by assumption and U and U' have the same rank by C99 6.3.1.1p1 item 4,
-the rank of T is at most the rank of U'. If T and U' have the same rank,
-then T and U' are the same type by C99 6.3.1.1p1 item 1, and the result
-follows trivially. Otherwise, the rank of T is less than the rank of U',
-and the result follows from C99 6.2.5p8. QED
-
-Lemma X. If T is an integer type, U is an unsigned integer type, neither
-T nor U is _Bool, and the rank of T is at most the rank of U, then the
-nonnegative range of T is at most the range of U.
-
-Proof. If T and U are the same type, then the result follows trivially.
-Otherwise, if T is unsigned, then T and U have different ranks by Lemma
-Z, so the rank of T is less than the rank of U, and the result follows
-from C99 6.2.5p8. Otherwise, T is signed, and the result follows from
-Lemma Y. QED
-
-Theorem 2. If both operands of an integer comparison have signed type or
-both have nonnegative value, then the comparison is normal.
-
-Proof. By C99 6.5.8p3 and C99 6.5.9p4, the usual arithmetic conversions
-are performed on the operands before their values are compared. To show
-that the comparison is normal, it suffices to show that the conversions
-preserve the values of the operands.
-
-The usual arithmetic conversions are defined by C99 6.3.1.8p1. There are
-two steps for integer operands: the integer promotions are performed on
-the operands, and one of five cases is performed based on the types of
-the promoted operands.
-
-The integer promotions are defined by C99 6.3.1.1p2. These preserve the
-values of the operands as clearly stated by C99 6.3.1.1p3. The types of
-the operands may change, but this is inconsequential except that if an
-operand has type _Bool, then it is converted to int, guaranteeing that
-neither operand has type _Bool after promotion.
-
-The aforementioned five cases are defined within the usual arithmetic
-conversions themselves. Let T and U be the types of the operands.
-
-In case 1, T and U are the same type and no action is taken.
-
-In case 2, T and U are different types, both T and U are signed or both
-are unsigned, the rank of T is less than the rank of U, and the operand
-with type T is converted to U. The value is preserved by C99 6.2.5p8.
-
-In case 3, T and U are different types, T is signed, U is unsigned, the
-rank of T is at most the rank of U, and the operand with type T is
-converted to U. The value is nonnegative by the assumption of the
-theorem and is preserved by Lemma X.
-
-In case 4, a conversion occurs and the value is preserved by the wording
-of the case itself.
-
-In case 5, T and U are different types, T is signed, U is unsigned, the
-rank of T is larger than the rank of U, and both operands are converted
-to the unsigned type T' that corresponds to T. Both values are
-nonnegative by the assumption of the theorem and are preserved by Lemma
-X. QED
+The usual arithmetic conversions lead to what could be called the
+fundamental theorem of integer comparisons: an integer comparison is
+strongly conceptual if and only if both operands have signed type after
+promotion or both have nonnegative value. This is important not only in
+theory, but for understanding when comparisons in practical code behave
+as intended.
 
 Note that the converse of Theorem 2 is not true: -2 < UINT_MAX is normal
 but does not satisfy the assumption of the theorem. The normality here
