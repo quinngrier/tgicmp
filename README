@@ -99,41 +99,6 @@ promotion or both have nonnegative value. This is important not only in
 theory, but for understanding when comparisons in practical code behave
 as intended.
 
-Note that the converse of Theorem 2 is not true: -2 < UINT_MAX is normal
-but does not satisfy the assumption of the theorem. The normality here
-is surprising because -2 is converted to unsigned int and its value is
-lost, which suggests that normality should also be lost. However, the
-comparison becomes UINT_MAX - 1 < UINT_MAX, which happens to preserve
-the original conceptual result. In general, the value of one operand
-being lost is not enough to cause normality to be lost.
-
-Corollary 3. If both operands of an integer comparison have signed type
-or both have unsigned type, then the comparison is normal.
-
-Proof. If both operands have signed type, then Theorem 2 implies that
-the comparison is normal. If both have unsigned type, then neither has
-negative value, and Theorem 2 implies that the comparison is normal. QED
-
-Corollary 4. If one operand of an integer comparison has signed type but
-not negative value, then the comparison is normal.
-
-Proof. If the other operand has signed type, then both have signed type,
-and Theorem 2 implies that the comparison is normal. If it has unsigned
-type, then neither has negative value, and Theorem 2 implies that the
-comparison is normal. QED
-
-Corollary 5. If both operands of an integer comparison have negative
-value or neither has negative value, then the comparison is normal.
-
-Proof. If both operands have negative value, then both have signed type,
-and Theorem 2 implies that the comparison is normal. If neither has
-negative value, then Theorem 2 implies that the comparison is normal.
-QED
-
-Theorem K. If x and y are integers with any types and values, then the
-actual result of (x < 0) == (y < 0) ? x < y : x < 0 matches the
-conceptual result of x < y.
-
 The authors of this file have waived all copyright and
 related or neighboring rights to the extent permitted by
 law as described by the CC0 1.0 Universal Public Domain
