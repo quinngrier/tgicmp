@@ -64,12 +64,12 @@ are integer constant expressions, so is the expansion.
 3. Formal development
 
 This section rigorously develops the ideas behind type-generic integer
-comparisons. The 2011 revision of the C standard (C11) will be assumed.
-The key ideas also apply to the 1990 and 1999 revisions of the standard,
-but some changes may be necessary. The official version of C11 can only
-be purchased, but several drafts with only minor differences are freely
-available and should be easy to find. A draft would be included along
-with this file, but the copyright information is unclear.
+comparisons. The 2011 revision of the C standard will be assumed. The
+concepts also apply to all older revisions of the standard, but minor
+changes may be necessary. Official copies of the standard can only be
+purchased, but several drafts with only minor differences are freely
+available and should be easy to find. A draft would be included with
+this file, but the copyright information is unclear.
 
 A relational or equality expression whose operands have integer type is
 called an integer comparison. The result of an integer comparison as if
