@@ -1,6 +1,7 @@
                  Type-generic integer comparisons in C
 
 1. Overview
+------------------------------------------------------------------------
 
 One of the difficulties with C is its surprising behavior when comparing
 integers with different types. For example, -1 < 0u is conceptually true
@@ -43,6 +44,7 @@ the appropriate result. For the complete specification of the header,
 see Section 2.
 
 2. Header specification
+------------------------------------------------------------------------
 
 The tgicmp.h header defines six macros for performing type-generic
 integer comparisons. If the header is included, it reserves the macro
@@ -62,6 +64,7 @@ use in preprocessing directives, so is the expansion. If the arguments
 are integer constant expressions, so is the expansion.
 
 3. Formal development
+------------------------------------------------------------------------
 
 This section rigorously develops the ideas behind type-generic integer
 comparisons. The 2011 revision of the C standard will be assumed. The
