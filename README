@@ -58,7 +58,7 @@ expression with integer type but may otherwise have any type and value.
 Invalid arguments, in particular those with real floating type, always
 cause syntax errors. The macro expansion is a parenthesized expression
 with type int and value 1 if the corresponding comparison of the first
-and second arguments is conceptually true, or 0 if not. The arguments
+and second arguments is conceptually true, or 0 if not. Both arguments
 are always evaluated more than once. If the arguments are suitable for
 use in preprocessing directives, so is the expansion. If the arguments
 are integer constant expressions, so is the expansion.
