@@ -106,6 +106,14 @@ Let x and y be integers with any types and values. As shown by the above
 examples, the integer comparison x < y is not conceptual in general. The
 goal is therefore to construct an expression that conceptualizes x < y.
 
+The first observation is that the integer comparison x < 0 is strongly
+conceptual. This follows easily from the fundamental theorem: If x has
+nonnegative value, then both x and 0 have nonnegative value. Otherwise,
+x has negative value, and thus signed type. Signed types never promote
+to unsigned int, so x has signed type after promotion. 0 trivially has
+signed type after promotion since it has type int. In either case, the
+result follows from the fundamental theorem.
+
 ------------------------------------------------------------------------
 
 The authors of this file have waived all copyright and
