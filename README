@@ -114,6 +114,30 @@ to unsigned int, so x has signed type after promotion. 0 trivially has
 signed type after promotion since it has type int. In either case, the
 result follows from the fundamental theorem.
 
+It then follows that the expression (x < 0) == (y < 0) tests if x and y
+are both negative or both nonnegative. This divides the work into three
+cases: (1) x and y are both negative, (2) x and y are both nonnegative,
+and (3) exactly one of x and y is negative.
+
+In case 1, x < y itself is strongly conceptual: Since x and y are both
+negative, x and y both have signed type. As stated above, signed types
+never promote to unsigned int, so x and y both have signed type after
+promotion. The result then follows from the fundamental theorem.
+
+In case 2, x < y itself is strongly conceptual: Since x and y are both
+nonnegative, the result follows trivially from the fundamental theorem.
+Note that this is the same result as in case 1.
+
+In case 3, x < 0 conceptualizes x < y: If x is negative and y is
+nonnegative, the result of x < 0 and the conceptual result of x < y are
+both 1. Otherwise, if x is nonnegative and y is negative, the result of
+x < 0 and the conceptual result of x < y are both 0. Also note that the
+strong conceptuality of x < 0 is used here.
+
+Putting everything together, it follows that x < y is conceptualized by
+the expression (x < 0) == (y < 0) ? x < y : x < 0. This can be combined
+with logical negation to conceptualize the other comparisons.
+
 ------------------------------------------------------------------------
 
 The authors of this file have waived all copyright and
