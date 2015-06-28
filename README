@@ -4,12 +4,12 @@
 ------------------------------------------------------------------------
 
 One of the difficulties with C is its surprising behavior when comparing
-integers with different types. For example, -1 < 0u is conceptually true
+integers with different types. For example, -1 < 0U is conceptually true
 but actually false. This is because of the usual arithmetic conversions,
 which are the rules for consolidating operands with different types. In
 this example, the operands have types int and unsigned int, causing the
 int to be converted to unsigned int. Because this conversion is modular,
-the comparison becomes UINT_MAX < 0u, which is false.
+the comparison becomes UINT_MAX < 0U, which is false.
 
 This difficulty can only arise when one operand has unsigned type and
 the other has signed type and negative value. Depending on the types,
@@ -90,8 +90,8 @@ Here are some examples of integer comparisons with various properties:
     Integer comparison | Conceptual result | Result | Conceptuality
    --------------------+-------------------+--------+---------------
       -1 < 0           |         1         |   1    |    Strong
-      -1 < 0u          |         1         |   0    |     None
-       0 < 0u          |         0         |   0    |    Strong
+      -1 < 0U          |         1         |   0    |     None
+       0 < 0U          |         0         |   0    |    Strong
       -1 < UINT_MAX    |         1         |   0    |     None
       -2 < UINT_MAX    |         1         |   1    |     Weak
 
