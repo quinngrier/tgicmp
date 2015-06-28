@@ -1,7 +1,7 @@
 #ifndef TGILT
   #define TGILT(x, y) \
-    ((x) % 1 == 0 /* allow only integers */ && \
-     (y) % 1 == 0 /* allow only integers */ && \
+    ((x) % 1 == 0 && /* allow only integers */ \
+     (y) % 1 == 0 && /* allow only integers */ \
      (((x) < 0) == ((y) < 0) ? (x) < (y) : (x) < 0))
 #endif
 
