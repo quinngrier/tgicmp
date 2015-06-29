@@ -1,5 +1,12 @@
                  Type-generic integer comparisons in C
 
+Contents
+------------------------------------------------------------------------
+
+  1. Overview
+  2. Header specification
+  3. Formal development
+
 1. Overview
 ------------------------------------------------------------------------
 
