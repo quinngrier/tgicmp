@@ -143,7 +143,7 @@ strong conceptuality of x < 0 is used here.
 
 Putting everything together, it follows that x < y is conceptualized by
 the expression (x < 0) == (y < 0) ? x < y : x < 0. This can be combined
-with logical negation to conceptualize the other comparisons.
+with logical operators to conceptualize the other comparisons.
 
 ------------------------------------------------------------------------
 
