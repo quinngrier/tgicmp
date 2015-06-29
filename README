@@ -97,10 +97,17 @@ Here are some examples of integer comparisons with various properties:
 
 The usual arithmetic conversions lead to what could be called the
 fundamental theorem of integer comparisons: an integer comparison is
-strongly conceptual if and only if both operands have signed type after
-promotion or both have nonnegative value. This is important not only in
-theory, but for understanding when comparisons in practical code behave
+strongly conceptual if both operands have signed type after promotion or
+if both have nonnegative value. This is important not only in theory but
+for understanding when comparisons in real code are guaranteed to behave
 as intended.
+
+Note that the converse of the fundamental theorem is not true. As an
+example, if long int has range [-2^63, 2^63 - 1] and unsigned int has
+range [0, 2^32 - 1], then the comparison -1L < 0U does not satisfy the
+assumption of the theorem but is surprisingly strongly conceptual. The
+unsigned int is simply converted to long int and the negative value is
+not compromised.
 
 Let x and y be integers with any types and values. As shown by the above
 examples, the integer comparison x < y is not conceptual in general. The
