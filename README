@@ -116,9 +116,9 @@ but does not satisfy the assumption of the theorem. In this example, the
 usual arithmetic conversions simply convert the unsigned int to long int
 and the negative value is preserved.
 
-Let x and y be integers with any types and values. As shown above, the
-integer comparison x < y is not conceptual in general. The goal is then
-to construct an expression that conceptualizes x < y.
+Let x and y be integers with any types and values. As shown by the above
+table, the integer comparison x < y is not conceptual in general. The
+goal is then to construct an expression that conceptualizes x < y.
 
 The first observation is that the integer comparison x < 0 is strongly
 conceptual. This follows easily from the fundamental theorem: If x has
