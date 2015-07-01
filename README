@@ -112,11 +112,10 @@ for understanding when comparisons in real code are guaranteed to behave
 as intended.
 
 Note that the converse of the fundamental theorem is not true. For
-example, if long int has range [-2^63, 2^63 - 1] and unsigned int has
-range [0, 2^32 - 1], then the comparison -1L < 0U is strongly conceptual
-but does not satisfy the assumption of the theorem. In this example, the
-usual arithmetic conversions simply convert the unsigned int to long int
-and the negative value is preserved.
+example, if LONG_MAX >= UINT_MAX, then the comparison -1L < 0U does not
+satisfy the assumption of the theorem but is strongly conceptual. Since
+LONG_MAX >= UINT_MAX, the unsigned int is converted to long int and the
+negative value is preserved.
 
 Let x and y be integers with any types and values. As shown by the above
 table, the integer comparison x < y is not conceptual in general. The
