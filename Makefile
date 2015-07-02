@@ -9,7 +9,7 @@ $(tgicmp)test.o: \
 $(tgicmp)test.c \
 $(tgicmp)tgicmp.h \
 
-	$(CC) $(CFLAGS) -c $(tgicmp)test.c
+	cd -- $(@D) && $(CC) $(CFLAGS) -c test.c
 
 #
 # The authors of this file have waived all copyright and
