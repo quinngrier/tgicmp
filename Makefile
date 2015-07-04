@@ -1,3 +1,7 @@
+$(tgicmp)all: \
+$(tgicmp)test$(EXEEXT) \
+$(tgicmp)test.o \
+
 $(tgicmp)check: \
 $(tgicmp)test$(EXEEXT) \
 
