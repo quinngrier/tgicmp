@@ -7,6 +7,10 @@ $(tgicmp)test$(EXEEXT) \
 
 	$(@D)/test$(EXEEXT)
 
+$(tgicmp)clean:
+	rm -f -- $(tgicmp)test$(EXEEXT)
+	rm -f -- $(tgicmp)test.o
+
 $(tgicmp)test$(EXEEXT): \
 $(tgicmp)test.o \
 
