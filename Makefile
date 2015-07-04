@@ -1,3 +1,8 @@
+$(tgicmp)check: \
+$(tgicmp)test$(EXEEXT) \
+
+	$(@D)/test$(EXEEXT)
+
 $(tgicmp)test$(EXEEXT): \
 $(tgicmp)test.o \
 
