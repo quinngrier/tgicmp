@@ -3,6 +3,7 @@ datarootdir = $(prefix)/share
 includedir = $(prefix)/include
 mandir = $(datarootdir)/man
 man3dir = $(mandir)/man3
+man3ext = .3
 
 $(tgicmp)all: \
 $(tgicmp)test$(EXEEXT) \
