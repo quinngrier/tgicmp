@@ -66,8 +66,8 @@ respectively. Each macro takes two arguments x and y. Each of x and y
 must be an integer expression. Invalid arguments, in particular those
 with real floating type, always cause syntax errors. The macro expands
 to a parenthesized integer expression with type int and value 1 if the
-corresponding comparison of x and y is conceptually true, or 0 if not.
-Both x and y are always evaluated more than once. If both x and y are
+corresponding comparison between x and y is conceptually true, or 0 if
+not. Both x and y may be evaluated more than once. If both x and y are
 constant expressions, so is the resulting expression. If both x and y
 are suitable for use in preprocessing directives, so is the resulting
 expression.
