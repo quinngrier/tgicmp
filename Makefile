@@ -17,6 +17,10 @@ $(tgicmp)clean:
 	rm -f -- $(tgicmp)test$(EXEEXT)
 	rm -f -- $(tgicmp)test.o
 
+$(tgicmp)installdirs:
+	install -d -- $(DESTDIR)$(includedir)
+	install -d -- $(DESTDIR)$(man3dir)
+
 $(tgicmp)test$(EXEEXT): \
 $(tgicmp)test.o \
 
