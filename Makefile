@@ -18,6 +18,14 @@ $(tgicmp)clean:
 	rm -f -- $(tgicmp)test$(EXEEXT)
 	rm -f -- $(tgicmp)test.o
 
+$(tgicmp)install: \
+$(tgicmp)installdirs \
+$(tgicmp)tgicmp.3 \
+$(tgicmp)tgicmp.h \
+
+	install -- $(tgicmp)tgicmp.3 $(DESTDIR)$(man3dir)/tgicmp$(man3ext)
+	install -- $(tgicmp)tgicmp.h $(DESTDIR)$(includedir)/tgicmp.h
+
 $(tgicmp)installdirs:
 	install -d -- $(DESTDIR)$(includedir)
 	install -d -- $(DESTDIR)$(man3dir)
