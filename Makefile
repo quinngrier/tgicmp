@@ -1,3 +1,9 @@
+prefix = /usr/local
+datarootdir = $(prefix)/share
+includedir = $(prefix)/include
+mandir = $(datarootdir)/man
+man3dir = $(mandir)/man3
+
 $(tgicmp)all: \
 $(tgicmp)test$(EXEEXT) \
 $(tgicmp)test.o \
