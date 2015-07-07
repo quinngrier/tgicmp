@@ -1,4 +1,4 @@
-AC_INIT([tgicmp], [0.0.1])
+AC_INIT([tgicmp], [0.0.1], [quinn.grier@gmail.com])
 AM_INIT_AUTOMAKE([foreign])
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
