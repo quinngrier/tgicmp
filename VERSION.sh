@@ -42,6 +42,7 @@ fi
 # If that didn't work, something is wrong. autoconf doesn't care about
 # our exit status, but as long as we don't print anything then it will
 # get mad about an empty version string.
+echo 'VERSION.sh: git describe failed and VERSION does not exist' >&2
 exit 1
 
 #
