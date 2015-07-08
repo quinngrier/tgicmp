@@ -10,10 +10,10 @@
 #
 # The script assumes that you tag your version commits with strings that
 # begin with "v" and a digit, like "v2.63" or "v2.5.0-rc0". When you run
-# autoconf inside your repository, the script uses git describe to get a
-# version string and writes the string to the VERSION file. When you run
+# autoconf inside your repository, the script uses git describe to print
+# a version string and also outputs it to the VERSION file. When you run
 # autoconf inside an extracted distribution tarball, the script uses the
-# VERSION file to get the version string.
+# VERSION file to print the version string.
 #
 
 set -e
