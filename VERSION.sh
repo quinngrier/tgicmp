@@ -13,7 +13,9 @@
 # autoconf inside your repository, the script uses git describe to print
 # a version string and also outputs it to the VERSION file. When you run
 # autoconf inside an extracted distribution tarball, the script uses the
-# VERSION file to print the version string.
+# VERSION file to print the version string. If you also want autoconf to
+# work inside an extracted git archive tarball, you can add the VERSION
+# file to your repository and update it at your leisure.
 #
 
 set -e
