@@ -33,7 +33,7 @@ if test "$y" = 0; then
   exit 0
 fi
 
-# If that didn't work, try reading VERSION.
+# If that didn't work, try reading the VERSION file.
 if test -f VERSION; then
   cat VERSION
   exit 0
