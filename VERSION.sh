@@ -39,10 +39,9 @@ if test -f VERSION; then
   exit 0
 fi
 
-# If that didn't work, something is wrong. The m4_esyscmd_s call that's
-# running us doesn't care about our exit code, but as long as we refuse
-# to print anything, then autoconf will at least get mad about an empty
-# version string.
+# If that didn't work, something is wrong. autoconf doesn't care about
+# our exit status, but as long as we don't print anything then it will
+# get mad about an empty version string.
 exit 1
 
 #
