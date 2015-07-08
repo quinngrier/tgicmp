@@ -4,7 +4,7 @@
 # and use AC_INIT (in configure.ac) and EXTRA_DIST (in Makefile.am) like
 # this:
 #
-#   AC_INIT([foo], [m4_esyscmd_s([sh VERSION.sh])])
+#   AC_INIT([foo], m4_esyscmd_s([sh VERSION.sh]))
 #
 #   EXTRA_DIST = VERSION.sh VERSION
 #
