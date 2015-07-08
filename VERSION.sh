@@ -22,7 +22,7 @@ set -e
 
 # Try running git describe.
 set +e
-x=$(git describe --always --dirty --match='v[0-9]*' --tags)
+x=$(git describe --always --match='v[0-9]*' --tags)
 y="$?"
 set -e
 if test "$y" = 0; then
