@@ -1,5 +1,6 @@
 include_HEADERS = tgicmp.h
 dist_man_MANS = tgicmp.3
+EXTRA_DIST = VERSION.sh VERSION
 
 ##
 ## The authors of this file have waived all copyright and
