@@ -1,13 +1,12 @@
 \input texinfo
 @setfilename tgicmp.info
-@settitle @code{tgicmp}
+@settitle @code{tgicmp v@value{VERSION}}
 
 @include version.texi
 
 @titlepage
-@title @code{tgicmp}
+@title @code{tgicmp v@value{VERSION}}
 @subtitle Type-generic integer comparisons in C
-@subtitle @code{v@value{VERSION}}
 @end titlepage
 
 @ifnottex
