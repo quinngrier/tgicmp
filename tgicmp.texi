@@ -12,6 +12,8 @@
 
 Hello
 
+@include CC0-1.0-appendix.texi
+
 @bye
 
 @c
