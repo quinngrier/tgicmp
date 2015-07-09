@@ -21,7 +21,7 @@
 set -e
 
 #
-# Try running git describe.
+# Try using git describe.
 #
 
 set +e
@@ -37,7 +37,7 @@ if test "$y" = 0; then
 fi
 
 #
-# If that didn't work, try reading the VERSION file.
+# If that didn't work, try using the VERSION file.
 #
 
 if test -f VERSION; then
