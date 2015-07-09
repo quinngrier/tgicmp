@@ -15,7 +15,7 @@
 # autoconf inside an extracted distribution tarball, the script uses the
 # VERSION file to print the version string. If you also want autoconf to
 # work inside an extracted git archive tarball, you can add the VERSION
-# file to your repository and update it at your leisure.
+# file to your repository and update it as needed.
 #
 
 set -e
