@@ -1,6 +1,9 @@
 include_HEADERS = tgicmp.h
 dist_man_MANS = tgicmp.3
-EXTRA_DIST = VERSION.sh VERSION
+
+EXTRA_DIST = \
+  VERSION \
+  VERSION.sh
 
 info_TEXINFOS = tgicmp.texi
 tgicmp_TEXINFOS = \
