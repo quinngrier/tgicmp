@@ -1,7 +1,10 @@
 include_HEADERS = tgicmp.h
 dist_man_MANS = tgicmp.3
 EXTRA_DIST = VERSION.sh VERSION
+
 info_TEXINFOS = tgicmp.texi
+tgicmp_TEXINFOS = \
+  CC0-1.0-appendix.texi
 
 ##
 ## The authors of this file have waived all copyright and
