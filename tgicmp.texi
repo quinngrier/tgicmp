@@ -10,7 +10,18 @@
 @subtitle @code{v@value{VERSION}}
 @end titlepage
 
-Hello
+@ifnottex
+@node Top
+@top @code{tgicmp v@value{VERSION}}
+
+This manual is for @code{tgicmp v@value{VERSION}}, a small library that
+provides macros for performing type-generic integer comparisons in C.
+
+@end ifnottex
+
+@menu
+* The CC0 1.0 Universal Public Domain Dedication: The CC0 1-0 Universal Public Domain Dedication.
+@end menu
 
 @include CC0-1.0-appendix.texi
 
