@@ -2,6 +2,7 @@ include_HEADERS = tgicmp.h
 dist_man_MANS = tgicmp.3
 
 EXTRA_DIST = \
+  CC0-1.0.txt \
   VERSION \
   VERSION.sh
 
