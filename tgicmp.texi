@@ -2,10 +2,12 @@
 @setfilename tgicmp.info
 @settitle @code{tgicmp}
 
+@include version.texi
+
 @titlepage
 @title @code{tgicmp}
 @subtitle Type-generic integer comparisons in C
-@subtitle @code{v@PACKAGE_VERSION@}
+@subtitle @code{v@value{VERSION}}
 @end titlepage
 
 Hello
