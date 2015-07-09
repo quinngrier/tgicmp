@@ -14,8 +14,8 @@
 @node Top
 @top @code{tgicmp v@value{VERSION}}
 
-This manual is for @code{tgicmp v@value{VERSION}}, a small library that
-provides macros for performing type-generic integer comparisons in C.
+This manual is for @code{tgicmp v@value{VERSION}}, a library for
+performing type-generic integer comparisons in C.
 
 @end ifnottex
 
