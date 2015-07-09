@@ -1,7 +1,11 @@
 AC_INIT([tgicmp], m4_esyscmd_s([sh VERSION.sh]),
         [quinn.grier@gmail.com])
 AM_INIT_AUTOMAKE([foreign])
-AC_CONFIG_FILES([Makefile])
+
+AC_CONFIG_FILES([
+  Makefile
+])
+
 AC_OUTPUT
 
 dnl
