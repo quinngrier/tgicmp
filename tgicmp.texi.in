@@ -5,7 +5,7 @@
 @titlepage
 @title @code{tgicmp}
 @subtitle Type-generic integer comparisons in C
-@subtitle v@PACKAGE_VERSION@
+@subtitle @code{v@PACKAGE_VERSION@}
 @end titlepage
 
 Hello
