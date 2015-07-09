@@ -1,8 +1,7 @@
 \input texinfo
 @setfilename tgicmp.info
-@settitle @code{tgicmp v@value{VERSION}}
-
 @include version.texi
+@settitle @code{tgicmp v@value{VERSION}}
 
 @titlepage
 @title @code{tgicmp v@value{VERSION}}
