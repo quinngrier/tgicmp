@@ -4,6 +4,9 @@ man_MANS = tgicmp.3
 tgicmp.3: tgicmp.3.in
 	sed s/@PACKAGE_VERSION@/$(PACKAGE_VERSION)/g $? >$@
 
+CLEANFILES = \
+  tgicmp.3
+
 EXTRA_DIST = \
   CC0-1.0.txt \
   VERSION \
