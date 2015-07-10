@@ -1,11 +1,17 @@
 include_HEADERS = tgicmp.h
 
-man_MANS = tgicmp.3
 tgicmp.3: tgicmp.3.in
 	sed 's/[@]PACKAGE_VERSION@/$(PACKAGE_VERSION)/g' $? >$@
-
-CLEANFILES = \
-  tgicmp.3
+tgicmp.h.3: tgicmp.3; cp $? $@
+TGILT.3:    tgicmp.3; cp $? $@
+TGIGT.3:    tgicmp.3; cp $? $@
+TGILE.3:    tgicmp.3; cp $? $@
+TGIGE.3:    tgicmp.3; cp $? $@
+TGIEQ.3:    tgicmp.3; cp $? $@
+TGINE.3:    tgicmp.3; cp $? $@
+man_MANS = tgicmp.3 tgicmp.h.3 \
+           TGILT.3 TGIGT.3 TGILE.3 TGIGE.3 TGIEQ.3 TGINE.3
+CLEANFILES = $(man_MANS)
 
 EXTRA_DIST = \
   CC0-1.0.txt \
