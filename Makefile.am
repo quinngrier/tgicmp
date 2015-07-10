@@ -1,7 +1,12 @@
 include_HEADERS = tgicmp.h
 
 tgicmp.3: tgicmp.3.in
-	sed 's/[@]PACKAGE_VERSION@/$(PACKAGE_VERSION)/g' $? >$@
+	sed -e 's|[@]PACKAGE_VERSION@|$(PACKAGE_VERSION)|g' \
+	    -e 's|[@]dvidir@|$(dvidir)|g'                   \
+	    -e 's|[@]htmldir@|$(htmldir)|g'                 \
+	    -e 's|[@]pdfdir@|$(pdfdir)|g'                   \
+	    -e 's|[@]psdir@|$(psdir)|g'                     \
+	    $? >$@
 tgicmp.h.3: tgicmp.3; cp $? $@
 TGILT.3:    tgicmp.3; cp $? $@
 TGIGT.3:    tgicmp.3; cp $? $@
