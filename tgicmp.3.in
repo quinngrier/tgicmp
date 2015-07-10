@@ -73,6 +73,27 @@ and
 .I y
 are suitable for use in preprocessing directives, so is the resulting
 .IR expression .
+.SH SEE ALSO
+The full manual for
+.B tgicmp
+is written in Texinfo and should be viewable with the following command:
+.IP
+.B info tgicmp
+.PP
+It may also be available in DVI, HTML, PDF, and PostScript form in the
+following directories:
+.IP
+DVI:
+.B @dvidir@
+.IP
+HTML:
+.B @htmldir@
+.IP
+PDF:
+.B @pdfdir@
+.IP
+PostScript:
+.B @psdir@
 .\"
 .\" The authors of this file have waived all copyright and
 .\" related or neighboring rights to the extent permitted by
