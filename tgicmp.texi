@@ -3,9 +3,14 @@
 @include version.texi
 @settitle @code{tgicmp v@value{VERSION}}
 
+@include CC0-1.0-copying.texi
+
 @titlepage
 @title @code{tgicmp v@value{VERSION}}
 @subtitle Type-generic integer comparisons in C
+@page
+@vskip 0pt plus 1filll
+@insertcopying
 @end titlepage
 
 @ifnottex

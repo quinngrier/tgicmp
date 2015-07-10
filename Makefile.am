@@ -8,7 +8,8 @@ EXTRA_DIST = \
 
 info_TEXINFOS = tgicmp.texi
 tgicmp_TEXINFOS = \
-  CC0-1.0-appendix.texi
+  CC0-1.0-appendix.texi \
+  CC0-1.0-copying.texi
 
 ##
 ## The authors of this file have waived all copyright and
