@@ -2,7 +2,7 @@ include_HEADERS = tgicmp.h
 
 man_MANS = tgicmp.3
 tgicmp.3: tgicmp.3.in
-	sed s/@PACKAGE_VERSION@/$(PACKAGE_VERSION)/g $? >$@
+	sed 's/[@]PACKAGE_VERSION@/$(PACKAGE_VERSION)/g' $? >$@
 
 CLEANFILES = \
   tgicmp.3
