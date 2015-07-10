@@ -1,5 +1,8 @@
 include_HEADERS = tgicmp.h
+
 dist_man_MANS = tgicmp.3
+tgicmp.3: tgicmp.3.in
+	sed s/@PACKAGE_VERSION@/$(PACKAGE_VERSION)/g $? >$@
 
 EXTRA_DIST = \
   CC0-1.0.txt \
