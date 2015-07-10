@@ -23,8 +23,18 @@ performing type-generic integer comparisons in C.
 @end ifnottex
 
 @menu
+* Copyright information::
 * The CC0 1.0 Universal Public Domain Dedication: The CC0 1-0 Universal Public Domain Dedication.
 @end menu
+
+@node Copyright information
+@unnumbered Copyright information
+
+The entirety of @code{tgicmp}, including this manual, is published under
+the CC0 1.0 Universal Public Domain Dedication. This roughly means that
+@code{tgicmp} is in the public domain in those legal jurisdictions that
+recognize it, and under a maximally permissive fallback license in
+others. @xref{The CC0 1-0 Universal Public Domain Dedication}.
 
 @include CC0-1.0-appendix.texi
 
