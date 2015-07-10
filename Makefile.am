@@ -7,7 +7,8 @@ tgicmp.3: tgicmp.3.in
 EXTRA_DIST = \
   CC0-1.0.txt \
   VERSION \
-  VERSION.sh
+  VERSION.sh \
+  tgicmp.3.in
 
 info_TEXINFOS = tgicmp.texi
 tgicmp_TEXINFOS = \
