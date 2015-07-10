@@ -30,7 +30,7 @@ y="$?"
 set -e
 if test "$y" = 0; then
   echo "$x" >VERSION
-  x=$(sed s/^v// VERSION)
+  x=$(sed 's/^v//' VERSION)
   echo "$x" >VERSION
   echo "$x"
   exit 0
