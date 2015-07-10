@@ -13,6 +13,8 @@
 @insertcopying
 @end titlepage
 
+@contents
+
 @ifnottex
 @node Top
 @top @code{tgicmp v@value{VERSION}}
