@@ -1,4 +1,4 @@
-.TH tgicmp 3
+.TH tgicmp 3 "" "tgicmp v@PACKAGE_VERSION@"
 .SH NAME
 tgicmp \- type-generic integer comparisons
 .SH SYNOPSIS
