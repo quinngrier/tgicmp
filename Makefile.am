@@ -18,8 +18,9 @@ man_MANS = tgicmp.3 tgicmp.h.3 \
            TGILT.3 TGIGT.3 TGILE.3 TGIGE.3 TGIEQ.3 TGINE.3
 CLEANFILES = $(man_MANS)
 
+dist_doc_DATA = CC0-1.0.txt
+
 EXTRA_DIST = \
-  CC0-1.0.txt \
   VERSION \
   VERSION.sh \
   tgicmp.3.in
