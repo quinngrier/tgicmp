@@ -83,17 +83,12 @@ is written in Texinfo and should be viewable with the following command:
 It may also be available in DVI, HTML, PDF, and PostScript form in the
 following directories:
 .IP
-DVI:
-.B @dvidir@
-.IP
-HTML:
-.B @htmldir@
-.IP
-PDF:
-.B @pdfdir@
-.IP
-PostScript:
-.B @psdir@
+.nf
+.RB "DVI:  " "@dvidir@"
+.RB "HTML: " "@htmldir@"
+.RB "PDF:  " "@pdfdir@"
+.RB "PS:   " "@psdir@"
+.fi
 .\"
 .\" The authors of this file have waived all copyright and
 .\" related or neighboring rights to the extent permitted by
