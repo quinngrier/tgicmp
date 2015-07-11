@@ -4,10 +4,25 @@
 # file, add that to your repository, and repeat as needed.
 #
 
+#
+# We want the author YYYY-MM-DD in UTC, but the only git log author date
+# format that respects TZ=UTC is %ad. So we hopefully improve the chance
+# that it's in standard C form with LC_ALL=C and do some parsing work.
+#
+
 set -e
-git log --all --author-date-order \
-        --format='format:# %aI %an <%ae>%n* %s.%n' >ChangeLog.tmp
-sed 's/^\(# .\{10\}\).\{15\}/\1/' ChangeLog.tmp >ChangeLog
+LC_ALL=C TZ=UTC git log --all --author-date-order --date=local     \
+                        --format='format:# %ad %an <%ae>%n* %s.%n' \
+                        >ChangeLog.tmp
+sed -e 's/^# ... \(...\) \([0-9]\{1,\}\).\{10\}\(....\)/# \3-\1-\2/' \
+    -e 's/^\(# ....-...-\)\(. \)/\10\2/'                             \
+    -e 's/^\(# ....-\)Jan/\101/' -e 's/^\(# ....-\)Jul/\107/'        \
+    -e 's/^\(# ....-\)Feb/\102/' -e 's/^\(# ....-\)Aug/\108/'        \
+    -e 's/^\(# ....-\)Mar/\103/' -e 's/^\(# ....-\)Sep/\109/'        \
+    -e 's/^\(# ....-\)Apr/\104/' -e 's/^\(# ....-\)Oct/\110/'        \
+    -e 's/^\(# ....-\)May/\105/' -e 's/^\(# ....-\)Nov/\111/'        \
+    -e 's/^\(# ....-\)Jun/\106/' -e 's/^\(# ....-\)Dec/\112/'        \
+    ChangeLog.tmp >ChangeLog
 exit 0
 
 #
