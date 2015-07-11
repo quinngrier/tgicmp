@@ -73,6 +73,16 @@ and
 .I y
 are suitable for use in preprocessing directives, so is the resulting
 .IR expression .
+.SH COPYRIGHT
+The authors of
+.B tgicmp
+have waived all copyright and
+related or neighboring rights to the extent permitted by
+law as described by the CC0 1.0 Universal Public Domain
+Dedication. See
+.B @docdir@/CC0-1.0.txt
+for the full dedication, which may also be available at
+<https://creativecommons.org/publicdomain/zero/1.0/>.
 .SH SEE ALSO
 The full manual for
 .B tgicmp
