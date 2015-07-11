@@ -1,0 +1,686 @@
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+* Use tformat instead of format in AUTHORS.sh.
+
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+* Add ChangeLog.sh.
+
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+* Use tgicmp.3.in for AC_CONFIG_SRCDIR.
+
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+* Reformat the AC_CONFIG_FILES call.
+
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+* Update the tgicmp.3 rule.
+
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+* Add the SEE ALSO section to tgicmp.3.in.
+
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+* Add more names for the man page.
+
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+* Use -Wall -Werror with AM_INIT_AUTOMAKE.
+
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+* Quote the sed command as a matter of style.
+
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+* Add the table of contents.
+
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+* Add the Copyright information chapter.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Add version information to tgicmp.3.in.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Avoid accidental replacement of @PACKAGE_VERSION@.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Add tgicmp.3 to CLEANFILES.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Don't deliver tgicmp.3.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Deliver tgicmp.3.in.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Add a rule to make tgicmp.3 from tgicmp.3.in.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Rename tgicmp.3 to tgicmp.3.in.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Use CC0-1.0-copying.texi in tgicmp.texi.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Add CC0-1.0-copying.texi.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Add CC0-1.0.txt to EXTRA_DIST.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Reformat EXTRA_DIST.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Include version.texi earlier.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Use consistent titles.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Be less wordy.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Start on the Top node.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Make tgicmp.texi depend on CC0-1.0-appendix.texi.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Include CC0-1.0-appendix.texi in tgicmp.texi.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Add CC0-1.0-appendix.texi.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Use version.texi.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Add tgicmp.texi to Makefile.am.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Rename tgicmp.texi.in to tgicmp.texi.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Remove tgicmp.texi from AC_CONFIG_FILES.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Use AC_CONFIG_SRCDIR.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Use consistent wording.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Add AUTHORS.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Add AUTHORS.sh.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+* Use consistent comment style.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Put the title page version string in @code{}.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Add tgicmp.texi to AC_CONFIG_FILES.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Reformat the AC_CONFIG_FILES call.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Start working on tgicmp.texi.in.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Print an error message in VERSION.sh.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Use less quotes so that autoconf barfs on empty.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Reduce stderr noise during autoconf.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Don't use --dirty with git describe.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Add VERSION.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Explain how to make autoconf work with git archive.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Distribute VERSION.sh and VERSION.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Use VERSION.sh in AC_INIT.
+
+# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+* Add VERSION.sh.
+
+# 2015-07-07 Quinn Grier <quinn.grier@gmail.com>
+* Add email to AC_INIT.
+
+# 2015-07-07 Quinn Grier <quinn.grier@gmail.com>
+* Copy CC0-1.0.txt to COPYING.
+
+# 2015-07-07 Quinn Grier <quinn.grier@gmail.com>
+* Start using Autotools.
+
+# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+* Fix inaccurate wording.
+
+# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+* Add the install target.
+
+# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+* Add the man3ext variable.
+
+# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+* Add the installdirs target.
+
+# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+* Add some Makefile variables.
+
+# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+* Add the DESCRIPTION section to tgicmp.3.
+
+# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+* Edit the header specification.
+
+# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+* Add the NAME section to tgicmp.3.
+
+# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+* Start working on tgicmp.3.
+
+# 2015-07-04 Quinn Grier <quinn.grier@gmail.com>
+* Add the clean target.
+
+# 2015-07-04 Quinn Grier <quinn.grier@gmail.com>
+* Add the all target.
+
+# 2015-07-04 Quinn Grier <quinn.grier@gmail.com>
+* Add the check target.
+
+# 2015-07-02 Quinn Grier <quinn.grier@gmail.com>
+* Output test.o to the right directory.
+
+# 2015-07-02 Quinn Grier <quinn.grier@gmail.com>
+* Add Makefile.
+
+# 2015-07-02 Quinn Grier <quinn.grier@gmail.com>
+* Add test.c.
+
+# 2015-07-01 Quinn Grier <quinn.grier@gmail.com>
+* Edit a sentence.
+
+# 2015-07-01 Quinn Grier <quinn.grier@gmail.com>
+* Simplify the counterexample.
+
+# 2015-06-30 Quinn Grier <quinn.grier@gmail.com>
+* Add "tgicmp" to the README title.
+
+# 2015-06-29 Quinn Grier <quinn.grier@gmail.com>
+* Edit a sentence.
+
+# 2015-06-29 Quinn Grier <quinn.grier@gmail.com>
+* Edit a paragraph.
+
+# 2015-06-29 Quinn Grier <quinn.grier@gmail.com>
+* Add a Contents section.
+
+# 2015-06-29 Quinn Grier <quinn.grier@gmail.com>
+* Change "logical negation" to "logical operators".
+
+# 2015-06-29 Quinn Grier <quinn.grier@gmail.com>
+* Edit a paragraph.
+
+# 2015-06-29 Quinn Grier <quinn.grier@gmail.com>
+* The converse of the fundamental theorem is false.
+
+# 2015-06-29 Quinn Grier <quinn.grier@gmail.com>
+* Edit a sentence.
+
+# 2015-06-28 Quinn Grier <quinn.grier@gmail.com>
+* Put the comments after the && operators.
+
+# 2015-06-28 Quinn Grier <quinn.grier@gmail.com>
+* Make integer checks less cryptic.
+
+# 2015-06-28 Quinn Grier <quinn.grier@gmail.com>
+* Use the integer suffix U instead of u.
+
+# 2015-05-31 Quinn Grier <quinn.grier@gmail.com>
+* Finish writing the formal development.
+
+# 2015-05-26 Quinn Grier <quinn.grier@gmail.com>
+* Change "The arguments" to "Both arguments".
+
+# 2015-05-26 Quinn Grier <quinn.grier@gmail.com>
+* Explain why x < 0 is strongly conceptual.
+
+# 2015-05-25 Quinn Grier <quinn.grier@gmail.com>
+* Add a horizontal rule above the copyright notice.
+
+# 2015-05-25 Quinn Grier <quinn.grier@gmail.com>
+* Add a horizontal rule under each section title.
+
+# 2015-05-22 Quinn Grier <quinn.grier@gmail.com>
+* Add a paragraph to the formal development.
+
+# 2015-05-22 Quinn Grier <quinn.grier@gmail.com>
+* Future-proof the C standard discussion.
+
+# 2015-05-18 Quinn Grier <quinn.grier@gmail.com>
+* Remove the rest of the old formal development.
+
+# 2015-04-09 Quinn Grier <quinn.grier@gmail.com>
+* Condense the old Theorem 2.
+
+# 2015-04-09 Quinn Grier <quinn.grier@gmail.com>
+* Use "or foo if not" consistently.
+
+# 2015-04-09 Quinn Grier <quinn.grier@gmail.com>
+* Emphasize only real floating types.
+
+# 2015-04-06 Quinn Grier <quinn.grier@gmail.com>
+* Be more direct.
+
+# 2015-04-06 Quinn Grier <quinn.grier@gmail.com>
+* Comment the non-integer rejection.
+
+# 2015-04-06 Quinn Grier <quinn.grier@gmail.com>
+* Simplify the non-integer rejection.
+
+# 2015-04-06 Quinn Grier <quinn.grier@gmail.com>
+* Change "its" to "a".
+
+# 2015-03-21 Quinn Grier <quinn.grier@gmail.com>
+* Reword the end-of-line normalization comment.
+
+# 2015-03-18 Quinn Grier <quinn.grier@gmail.com>
+* Swap the result and conceptual result columns.
+
+# 2015-03-18 Quinn Grier <quinn.grier@gmail.com>
+* Reorder the examples.
+
+# 2015-03-18 Quinn Grier <quinn.grier@gmail.com>
+* Change the 2 < UINT_MAX example to 0 < 0u.
+
+# 2015-03-18 Quinn Grier <quinn.grier@gmail.com>
+* Use -1 instead of -2 for the first two examples.
+
+# 2015-03-18 Quinn Grier <quinn.grier@gmail.com>
+* Add another example to the table.
+
+# 2015-03-18 Quinn Grier <quinn.grier@gmail.com>
+* Change "differ" to "stray".
+
+# 2015-03-18 Quinn Grier <quinn.grier@gmail.com>
+* Center the title.
+
+# 2015-03-18 Quinn Grier <quinn.grier@gmail.com>
+* Delete two obsolete paragraphs.
+
+# 2015-03-18 Quinn Grier <quinn.grier@gmail.com>
+* Specify the macros.
+
+# 2015-03-18 Quinn Grier <quinn.grier@gmail.com>
+* Introduce the header.
+
+# 2015-03-15 Quinn Grier <quinn.grier@gmail.com>
+* Rewrite the formal development introduction.
+
+# 2015-03-14 Quinn Grier <quinn.grier@gmail.com>
+* Simplify the table of examples.
+
+# 2015-03-14 Quinn Grier <quinn.grier@gmail.com>
+* Fix repetitive sentence structure.
+
+# 2015-03-14 Quinn Grier <quinn.grier@gmail.com>
+* Add another example.
+
+# 2015-03-14 Quinn Grier <quinn.grier@gmail.com>
+* Update the examples.
+
+# 2015-03-13 Quinn Grier <quinn.grier@gmail.com>
+* Update and reformat the formal definitions.
+
+# 2015-03-13 Quinn Grier <quinn.grier@gmail.com>
+* Change the title of Section 3.
+
+# 2015-03-13 Quinn Grier <quinn.grier@gmail.com>
+* Add a header for Section 2.
+
+# 2015-03-13 Quinn Grier <quinn.grier@gmail.com>
+* Reference the header specification.
+
+# 2015-03-13 Quinn Grier <quinn.grier@gmail.com>
+* Reference the formal development.
+
+# 2015-03-13 Quinn Grier <quinn.grier@gmail.com>
+* Talk about the header in the overview.
+
+# 2015-03-12 Quinn Grier <quinn.grier@gmail.com>
+* Mention that compilers can help.
+
+# 2015-03-12 Quinn Grier <quinn.grier@gmail.com>
+* Rename Introduction to Overview.
+
+# 2015-03-12 Quinn Grier <quinn.grier@gmail.com>
+* Change the title.
+
+# 2015-03-12 Quinn Grier <quinn.grier@gmail.com>
+* Repurpose the old proof into the introduction.
+
+# 2015-03-12 Quinn Grier <quinn.grier@gmail.com>
+* Focus on integer comparisons.
+
+# 2015-03-12 Quinn Grier <quinn.grier@gmail.com>
+* Repurpose the advice blurbs into the introduction.
+
+# 2015-03-12 Quinn Grier <quinn.grier@gmail.com>
+* Remove an obsolete paragraph.
+
+# 2015-03-12 Quinn Grier <quinn.grier@gmail.com>
+* Write a second paragraph in the introduction.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Remove an old sentence.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Use -2 in every example.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Add integer comparison examples.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Define strong and weak consistency.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Update the definition of consistent.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Define what realizing an integer comparison means.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Simplify the definition of expectation.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Number a definition properly.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Add an Introduction section header.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* The Theory section will probably be section 3.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Repurpose the C99 blurb as the introduction.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Rename Definition A.A to 2.1.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Make a section for the theory stuff.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Make an indexing placeholder unique.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Fix an indexing placeholder.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Update the definition of "normal" to "consistent".
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Define what an expectation is.
+
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+* Define what an integer comparison is.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* State Theorem K.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Simplify the statement of Lemma Z.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Simplify the Lemma Z proof.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Use "Therefore" instead of "So".
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Use the word "version" instead of "copy".
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Add more detail to the five cases.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Clarify the effect of the integer promotions.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Use consistent wording.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Factor another lemma out of the Lemma X proof.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Explain why a draft of C99 is not included.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Improve the second part of the Lemma Z proof.
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Use "different" instead of "distinct".
+
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+* Define TGIGE like TGILE.
+
+# 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
+* Use "then" after "if".
+
+# 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
+* Rewrite Theorem 2 to use Lemma X.
+
+# 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
+* Talk about C99 before the main results.
+
+# 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
+* Rewrite Lemma X.
+
+# 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
+* Improve the Lemma Z proof.
+
+# 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
+* State Lemma Z more precisely.
+
+# 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
+* Use consistent wording.
+
+# 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
+* Add Lemma X.
+
+# 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
+* Add Lemma Z.
+
+# 2015-03-08 Quinn Grier <quinn.grier@gmail.com>
+* Add more detail to case 1.
+
+# 2015-03-08 Quinn Grier <quinn.grier@gmail.com>
+* Add detail to the start of the Theorem 2 proof.
+
+# 2015-03-08 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-08 Quinn Grier <quinn.grier@gmail.com>
+* Explain why the converse of Theorem 2 is not true.
+
+# 2015-03-08 Quinn Grier <quinn.grier@gmail.com>
+* Explain how to get the C99 standard.
+
+# 2015-03-08 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-08 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-08 Quinn Grier <quinn.grier@gmail.com>
+* State and prove Corollary 5.
+
+# 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
+* Add more detail leading up to Theorem 2.
+
+# 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
+* Keep the focus on integer comparisons.
+
+# 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
+* Use consistent wording in the proofs.
+
+# 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
+* Prove Theorem 2.
+
+# 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
+* Improve the wording of Corollary 4.
+
+# 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
+* Improve the wording of Corollary 3.
+
+# 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
+* Change Theorem 2 to its contrapositive.
+
+# 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
+* Simplify the title.
+
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
+* Say "types and values" instead of "values and types".
+
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
+* Don't hyphenate "type generic".
+
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
+* State and prove Corollary 4.
+
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
+* State that Corollary 3 is not enough.
+
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
+* Define TGIGE like TGIGT.
+
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
+* TGIGT(x, y) is just TGILT(y, x).
+
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
+* Prove Corollary 3.
+
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
+* Number the definition of normal.
+
+# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+* Rewrite the paragraph leading to Corollary 2.
+
+# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+* State the practical advice as Corollary 2.
+
+# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+* Rewrite the paragraph leading to Theorem 1.
+
+# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+* Keep the focus on integer comparisons.
+
+# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+* Segue into the definition of normal.
+
+# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+* State the key observation as Theorem 1.
+
+# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+* Define what a normal comparison is.
+
+# 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
+* Add a title to the README.
+
+# 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
+* Detail the solution.
+
+# 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
+* Discuss the key observation.
+
+# 2015-03-03 Quinn Grier <quinn.grier@gmail.com>
+* Improve wording.
+
+# 2015-03-03 Quinn Grier <quinn.grier@gmail.com>
+* Don't fight warnings.
+
+# 2015-03-03 Quinn Grier <quinn.grier@gmail.com>
+* Reorder the macro definitions.
+
+# 2015-03-03 Quinn Grier <quinn.grier@gmail.com>
+* Add more details to the README.
+
+# 2015-03-03 Quinn Grier <quinn.grier@gmail.com>
+* Simplify the sign match tests.
+
+# 2015-03-03 Quinn Grier <quinn.grier@gmail.com>
+* Indent the code properly.
+
+# 2015-03-02 Quinn Grier <quinn.grier@gmail.com>
+* Do one floating type rejection per line.
+
+# 2015-03-01 Quinn Grier <quinn.grier@gmail.com>
+* Initial commit.
