@@ -18,7 +18,7 @@ header defines six macros for performing type-generic
 integer comparisons. If the header is included, it reserves the macro
 names for use as specified. The header can be included multiple times
 without any problems.
-.sp
+.PP
 The six macros are
 .BR TGILT ,
 .BR TGIGT ,
