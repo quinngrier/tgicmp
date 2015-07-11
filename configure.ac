@@ -1,6 +1,6 @@
 AC_INIT([tgicmp], m4_esyscmd_s([sh VERSION.sh]),
         [quinn.grier@gmail.com])
-AC_CONFIG_SRCDIR([tgicmp.h])
+AC_CONFIG_SRCDIR([tgicmp.3.in])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
