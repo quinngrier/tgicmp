@@ -5,7 +5,8 @@
 #
 
 set -e
-git log --format='format:# %aI %an <%ae>%n* %s.%n' --all >ChangeLog.tmp
+git log --all --author-date-order \
+        --format='format:# %aI %an <%ae>%n* %s.%n' >ChangeLog.tmp
 sed 's/^\(# .\{10\}\).\{15\}/\1/' ChangeLog.tmp >ChangeLog
 exit 0
 
