@@ -5,7 +5,7 @@
 #
 
 set -e
-git log --format='format:%an <%ae>' --all >AUTHORS.tmp
+git log --format='tformat:%an <%ae>' --all >AUTHORS.tmp
 LC_ALL=C sort -u AUTHORS.tmp >AUTHORS
 exit 0
 
