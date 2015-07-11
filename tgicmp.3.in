@@ -18,7 +18,7 @@ header defines six macros for performing type-generic
 integer comparisons. If the header is included, it reserves the macro
 names for use as specified. The header can be included multiple times
 without any problems.
-.PP
+.LP
 The six macros are
 .BR TGILT ,
 .BR TGIGT ,
@@ -79,7 +79,7 @@ The full manual for
 is written in Texinfo and should be viewable with the following command:
 .IP
 .B info tgicmp
-.PP
+.LP
 It may also be available in DVI, HTML, PDF, and PostScript form in the
 following directories:
 .IP
