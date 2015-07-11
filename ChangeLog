@@ -1,16 +1,25 @@
-# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-11 Quinn Grier <quinn.grier@gmail.com>
+* Use UTC dates in ChangeLog.sh.
+
+# 2015-07-11 Quinn Grier <quinn.grier@gmail.com>
+* Use --author-date-order in ChangeLog.sh.
+
+# 2015-07-11 Quinn Grier <quinn.grier@gmail.com>
+* Add ChangeLog.
+
+# 2015-07-11 Quinn Grier <quinn.grier@gmail.com>
 * Use tformat instead of format in AUTHORS.sh.
 
-# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-11 Quinn Grier <quinn.grier@gmail.com>
 * Add ChangeLog.sh.
 
-# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-11 Quinn Grier <quinn.grier@gmail.com>
 * Use tgicmp.3.in for AC_CONFIG_SRCDIR.
 
-# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-11 Quinn Grier <quinn.grier@gmail.com>
 * Reformat the AC_CONFIG_FILES call.
 
-# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-11 Quinn Grier <quinn.grier@gmail.com>
 * Improve wording.
 
 # 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
@@ -34,31 +43,31 @@
 # 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
 * Add the Copyright information chapter.
 
-# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
 * Add version information to tgicmp.3.in.
 
-# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
 * Avoid accidental replacement of @PACKAGE_VERSION@.
 
-# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
 * Add tgicmp.3 to CLEANFILES.
 
-# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
 * Don't deliver tgicmp.3.
 
-# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
 * Deliver tgicmp.3.in.
 
-# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
 * Add a rule to make tgicmp.3 from tgicmp.3.in.
 
-# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
 * Rename tgicmp.3 to tgicmp.3.in.
 
-# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
 * Use CC0-1.0-copying.texi in tgicmp.texi.
 
-# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-10 Quinn Grier <quinn.grier@gmail.com>
 * Add CC0-1.0-copying.texi.
 
 # 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
@@ -118,16 +127,16 @@
 # 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
 * Use consistent comment style.
 
-# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
 * Put the title page version string in @code{}.
 
-# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
 * Add tgicmp.texi to AC_CONFIG_FILES.
 
-# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
 * Reformat the AC_CONFIG_FILES call.
 
-# 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-09 Quinn Grier <quinn.grier@gmail.com>
 * Start working on tgicmp.texi.in.
 
 # 2015-07-08 Quinn Grier <quinn.grier@gmail.com>
@@ -175,19 +184,19 @@
 # 2015-07-07 Quinn Grier <quinn.grier@gmail.com>
 * Start using Autotools.
 
-# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-06 Quinn Grier <quinn.grier@gmail.com>
 * Fix inaccurate wording.
 
-# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-06 Quinn Grier <quinn.grier@gmail.com>
 * Add the install target.
 
-# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-06 Quinn Grier <quinn.grier@gmail.com>
 * Add the man3ext variable.
 
-# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-06 Quinn Grier <quinn.grier@gmail.com>
 * Add the installdirs target.
 
-# 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-06 Quinn Grier <quinn.grier@gmail.com>
 * Add some Makefile variables.
 
 # 2015-07-05 Quinn Grier <quinn.grier@gmail.com>
@@ -220,7 +229,7 @@
 # 2015-07-02 Quinn Grier <quinn.grier@gmail.com>
 * Add test.c.
 
-# 2015-07-01 Quinn Grier <quinn.grier@gmail.com>
+# 2015-07-02 Quinn Grier <quinn.grier@gmail.com>
 * Edit a sentence.
 
 # 2015-07-01 Quinn Grier <quinn.grier@gmail.com>
@@ -229,10 +238,10 @@
 # 2015-06-30 Quinn Grier <quinn.grier@gmail.com>
 * Add "tgicmp" to the README title.
 
-# 2015-06-29 Quinn Grier <quinn.grier@gmail.com>
+# 2015-06-30 Quinn Grier <quinn.grier@gmail.com>
 * Edit a sentence.
 
-# 2015-06-29 Quinn Grier <quinn.grier@gmail.com>
+# 2015-06-30 Quinn Grier <quinn.grier@gmail.com>
 * Edit a paragraph.
 
 # 2015-06-29 Quinn Grier <quinn.grier@gmail.com>
@@ -268,16 +277,16 @@
 # 2015-05-26 Quinn Grier <quinn.grier@gmail.com>
 * Explain why x < 0 is strongly conceptual.
 
-# 2015-05-25 Quinn Grier <quinn.grier@gmail.com>
+# 2015-05-26 Quinn Grier <quinn.grier@gmail.com>
 * Add a horizontal rule above the copyright notice.
 
-# 2015-05-25 Quinn Grier <quinn.grier@gmail.com>
+# 2015-05-26 Quinn Grier <quinn.grier@gmail.com>
 * Add a horizontal rule under each section title.
 
-# 2015-05-22 Quinn Grier <quinn.grier@gmail.com>
+# 2015-05-23 Quinn Grier <quinn.grier@gmail.com>
 * Add a paragraph to the formal development.
 
-# 2015-05-22 Quinn Grier <quinn.grier@gmail.com>
+# 2015-05-23 Quinn Grier <quinn.grier@gmail.com>
 * Future-proof the C standard discussion.
 
 # 2015-05-18 Quinn Grier <quinn.grier@gmail.com>
@@ -394,7 +403,7 @@
 # 2015-03-12 Quinn Grier <quinn.grier@gmail.com>
 * Write a second paragraph in the introduction.
 
-# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-12 Quinn Grier <quinn.grier@gmail.com>
 * Remove an old sentence.
 
 # 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
@@ -451,13 +460,13 @@
 # 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
 * Define what an integer comparison is.
 
-# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
 * State Theorem K.
 
-# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
 * Improve wording.
 
-# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-11 Quinn Grier <quinn.grier@gmail.com>
 * Simplify the statement of Lemma Z.
 
 # 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
@@ -505,10 +514,10 @@
 # 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
 * Define TGIGE like TGILE.
 
-# 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
 * Use "then" after "if".
 
-# 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-10 Quinn Grier <quinn.grier@gmail.com>
 * Rewrite Theorem 2 to use Lemma X.
 
 # 2015-03-09 Quinn Grier <quinn.grier@gmail.com>
@@ -559,13 +568,13 @@
 # 2015-03-08 Quinn Grier <quinn.grier@gmail.com>
 * State and prove Corollary 5.
 
-# 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-08 Quinn Grier <quinn.grier@gmail.com>
 * Improve wording.
 
-# 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-08 Quinn Grier <quinn.grier@gmail.com>
 * Add more detail leading up to Theorem 2.
 
-# 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-08 Quinn Grier <quinn.grier@gmail.com>
 * Keep the focus on integer comparisons.
 
 # 2015-03-07 Quinn Grier <quinn.grier@gmail.com>
@@ -616,19 +625,19 @@
 # 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
 * Number the definition of normal.
 
-# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
 * Rewrite the paragraph leading to Corollary 2.
 
-# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
 * State the practical advice as Corollary 2.
 
-# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
 * Rewrite the paragraph leading to Theorem 1.
 
-# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
 * Keep the focus on integer comparisons.
 
-# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-06 Quinn Grier <quinn.grier@gmail.com>
 * Segue into the definition of normal.
 
 # 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
@@ -640,10 +649,10 @@
 # 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
 * Define what a normal comparison is.
 
-# 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
 * Improve wording.
 
-# 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-05 Quinn Grier <quinn.grier@gmail.com>
 * Improve wording.
 
 # 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
@@ -661,10 +670,10 @@
 # 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
 * Discuss the key observation.
 
-# 2015-03-03 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
 * Improve wording.
 
-# 2015-03-03 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-04 Quinn Grier <quinn.grier@gmail.com>
 * Don't fight warnings.
 
 # 2015-03-03 Quinn Grier <quinn.grier@gmail.com>
@@ -679,8 +688,8 @@
 # 2015-03-03 Quinn Grier <quinn.grier@gmail.com>
 * Indent the code properly.
 
-# 2015-03-02 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-03 Quinn Grier <quinn.grier@gmail.com>
 * Do one floating type rejection per line.
 
-# 2015-03-01 Quinn Grier <quinn.grier@gmail.com>
+# 2015-03-02 Quinn Grier <quinn.grier@gmail.com>
 * Initial commit.
