@@ -1,5 +1,5 @@
 #
-# This script makes autoconf automatically generate a version string for
+# This script helps autoconf automatically generate a version string for
 # AC_INIT by using git describe. Just add this script to your repository
 # and use AC_INIT (in configure.ac) and EXTRA_DIST (in Makefile.am) like
 # this:
