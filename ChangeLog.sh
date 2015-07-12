@@ -11,7 +11,7 @@
 #
 
 set -e
-LC_ALL=C TZ=UTC git log --all --author-date-order --date=local     \
+LC_ALL=C TZ=UTC git log --author-date-order --date=local           \
                         --format='format:# %ad %an <%ae>%n* %s.%n' \
                         >ChangeLog.tmp
 sed -e 's/^# ... \(...\) \([0-9]\{1,\}\).\{10\}\(....\)/# \3-\1-\2/' \
