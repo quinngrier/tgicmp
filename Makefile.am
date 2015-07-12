@@ -33,6 +33,7 @@ PACKAGE.texi: $(srcdir)/PACKAGE.texi.in
 	sed -e 's|[@]PACKAGE_DATE@|$(PACKAGE_DATE)|g'       \
 	    -e 's|[@]PACKAGE_VERSION@|$(PACKAGE_VERSION)|g' \
 	    $? >$@
+EXTRA_DIST += $(srcdir)/PACKAGE.texi.in
 
 info_TEXINFOS = tgicmp.texi
 tgicmp_TEXINFOS = \
