@@ -1,7 +1,8 @@
 include_HEADERS = tgicmp.h
 
 tgicmp.3: tgicmp.3.in
-	sed -e 's|[@]PACKAGE_VERSION@|$(PACKAGE_VERSION)|g' \
+	sed -e 's|[@]PACKAGE_DATE@|$(PACKAGE_DATE)|g'       \
+	    -e 's|[@]PACKAGE_VERSION@|$(PACKAGE_VERSION)|g' \
 	    -e 's|[@]docdir@|$(docdir)|g'                   \
 	    -e 's|[@]dvidir@|$(dvidir)|g'                   \
 	    -e 's|[@]htmldir@|$(htmldir)|g'                 \
