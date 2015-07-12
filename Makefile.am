@@ -22,6 +22,8 @@ CLEANFILES = $(man_MANS)
 dist_doc_DATA = CC0-1.0.txt
 
 EXTRA_DIST = \
+  DATE \
+  DATE.sh \
   VERSION \
   VERSION.sh \
   tgicmp.3.in
