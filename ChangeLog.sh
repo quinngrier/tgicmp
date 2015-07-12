@@ -9,6 +9,13 @@
 # format that respects TZ=UTC is %ad. So we hopefully improve the chance
 # that it's in standard C form with LC_ALL=C and do some parsing work.
 #
+# Here is an example of how the parsing works:
+#
+#      Wed Jul 1 12:34:56 2015
+#   -> 2015-Jul-1
+#   -> 2015-Jul-01
+#   -> 2015-07-01
+#
 
 set -e
 trap 'rm -f ChangeLog.tmp' EXIT
