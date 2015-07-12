@@ -11,6 +11,7 @@
 #
 
 set -e
+trap 'rm -f ChangeLog.tmp' EXIT
 LC_ALL=C TZ=UTC git log --author-date-order --date=local           \
                         --format='format:# %ad %an <%ae>%n* %s.%n' \
                         >ChangeLog.tmp
