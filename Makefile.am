@@ -29,6 +29,11 @@ EXTRA_DIST = \
   VERSION.sh \
   tgicmp.3.in
 
+PACKAGE.texi: $(srcdir)/PACKAGE.texi.in
+	sed -e 's|[@]PACKAGE_DATE@|$(PACKAGE_DATE)|g'       \
+	    -e 's|[@]PACKAGE_VERSION@|$(PACKAGE_VERSION)|g' \
+	    $? >$@
+
 info_TEXINFOS = tgicmp.texi
 tgicmp_TEXINFOS = \
   CC0-1.0-appendix.texi \
