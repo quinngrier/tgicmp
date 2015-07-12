@@ -38,7 +38,8 @@ EXTRA_DIST += $(srcdir)/PACKAGE.texi.in
 info_TEXINFOS = tgicmp.texi
 tgicmp_TEXINFOS = \
   CC0-1.0-appendix.texi \
-  CC0-1.0-copying.texi
+  CC0-1.0-copying.texi \
+  PACKAGE.texi
 
 ##
 ## The authors of this file have waived all copyright and
