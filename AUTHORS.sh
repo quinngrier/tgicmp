@@ -5,6 +5,7 @@
 #
 
 set -e
+trap 'rm -f AUTHORS.tmp' EXIT
 git log --format='tformat:%an <%ae>' >AUTHORS.tmp
 LC_ALL=C sort -u AUTHORS.tmp >AUTHORS
 exit 0
