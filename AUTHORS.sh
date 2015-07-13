@@ -5,9 +5,9 @@
 #
 
 set -e
-trap 'rm -f AUTHORS.tmp' EXIT
-git log --format='tformat:%an <%ae>' >AUTHORS.tmp
-LC_ALL=C sort -u AUTHORS.tmp >AUTHORS
+trap 'rm -f AUTHORS.tmp1' EXIT
+git log --format='tformat:%an <%ae>' >AUTHORS.tmp1
+LC_ALL=C sort -u AUTHORS.tmp1 >AUTHORS
 exit 0
 
 #
