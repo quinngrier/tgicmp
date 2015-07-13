@@ -29,12 +29,12 @@ CLEANFILES = $(man_MANS)
 
 dist_doc_DATA = $(srcdir)/CC0-1.0.txt
 
-EXTRA_DIST = \
-  $(srcdir)/DATE \
-  $(srcdir)/DATE.sh \
-  $(srcdir)/VERSION \
-  $(srcdir)/VERSION.sh \
-  $(srcdir)/tgicmp.3.in
+EXTRA_DIST =
+EXTRA_DIST += $(srcdir)/DATE
+EXTRA_DIST += $(srcdir)/DATE.sh
+EXTRA_DIST += $(srcdir)/VERSION
+EXTRA_DIST += $(srcdir)/VERSION.sh
+EXTRA_DIST += $(srcdir)/tgicmp.3.in
 
 $(srcdir)/PACKAGE.texi: $(srcdir)/PACKAGE.texi.in
 	sed -e 's|[@]PACKAGE_DATE@|$(PACKAGE_DATE)|g'       \
