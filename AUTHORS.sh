@@ -1,14 +1,21 @@
 #
 # This script generates an AUTHORS file by using git log. Just add this
 # script to your repository, use it to generate your first AUTHORS file,
-# add that to your repository, and repeat as needed.
+# add that to your repository, and repeat as needed. You can also add a
+# file named AUTHORS.top with some text to be included at the beginning
+# of the AUTHORS file.
 #
 
 set -e
 trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2' EXIT
 git log --format='tformat:%an <%ae>' >AUTHORS.tmp1
 LC_ALL=C sort -u AUTHORS.tmp1 >AUTHORS.tmp2
-mv AUTHORS.tmp2 AUTHORS
+if test -f AUTHORS.top; then
+  cat AUTHORS.top AUTHORS.tmp2 >AUTHORS.tmp1
+else
+  mv AUTHORS.tmp2 AUTHORS.tmp1
+fi
+mv AUTHORS.tmp1 AUTHORS
 exit 0
 
 #
