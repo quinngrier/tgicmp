@@ -30,7 +30,8 @@ sed -e 's/^# ... \(...\) \([^ ]*\).\{10\}\(....\)/# \3-\1-\2/' \
     -e 's/^\(# ....-\)Apr/\104/' -e 's/^\(# ....-\)Oct/\110/'  \
     -e 's/^\(# ....-\)May/\105/' -e 's/^\(# ....-\)Nov/\111/'  \
     -e 's/^\(# ....-\)Jun/\106/' -e 's/^\(# ....-\)Dec/\112/'  \
-    ChangeLog.tmp1 >ChangeLog
+    ChangeLog.tmp1 >ChangeLog.tmp2
+mv ChangeLog.tmp2 ChangeLog
 exit 0
 
 #
