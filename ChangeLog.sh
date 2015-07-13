@@ -1,7 +1,9 @@
 #
 # This script generates a ChangeLog file by using git log. Just add this
 # script to your repository, use it to generate your first ChangeLog
-# file, add that to your repository, and repeat as needed.
+# file, add that to your repository, and repeat as needed. You can also
+# add a file named ChangeLog.top that will be included at the beginning
+# of the ChangeLog file.
 #
 
 #
@@ -31,7 +33,12 @@ sed -e 's/^# ... \(...\) \([^ ]*\).\{10\}\(....\)/# \3-\1-\2/' \
     -e 's/^\(# ....-\)May/\105/' -e 's/^\(# ....-\)Nov/\111/'  \
     -e 's/^\(# ....-\)Jun/\106/' -e 's/^\(# ....-\)Dec/\112/'  \
     ChangeLog.tmp1 >ChangeLog.tmp2
-mv ChangeLog.tmp2 ChangeLog
+if test -f ChangeLog.top; then
+  cat ChangeLog.top ChangeLog.tmp2 >ChangeLog.tmp1
+else
+  mv ChangeLog.tmp2 ChangeLog.tmp1
+fi
+mv ChangeLog.tmp1 ChangeLog
 exit 0
 
 #
