@@ -43,10 +43,10 @@ $(srcdir)/PACKAGE.texi: $(srcdir)/PACKAGE.texi.in
 EXTRA_DIST += $(srcdir)/PACKAGE.texi.in
 
 info_TEXINFOS = tgicmp.texi
-tgicmp_TEXINFOS = \
-  $(srcdir)/CC0-1.0-appendix.texi \
-  $(srcdir)/CC0-1.0-copying.texi \
-  $(srcdir)/PACKAGE.texi
+tgicmp_TEXINFOS =
+tgicmp_TEXINFOS += $(srcdir)/CC0-1.0-appendix.texi
+tgicmp_TEXINFOS += $(srcdir)/CC0-1.0-copying.texi
+tgicmp_TEXINFOS += $(srcdir)/PACKAGE.texi
 
 ##
 ## The authors of this file have waived all copyright and
