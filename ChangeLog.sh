@@ -18,10 +18,10 @@
 #
 
 set -e
-trap 'rm -f ChangeLog.tmp' EXIT
+trap 'rm -f ChangeLog.tmp1' EXIT
 LC_ALL=C TZ=UTC git log --author-date-order --date=local           \
                         --format='format:# %ad %an <%ae>%n* %s.%n' \
-                        >ChangeLog.tmp
+                        >ChangeLog.tmp1
 sed -e 's/^# ... \(...\) \([^ ]*\).\{10\}\(....\)/# \3-\1-\2/' \
     -e 's/^\(# ....-...-\)\(. \)/\10\2/'                       \
     -e 's/^\(# ....-\)Jan/\101/' -e 's/^\(# ....-\)Jul/\107/'  \
@@ -30,7 +30,7 @@ sed -e 's/^# ... \(...\) \([^ ]*\).\{10\}\(....\)/# \3-\1-\2/' \
     -e 's/^\(# ....-\)Apr/\104/' -e 's/^\(# ....-\)Oct/\110/'  \
     -e 's/^\(# ....-\)May/\105/' -e 's/^\(# ....-\)Nov/\111/'  \
     -e 's/^\(# ....-\)Jun/\106/' -e 's/^\(# ....-\)Dec/\112/'  \
-    ChangeLog.tmp >ChangeLog
+    ChangeLog.tmp1 >ChangeLog
 exit 0
 
 #
