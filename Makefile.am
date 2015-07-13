@@ -1,6 +1,6 @@
-include_HEADERS = tgicmp.h
+include_HEADERS = $(srcdir)/tgicmp.h
 
-tgicmp.3: tgicmp.3.in
+tgicmp.3: $(srcdir)/tgicmp.3.in
 	sed -e 's|[@]PACKAGE_DATE@|$(PACKAGE_DATE)|g'       \
 	    -e 's|[@]PACKAGE_VERSION@|$(PACKAGE_VERSION)|g' \
 	    -e 's|[@]docdir@|$(docdir)|g'                   \
@@ -20,16 +20,16 @@ man_MANS = tgicmp.3 tgicmp.h.3 \
            TGILT.3 TGIGT.3 TGILE.3 TGIGE.3 TGIEQ.3 TGINE.3
 CLEANFILES = $(man_MANS)
 
-dist_doc_DATA = CC0-1.0.txt
+dist_doc_DATA = $(srcdir)/CC0-1.0.txt
 
 EXTRA_DIST = \
-  DATE \
-  DATE.sh \
-  VERSION \
-  VERSION.sh \
-  tgicmp.3.in
+  $(srcdir)/DATE \
+  $(srcdir)/DATE.sh \
+  $(srcdir)/VERSION \
+  $(srcdir)/VERSION.sh \
+  $(srcdir)/tgicmp.3.in
 
-PACKAGE.texi: $(srcdir)/PACKAGE.texi.in
+$(srcdir)/PACKAGE.texi: $(srcdir)/PACKAGE.texi.in
 	sed -e 's|[@]PACKAGE_DATE@|$(PACKAGE_DATE)|g'       \
 	    -e 's|[@]PACKAGE_VERSION@|$(PACKAGE_VERSION)|g' \
 	    $? >$@
@@ -37,9 +37,9 @@ EXTRA_DIST += $(srcdir)/PACKAGE.texi.in
 
 info_TEXINFOS = tgicmp.texi
 tgicmp_TEXINFOS = \
-  CC0-1.0-appendix.texi \
-  CC0-1.0-copying.texi \
-  PACKAGE.texi
+  $(srcdir)/CC0-1.0-appendix.texi \
+  $(srcdir)/CC0-1.0-copying.texi \
+  $(srcdir)/PACKAGE.texi
 
 ##
 ## The authors of this file have waived all copyright and
