@@ -16,8 +16,15 @@ TGILE.3:    tgicmp.3; cp $? $@
 TGIGE.3:    tgicmp.3; cp $? $@
 TGIEQ.3:    tgicmp.3; cp $? $@
 TGINE.3:    tgicmp.3; cp $? $@
-man_MANS = tgicmp.3 tgicmp.h.3 \
-           TGILT.3 TGIGT.3 TGILE.3 TGIGE.3 TGIEQ.3 TGINE.3
+man_MANS =
+man_MANS += tgicmp.3
+man_MANS += tgicmp.h.3
+man_MANS += TGILT.3
+man_MANS += TGIGT.3
+man_MANS += TGILE.3
+man_MANS += TGIGE.3
+man_MANS += TGIEQ.3
+man_MANS += TGINE.3
 CLEANFILES = $(man_MANS)
 
 dist_doc_DATA = $(srcdir)/CC0-1.0.txt
