@@ -1,6 +1,6 @@
 include_HEADERS = $(srcdir)/tgicmp.h
 
-tgicmp.3: $(srcdir)/tgicmp.3.in
+$(builddir)/tgicmp.3: $(srcdir)/tgicmp.3.in
 	sed -e 's|[@]PACKAGE_DATE@|$(PACKAGE_DATE)|g'       \
 	    -e 's|[@]PACKAGE_VERSION@|$(PACKAGE_VERSION)|g' \
 	    -e 's|[@]docdir@|$(docdir)|g'                   \
@@ -9,22 +9,22 @@ tgicmp.3: $(srcdir)/tgicmp.3.in
 	    -e 's|[@]pdfdir@|$(pdfdir)|g'                   \
 	    -e 's|[@]psdir@|$(psdir)|g'                     \
 	    $? >$@
-tgicmp.h.3: tgicmp.3; cp $? $@
-TGILT.3:    tgicmp.3; cp $? $@
-TGIGT.3:    tgicmp.3; cp $? $@
-TGILE.3:    tgicmp.3; cp $? $@
-TGIGE.3:    tgicmp.3; cp $? $@
-TGIEQ.3:    tgicmp.3; cp $? $@
-TGINE.3:    tgicmp.3; cp $? $@
+$(builddir)/tgicmp.h.3: $(builddir)/tgicmp.3; cp $? $@
+$(builddir)/TGILT.3:    $(builddir)/tgicmp.3; cp $? $@
+$(builddir)/TGIGT.3:    $(builddir)/tgicmp.3; cp $? $@
+$(builddir)/TGILE.3:    $(builddir)/tgicmp.3; cp $? $@
+$(builddir)/TGIGE.3:    $(builddir)/tgicmp.3; cp $? $@
+$(builddir)/TGIEQ.3:    $(builddir)/tgicmp.3; cp $? $@
+$(builddir)/TGINE.3:    $(builddir)/tgicmp.3; cp $? $@
 man_MANS =
-man_MANS += tgicmp.3
-man_MANS += tgicmp.h.3
-man_MANS += TGILT.3
-man_MANS += TGIGT.3
-man_MANS += TGILE.3
-man_MANS += TGIGE.3
-man_MANS += TGIEQ.3
-man_MANS += TGINE.3
+man_MANS += $(builddir)/tgicmp.3
+man_MANS += $(builddir)/tgicmp.h.3
+man_MANS += $(builddir)/TGILT.3
+man_MANS += $(builddir)/TGIGT.3
+man_MANS += $(builddir)/TGILE.3
+man_MANS += $(builddir)/TGIGE.3
+man_MANS += $(builddir)/TGIEQ.3
+man_MANS += $(builddir)/TGINE.3
 CLEANFILES = $(man_MANS)
 
 dist_doc_DATA = $(srcdir)/CC0-1.0.txt
