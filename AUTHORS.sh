@@ -2,8 +2,8 @@
 # This script generates an AUTHORS file by using git log. Just add this
 # script to your repository, use it to generate your first AUTHORS file,
 # add that to your repository, and repeat as needed. You can also add a
-# file named AUTHORS.top with some text to be included at the beginning
-# of the AUTHORS file.
+# file named AUTHORS.top that will be included at the beginning of the
+# AUTHORS file.
 #
 
 set -e
