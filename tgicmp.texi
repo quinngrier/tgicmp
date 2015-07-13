@@ -1,13 +1,14 @@
 \input texinfo
 @setfilename tgicmp.info
 @include PACKAGE.texi
-@settitle @code{tgicmp v@value{VERSION}}
+@settitle @code{tgicmp}
 
 @include CC0-1.0-copying.texi
 
 @titlepage
-@title @code{tgicmp v@value{VERSION}}
+@title @code{tgicmp}
 @subtitle Type-generic integer comparisons in C
+@subtitle @code{v@value{VERSION}} (@value{DATE})
 @page
 @vskip 0pt plus 1filll
 @insertcopying
@@ -17,10 +18,10 @@
 
 @ifnottex
 @node Top
-@top @code{tgicmp v@value{VERSION}}
+@top @code{tgicmp}
 
-This manual is for @code{tgicmp v@value{VERSION}}, a library for
-performing type-generic integer comparisons in C.
+This manual is for @code{tgicmp v@value{VERSION}} (@value{DATE}), a
+library for performing type-generic integer comparisons in C.
 
 @end ifnottex
 
