@@ -5,7 +5,7 @@
 #
 
 set -e
-trap 'rm -f AUTHORS.tmp1' EXIT
+trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2' EXIT
 git log --format='tformat:%an <%ae>' >AUTHORS.tmp1
 LC_ALL=C sort -u AUTHORS.tmp1 >AUTHORS.tmp2
 mv AUTHORS.tmp2 AUTHORS
