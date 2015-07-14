@@ -20,6 +20,7 @@
 #
 
 set -e
+trap 'rm -f DATE.tmp' EXIT
 
 #
 # Try using git log.
@@ -42,7 +43,7 @@ x=$(LC_ALL=C TZ=UTC \
 y="$?"
 set -e
 if test "$y" = 0; then
-  echo "$x" >DATE
+  echo "$x" >DATE.tmp
   x=$(sed -e 's/^... \(...\) \([^ ]*\).\{10\}\(....\)/\3-\1-\2/' \
           -e 's/^\(....-...-\)\(.\)$/\10\2/'                     \
           -e 's/^\(....-\)Jan/\101/' -e 's/^\(....-\)Jul/\107/'  \
@@ -51,8 +52,9 @@ if test "$y" = 0; then
           -e 's/^\(....-\)Apr/\104/' -e 's/^\(....-\)Oct/\110/'  \
           -e 's/^\(....-\)May/\105/' -e 's/^\(....-\)Nov/\111/'  \
           -e 's/^\(....-\)Jun/\106/' -e 's/^\(....-\)Dec/\112/'  \
-          DATE)
-  echo "$x" >DATE
+          DATE.tmp)
+  echo "$x" >DATE.tmp
+  mv DATE.tmp DATE
   echo "$x"
   exit 0
 fi
