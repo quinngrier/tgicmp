@@ -8,15 +8,18 @@
 
 set -e
 trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2' EXIT
+
 git log --format='tformat:%an <%ae>' >AUTHORS.tmp1
 sed 's/ <>$//' AUTHORS.tmp1 >AUTHORS.tmp2
 LC_ALL=C sort -u AUTHORS.tmp2 >AUTHORS.tmp1
+
 if test -f AUTHORS.top; then
   cat AUTHORS.top AUTHORS.tmp1 >AUTHORS.tmp2
 else
   mv AUTHORS.tmp1 AUTHORS.tmp2
 fi
 mv AUTHORS.tmp2 AUTHORS
+
 exit 0
 
 #
