@@ -18,6 +18,7 @@
 #
 
 set -e
+trap 'rm -f VERSION.tmp' EXIT
 
 #
 # Try using git describe.
@@ -28,9 +29,10 @@ x=$(git describe --always --match='v[0-9]*' --tags 2>/dev/null)
 y="$?"
 set -e
 if test "$y" = 0; then
-  echo "$x" >VERSION
-  x=$(sed 's/^v//' VERSION)
-  echo "$x" >VERSION
+  echo "$x" >VERSION.tmp
+  x=$(sed 's/^v//' VERSION.tmp)
+  echo "$x" >VERSION.tmp
+  mv VERSION.tmp VERSION
   echo "$x"
   exit 0
 fi
