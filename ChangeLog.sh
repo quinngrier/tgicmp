@@ -7,9 +7,7 @@
 #
 # We want the author YYYY-MM-DD in UTC, but the only git log author date
 # format that respects TZ=UTC is %ad. So we hopefully improve the chance
-# that it's in standard C form with LC_ALL=C and do some parsing.
-#
-# Here is an example of how the parsing works:
+# that it's in standard C form with LC_ALL=C and convert it like this:
 #
 #      Wed Jul 1 12:34:56 2015
 #   -> 2015-Jul-1
