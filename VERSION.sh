@@ -6,7 +6,7 @@
 #
 #   AC_INIT([foo], m4_esyscmd_s([sh VERSION.sh]))
 #
-#   EXTRA_DIST = VERSION.sh VERSION
+#   EXTRA_DIST += VERSION.sh VERSION
 #
 # The script assumes that you tag your version commits with strings that
 # begin with "v" and a digit, like "v2.63" or "v2.5.0-rc0". When you run
