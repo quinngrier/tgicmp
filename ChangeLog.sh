@@ -5,8 +5,6 @@
 # add a file named ChangeLog.top that will be included at the beginning
 # of the ChangeLog file.
 #
-
-#
 # We want the author YYYY-MM-DD in UTC, but the only git log author date
 # format that respects TZ=UTC is %ad. So we hopefully improve the chance
 # that it's in standard C form with LC_ALL=C and do some parsing.
