@@ -30,6 +30,7 @@ sed -e 's/^# ... \(...\) \(.*\) ..:..:.. \(....\)/# \3-\1-\2/' \
     -e 's/^\(# ....-\)Apr/\104/' -e 's/^\(# ....-\)Oct/\110/'  \
     -e 's/^\(# ....-\)May/\105/' -e 's/^\(# ....-\)Nov/\111/'  \
     -e 's/^\(# ....-\)Jun/\106/' -e 's/^\(# ....-\)Dec/\112/'  \
+    -e 's/^# //'                                               \
     ChangeLog.tmp1 >ChangeLog.tmp2
 if test -f ChangeLog.top; then
   cat ChangeLog.top ChangeLog.tmp2 >ChangeLog.tmp1
