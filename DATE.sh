@@ -10,7 +10,7 @@
 #   AC_SUBST([PACKAGE_DATE])
 #   AC_DEFINE([PACKAGE_DATE], "AC_PACKAGE_DATE")
 #
-#   EXTRA_DIST = DATE.sh DATE
+#   EXTRA_DIST += DATE.sh DATE
 #
 # When you run autoconf inside your repository, the script uses git log
 # to print a YYYY-MM-DD date and also outputs it to the DATE file. When
