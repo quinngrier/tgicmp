@@ -36,7 +36,7 @@ trap 'rm -f DATE.tmp' EXIT
 #
 
 set +e
-x=$(LC_ALL=C TZ=UTC git log -1 --date=local --format=%ad 2>/dev/null)
+x=$(LC_ALL=C TZ=UTC git log -1 --date=local --pretty=%ad 2>/dev/null)
 y="$?"
 set -e
 if test "$y" = 0; then
