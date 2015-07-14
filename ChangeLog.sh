@@ -22,7 +22,7 @@ trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2' EXIT
 LC_ALL=C TZ=UTC git log --author-date-order --date=local           \
                         --format='format:# %ad %an <%ae>%n* %s.%n' \
                         >ChangeLog.tmp1
-sed -e 's/^# ... \(...\) \([^ ]*\).\{10\}\(....\)/# \3-\1-\2/' \
+sed -e 's/^# ... \(...\) \(.*\) ..:..:.. \(....\)/# \3-\1-\2/' \
     -e 's/^\(# ....-...-\)\(. \)/\10\2/'                       \
     -e 's/^\(# ....-\)Jan/\101/' -e 's/^\(# ....-\)Jul/\107/'  \
     -e 's/^\(# ....-\)Feb/\102/' -e 's/^\(# ....-\)Aug/\108/'  \
