@@ -1,7 +1,8 @@
 #
-# This script helps autoconf automatically generate a version string for
-# AC_INIT by using git describe. Just add this script to your repository
-# and merge the following code into your configure.ac and Makefile.am:
+# This script (VERSION.sh) helps to create a version string for AC_INIT
+# in configure.ac by using git describe to create a description of HEAD.
+# Just add this script to your repository and adapt the following code
+# for your configure.ac and Makefile.am:
 #
 #   AC_INIT([foo], m4_esyscmd_s([sh VERSION.sh]))
 #
