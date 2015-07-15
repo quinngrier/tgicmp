@@ -73,8 +73,8 @@ if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
 fi
 
 #
-# If we get here, then we're not running inside your repository, so
-# we'll try to read the DATE file.
+# If we get here, then we're not running inside your repository, so we
+# try to read the DATE file.
 #
 
 if test -f DATE; then
