@@ -20,7 +20,7 @@
 # can also add the VERSION file to your repository and update it for
 # commits intended to be used with git archive.
 #
-# The script assumes that you tag your version commits with strings that
+# This script assumes that you tag your version commits with names that
 # begin with "v" and a digit, like "v2.63" or "v2.5.0-rc0".
 #
 
