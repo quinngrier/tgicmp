@@ -88,7 +88,7 @@ fi
 # couldn't read the DATE file, so we'll give up.
 #
 
-echo 'DATE.sh: not in repository and DATE does not exist' >&2
+echo 'DATE.sh: not in repository and DATE not found' >&2
 exit 1
 
 #
