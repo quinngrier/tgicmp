@@ -89,7 +89,7 @@ fi
 # couldn't read the DATE file, so we'll give up.
 #
 
-echo 'DATE.sh: git log failed and DATE does not exist' >&2
+echo 'DATE.sh: not in repository and DATE does not exist' >&2
 exit 1
 
 #
