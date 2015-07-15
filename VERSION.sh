@@ -8,16 +8,20 @@
 #
 #   EXTRA_DIST += VERSION.sh VERSION
 #
+# This makes Autotools work both inside your repository and inside an
+# extracted distribution tarball. When running inside your repository,
+# VERSION.sh uses git describe to create a version string for HEAD and
+# also writes it to the VERSION file. Both VERSION.sh and VERSION are
+# included in distribution tarballs. When running inside an extracted
+# distribution tarball, VERSION.sh reads the VERSION file instead of
+# using git describe.
+#
+# To make Autotools work inside an extracted git archive tarball, you
+# can also add the VERSION file to your repository and update it for
+# commits intended to be used with git archive.
+#
 # The script assumes that you tag your version commits with strings that
 # begin with "v" and a digit, like "v2.63" or "v2.5.0-rc0".
-#
-# When you run
-# autoconf inside your repository, the script uses git describe to print
-# a version string and also outputs it to the VERSION file. When you run
-# autoconf inside an extracted distribution tarball, the script uses the
-# VERSION file to print the version string. If you also want autoconf to
-# work inside an extracted git archive tarball, you can add the VERSION
-# file to your repository and update it as needed.
 #
 
 set -e
