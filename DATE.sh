@@ -27,10 +27,12 @@ set -e
 trap 'rm -f DATE.tmp' EXIT
 
 #
-# First we need to detect if we're running inside your repository. We
-# can't just run git and see what happens because we might be running
-# inside an extracted tarball that's inside another repository. The
-# trick is to test if this script itself is being tracked.
+# First we need to check if we're running inside your repository. We
+# can't just consider any successful git command to mean that this is
+# true because we might be running inside an extracted tarball that's
+# inside another repository. The trick is to ask git if it's tracking
+# this script file itself. This should be strong enough of a check to
+# always do the right thing.
 #
 
 if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
