@@ -39,11 +39,11 @@ if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
 
   #
   # We want the author date of HEAD in YYYY-MM-DD format and in UTC, but
-  # the only pretty format that respects TZ=UTC is %ad, which appears to
-  # be roughly the same as asctime format. We can easily convert this to
-  # our desired format, so we try to guarantee that we get it by setting
-  # LC_ALL=C. If the result looks like it's in another format, we accept
-  # it as is. Otherwise, we convert it to YYYY-MM-DD format like this:
+  # it appears that git log only respects TZ=UTC when it is invoked with
+  # --date=local --pretty=%ad. This format is the same as the format of
+  # the asctime function except that the day number always has just one
+  # space preceding it instead of two for single-digit day numbers. We
+  # convert this format to YYYY-MM-DD format as follows:
   #
   #      Wed Jul 1 12:34:56 2015
   #   -> 2015-Jul-1
