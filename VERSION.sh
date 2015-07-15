@@ -11,8 +11,7 @@
 # This makes Autotools work both inside your repository and inside an
 # extracted distribution tarball. When running inside your repository,
 # VERSION.sh uses git describe to create a version string for HEAD and
-# also writes it to the VERSION file. Both VERSION.sh and VERSION are
-# included in distribution tarballs. When running inside an extracted
+# also writes it to the VERSION file. When running inside an extracted
 # distribution tarball, VERSION.sh reads the VERSION file instead of
 # using git describe.
 #
