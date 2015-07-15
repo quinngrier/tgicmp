@@ -27,20 +27,22 @@ set -e
 trap 'rm -f VERSION.tmp' EXIT
 
 #
-# Try using git describe.
+# First we need to check if we're running inside your repository. We
+# can't just consider any successful git command to mean that this is
+# true because we might be running inside an extracted tarball that's
+# inside another repository. The trick is to test if this script file
+# itself is being tracked by the repository.
 #
 
-set +e
-x=$(git describe --always --match='v[0-9]*' --tags 2>/dev/null)
-y="$?"
-set -e
-if test "$y" = 0; then
-  echo "$x" >VERSION.tmp
+if git ls-files --error-unmatch VERSION.sh >/dev/null 2>&1; then
+
+  git describe --always --match='v[0-9]*' --tags >VERSION.tmp
   x=$(sed 's/^v//' VERSION.tmp)
   echo "$x" >VERSION.tmp
   mv VERSION.tmp VERSION
   echo "$x"
   exit 0
+
 fi
 
 #
