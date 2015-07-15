@@ -28,24 +28,29 @@ set -e
 trap 'rm -f DATE.tmp' EXIT
 
 #
-# Try using git log.
-#
-# We want the author YYYY-MM-DD in UTC, but the only git log author date
-# format that respects TZ=UTC is %ad. So we hopefully improve the chance
-# that it's in standard C form with LC_ALL=C and convert it like this:
-#
-#      Wed Jul 1 12:34:56 2015
-#   -> 2015-Jul-1
-#   -> 2015-07-1
-#   -> 2015-07-01
+# First we need to detect if we're running inside your repository. We
+# can't just run git and see what happens because we might be running
+# inside an extracted tarball that's inside another repository. The
+# trick is to test if this script itself is tracked.
 #
 
-set +e
-x=$(LC_ALL=C TZ=UTC git log -1 --date=local --pretty=%ad 2>/dev/null)
-y="$?"
-set -e
-if test "$y" = 0; then
-  echo "$x" >DATE.tmp
+if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
+
+  #
+  # We want the author date of HEAD in YYYY-MM-DD format and in UTC, but
+  # the only pretty format that respects TZ=UTC is %ad, which appears to
+  # be roughly the same as asctime format. We can easily convert this to
+  # our desired format, so we try to guarantee that we get it by setting
+  # LC_ALL=C. If the result looks like it's in another format, we accept
+  # it as is. Otherwise, we convert it to YYYY-MM-DD format like this:
+  #
+  #      Wed Jul 1 12:34:56 2015
+  #   -> 2015-Jul-1
+  #   -> 2015-07-1
+  #   -> 2015-07-01
+  #
+
+  LC_ALL=C TZ=UTC git log -1 --date=local --pretty=%ad >DATE.tmp
   x=$(sed '/^... ... ..* ..:..:.. ....$/ {
              s/^... \(...\) \(..*\) ..:..:.. \(....\)$/\3-\1-\2/
              s/^\(....\)-Jan/\1-01/
@@ -66,6 +71,7 @@ if test "$y" = 0; then
   mv DATE.tmp DATE
   echo "$x"
   exit 0
+
 fi
 
 #
