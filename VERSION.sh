@@ -70,7 +70,7 @@ fi
 # will get mad about being given an empty version string.
 #
 
-echo 'VERSION.sh: git describe failed and VERSION does not exist' >&2
+echo 'VERSION.sh: not in repository and VERSION not found' >&2
 exit 1
 
 #
