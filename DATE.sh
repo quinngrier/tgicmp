@@ -18,9 +18,9 @@
 # to the DATE file. When running inside an extracted distribution
 # tarball, DATE.sh reads the DATE file instead of using git log.
 #
-# To make Autotools work inside an extracted git archive tarball, you
-# can also add the DATE file to your repository and update it for
-# commits intended to be used with git archive.
+# To also make Autotools work inside an extracted git archive tarball,
+# add the DATE file to your repository and update it when making a
+# commit that is intended to be used with git archive.
 #
 
 set -e
