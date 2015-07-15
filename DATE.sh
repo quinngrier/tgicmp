@@ -84,7 +84,7 @@ fi
 
 #
 # If we get here, then we're not running inside your repository and we
-# couldn't read the DATE file, so we'll give up.
+# couldn't read the DATE file, so we give up.
 #
 
 echo 'DATE.sh: not in repository and DATE not found' >&2
