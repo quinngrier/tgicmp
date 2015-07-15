@@ -15,9 +15,9 @@
 # distribution tarball, VERSION.sh reads the VERSION file instead of
 # using git describe.
 #
-# To make Autotools work inside an extracted git archive tarball, you
-# can also add the VERSION file to your repository and update it for
-# commits intended to be used with git archive.
+# To also make Autotools work inside an extracted git archive tarball,
+# add the VERSION file to your repository and update it when making a
+# commit that is intended to be used with git archive.
 #
 # This script assumes that you tag your version commits with names that
 # begin with "v" and a digit, like "v2.63" or "v2.5.0-rc0".
