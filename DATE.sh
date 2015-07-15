@@ -15,9 +15,8 @@
 # This makes Autotools work both inside your repository and inside an
 # extracted distribution tarball. When running inside your repository,
 # DATE.sh uses git log to retrieve the date of HEAD and also writes it
-# to the DATE file. Both DATE.sh and DATE are included in distribution
-# tarballs. When running inside an extracted distribution tarball,
-# DATE.sh reads the DATE file instead of using git log.
+# to the DATE file. When running inside an extracted distribution
+# tarball, DATE.sh reads the DATE file instead of using git log.
 #
 # To make Autotools work inside an extracted git archive tarball, you
 # can also add the DATE file to your repository and update it for
