@@ -54,7 +54,8 @@ if git ls-files --error-unmatch VERSION.sh >/dev/null 2>&1; then
 fi
 
 #
-# If that didn't work, try using the VERSION file.
+# If we get here, then we're not running inside your repository, so we
+# try to read the VERSION file.
 #
 
 if test -f VERSION; then
