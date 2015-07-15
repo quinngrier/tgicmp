@@ -85,7 +85,8 @@ if test -f DATE; then
 fi
 
 #
-# If that didn't work, something is wrong.
+# If we get here, then we're not running inside your repository and we
+# couldn't read the DATE file, so we'll give up.
 #
 
 echo 'DATE.sh: git log failed and DATE does not exist' >&2
