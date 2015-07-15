@@ -19,9 +19,6 @@
 # add the VERSION file to your repository and update it when making a
 # commit that is intended to be used with git archive.
 #
-# This script assumes that you tag your version commits with names that
-# begin with "v" and a digit, like "v2.63" or "v2.5.0-rc0".
-#
 
 set -e
 trap 'rm -f VERSION.tmp' EXIT
