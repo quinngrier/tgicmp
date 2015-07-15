@@ -36,6 +36,14 @@ trap 'rm -f VERSION.tmp' EXIT
 
 if git ls-files --error-unmatch VERSION.sh >/dev/null 2>&1; then
 
+  #
+  # We want the result of git describe when looking for a tag whose name
+  # begins with "v" and a digit, like "v2.69" or "v2.5.0-rc2". This will
+  # give a result like "v2.69" when HEAD is the same as the tag, or like
+  # "v2.69-144-g51b89d1" when HEAD is newer than the tag. We then remove
+  # the leading "v" to follow the usual Autotools conventions.
+  #
+
   git describe --always --match='v[0-9]*' --tags >VERSION.tmp
   x=$(sed 's/^v//' VERSION.tmp)
   echo "$x" >VERSION.tmp
