@@ -64,9 +64,10 @@ if test -f VERSION; then
 fi
 
 #
-# If that didn't work, something is wrong. autoconf doesn't care about
-# our exit status, but as long as we don't print anything then it will
-# get mad about an empty version string.
+# If we get here, then we're not running inside your repository and we
+# couldn't read the VERSION file, so we give up. autoconf doesn't care
+# about our exit code, but as long as we don't print anything then it
+# will get mad about being given an empty version string.
 #
 
 echo 'VERSION.sh: git describe failed and VERSION does not exist' >&2
