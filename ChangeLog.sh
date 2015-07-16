@@ -16,7 +16,7 @@
 #
 
 set -e
-trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2' EXIT
+trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2 ChangeLog.tmp3' EXIT
 LC_ALL=C TZ=UTC git log --author-date-order --date=local           \
                         --format='format:# %ad %an <%ae>%n* %s.%n' \
                         >ChangeLog.tmp1
@@ -32,7 +32,8 @@ sed -e 's/^# ... \(...\) \(.*\) ..:..:.. \(....\)/# \3-\1-\2/' \
     -e 's/^# //'                                               \
     ChangeLog.tmp1 >ChangeLog.tmp2
 if test -f ChangeLog.top.texi; then
-  cat ChangeLog.top.texi ChangeLog.tmp2 >ChangeLog.tmp1
+  makeinfo --plaintext ChangeLog.top.texi >ChangeLog.tmp3
+  cat ChangeLog.tmp3 ChangeLog.tmp2 >ChangeLog.tmp1
 else
   mv ChangeLog.tmp2 ChangeLog.tmp1
 fi
