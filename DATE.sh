@@ -64,7 +64,7 @@ if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
            s/Oct/10/
            s/Nov/11/
            s/Dec/12/
-           s/^\(....-..\)-\(.\)$/\1-0\2/' DATE.tmp)
+           s/-\(.\)$/-0\1/' DATE.tmp)
   echo "$x" >DATE.tmp
   mv DATE.tmp DATE
   echo "$x"
