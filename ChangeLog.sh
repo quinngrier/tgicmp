@@ -2,7 +2,7 @@
 # This script generates a ChangeLog file by using git log. Just add this
 # script to your repository, use it to generate your first ChangeLog
 # file, add that to your repository, and repeat as needed. You can also
-# add a file named ChangeLog.top that will be included at the beginning
+# add a file named ChangeLog.top.texi that will be included at the beginning
 # of the ChangeLog file.
 #
 # We want the author YYYY-MM-DD in UTC, but the only git log author date
@@ -31,8 +31,8 @@ sed -e 's/^# ... \(...\) \(.*\) ..:..:.. \(....\)/# \3-\1-\2/' \
     -e 's/^\(# .*\) <>$/\1/'                                   \
     -e 's/^# //'                                               \
     ChangeLog.tmp1 >ChangeLog.tmp2
-if test -f ChangeLog.top; then
-  cat ChangeLog.top ChangeLog.tmp2 >ChangeLog.tmp1
+if test -f ChangeLog.top.texi; then
+  cat ChangeLog.top.texi ChangeLog.tmp2 >ChangeLog.tmp1
 else
   mv ChangeLog.tmp2 ChangeLog.tmp1
 fi
