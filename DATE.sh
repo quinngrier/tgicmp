@@ -42,7 +42,7 @@ if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
   # --date=local --pretty=%ad. This format is the same as the format of
   # the asctime function except that single-digit day numbers have only
   # one preceding space instead of two. We convert this format to our
-  # desired YYYY-MM-DD format as follows:
+  # desired format as follows:
   #
   #      Wed Jul 1 12:34:56 2015
   #   -> 2015-Jul-1
