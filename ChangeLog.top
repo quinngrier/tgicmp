@@ -1,3 +1,7 @@
+\input texinfo
+@setfilename foo
+@settitle foo
+@documentencoding UTF-8
 This file contains a reverse chronological list of individual changes to
 tgicmp. For a shorter and more comprehensible list of major changes, see
 the NEWS file. For more details about individual changes, you will have
@@ -11,3 +15,4 @@ searching the Internet or by visiting one of the following mirrors:
 
 The list follows.
 
+@bye
