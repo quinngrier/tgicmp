@@ -51,7 +51,7 @@ if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
   #
 
   TZ=UTC git log -1 --date=local --pretty=%ad >DATE.tmp
-  x=$(sed 's/^... \(...\) \(.\{1,2\}\) ..:..:.. \(....\)/\3-\1-\2/
+  x=$(sed 's/... \(...\) \(.\{1,2\}\) ..:..:.. \(....\)/\3-\1-\2/
            s/^\(....\)-Jan/\1-01/
            s/^\(....\)-Feb/\1-02/
            s/^\(....\)-Mar/\1-03/
