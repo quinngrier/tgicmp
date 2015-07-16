@@ -52,18 +52,18 @@ if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
 
   TZ=UTC git log -1 --date=local --pretty=%ad >DATE.tmp
   x=$(sed 's/... \(...\) \(.\{1,2\}\) ..:..:.. \(....\)/\3-\1-\2/
-           s/^\(....\)-Jan/\1-01/
-           s/^\(....\)-Feb/\1-02/
-           s/^\(....\)-Mar/\1-03/
-           s/^\(....\)-Apr/\1-04/
-           s/^\(....\)-May/\1-05/
-           s/^\(....\)-Jun/\1-06/
-           s/^\(....\)-Jul/\1-07/
-           s/^\(....\)-Aug/\1-08/
-           s/^\(....\)-Sep/\1-09/
-           s/^\(....\)-Oct/\1-10/
-           s/^\(....\)-Nov/\1-11/
-           s/^\(....\)-Dec/\1-12/
+           s/Jan/01/
+           s/Feb/02/
+           s/Mar/03/
+           s/Apr/04/
+           s/May/05/
+           s/Jun/06/
+           s/Jul/07/
+           s/Aug/08/
+           s/Sep/09/
+           s/Oct/10/
+           s/Nov/11/
+           s/Dec/12/
            s/^\(....-..\)-\(.\)$/\1-0\2/' DATE.tmp)
   echo "$x" >DATE.tmp
   mv DATE.tmp DATE
