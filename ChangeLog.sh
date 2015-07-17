@@ -11,7 +11,8 @@
 # which will be fed through makeinfo --plaintext before being included.
 #
 # Similarly, you can optionally add a ChangeLog.bot(.texi) file, which
-# will be included at the bottom with a blank line preceding it.
+# will be included at the bottom of the ChangeLog file with a blank line
+# preceding it.
 #
 
 set -e
