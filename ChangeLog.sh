@@ -18,6 +18,10 @@
 set -e
 trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2' EXIT
 
+#
+# Process the ChangeLog.top(.texi) file.
+#
+
 if test -f ChangeLog.top; then
   cp ChangeLog.top ChangeLog.tmp1
   echo >>ChangeLog.tmp1
