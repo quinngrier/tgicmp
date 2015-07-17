@@ -18,7 +18,7 @@
 set -e
 trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2 ChangeLog.tmp3' EXIT
 
-LC_ALL=C TZ=UTC git log --author-date-order --date=local           \
+TZ=UTC git log --author-date-order --date=local           \
                         --format='format:# %ad %an <%ae>%n* %s.%n' \
                         >ChangeLog.tmp1
 sed -e 's/^# ... \(...\) \(.*\) ..:..:.. \(....\)/# \3-\1-\2/' \
