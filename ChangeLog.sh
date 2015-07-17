@@ -53,6 +53,10 @@ sed '/^Author:/s/ <>$//
        s/-\(.\) /-0\1 /
      }' ChangeLog.tmp2 >>ChangeLog.tmp1
 
+#
+# Process the ChangeLog.bot(.texi) file.
+#
+
 if test -f ChangeLog.bot; then
   echo >>ChangeLog.tmp1
   cat ChangeLog.bot >>ChangeLog.tmp1
