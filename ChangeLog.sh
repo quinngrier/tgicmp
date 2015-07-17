@@ -16,7 +16,7 @@
 #
 
 set -e
-trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2 ChangeLog.tmp3' EXIT
+trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2' EXIT
 
 if test -f ChangeLog.top; then
   cp ChangeLog.top ChangeLog.tmp1
