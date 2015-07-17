@@ -15,17 +15,6 @@
 # will be included at the bottom with a blank line preceding it.
 #
 
-#
-# We want the author YYYY-MM-DD in UTC, but the only git log author date
-# format that respects TZ=UTC is %ad. So we hopefully improve the chance
-# that it's in standard C form with LC_ALL=C and convert it like this:
-#
-#      Wed Jul 1 12:34:56 2015
-#   -> 2015-Jul-1
-#   -> 2015-Jul-01
-#   -> 2015-07-01
-#
-
 set -e
 trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2' EXIT
 
