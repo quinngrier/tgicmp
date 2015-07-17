@@ -18,20 +18,26 @@
 set -e
 trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2 ChangeLog.tmp3' EXIT
 
-pretty='format:# %ad %an <%ae>%n* %s.%n'
+pretty='Commit: %H%nAuthor: %an <%ae>%nDate:   %ad UTC%n%n    %s%n'
 TZ=UTC git log --author-date-order --date=local \
                --pretty="$pretty" >ChangeLog.tmp1
-sed -e 's/^# ... \(...\) \(.*\) ..:..:.. \(....\)/# \3-\1-\2/' \
-    -e 's/^\(# ....-...-\)\(. \)/\10\2/'                       \
-    -e 's/^\(# ....-\)Jan/\101/' -e 's/^\(# ....-\)Jul/\107/'  \
-    -e 's/^\(# ....-\)Feb/\102/' -e 's/^\(# ....-\)Aug/\108/'  \
-    -e 's/^\(# ....-\)Mar/\103/' -e 's/^\(# ....-\)Sep/\109/'  \
-    -e 's/^\(# ....-\)Apr/\104/' -e 's/^\(# ....-\)Oct/\110/'  \
-    -e 's/^\(# ....-\)May/\105/' -e 's/^\(# ....-\)Nov/\111/'  \
-    -e 's/^\(# ....-\)Jun/\106/' -e 's/^\(# ....-\)Dec/\112/'  \
-    -e 's/^\(# .*\) <>$/\1/'                                   \
-    -e 's/^# //'                                               \
-    ChangeLog.tmp1 >ChangeLog.tmp2
+sed '/^Author:/s/ <>$//
+     /^Date:/{
+       s/... \(...\) \(.\{1,2\}\) \(..:..:..\) \(....\)/\4-\1-\2 \3/
+       s/Jan/01/
+       s/Feb/02/
+       s/Mar/03/
+       s/Apr/04/
+       s/May/05/
+       s/Jun/06/
+       s/Jul/07/
+       s/Aug/08/
+       s/Sep/09/
+       s/Oct/10/
+       s/Nov/11/
+       s/Dec/12/
+       s/-\(.\) /-0\1 /
+     }' ChangeLog.tmp1 >ChangeLog.tmp2
 
 if test -f ChangeLog.top.texi; then
   makeinfo --plaintext ChangeLog.top.texi >ChangeLog.tmp3
