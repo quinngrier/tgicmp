@@ -7,9 +7,8 @@
 #
 # You can optionally add a file named ChangeLog.top, which will be
 # included at the top of the ChangeLog file with a blank line following
-# it. You can also write this file as a Texinfo document by renaming it
-# to ChangeLog.top.texi, which will be fed through makeinfo --plaintext
-# before being included.
+# it. You can also write it in Texinfo by naming it ChangeLog.top.texi,
+# which will be fed through makeinfo --plaintext before being included.
 #
 # Similarly, you can optionally add a ChangeLog.bot(.texi) file, which
 # will be included at the bottom with a blank line preceding it.
