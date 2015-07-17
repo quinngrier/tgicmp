@@ -20,6 +20,7 @@ trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2 ChangeLog.tmp3' EXIT
 
 if test -f ChangeLog.top.texi; then
   makeinfo --plaintext ChangeLog.top.texi >ChangeLog.tmp1
+  echo >>ChangeLog.tmp1
 else
   cp /dev/null ChangeLog.tmp1
 fi
