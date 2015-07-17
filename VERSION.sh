@@ -17,7 +17,7 @@
 #
 # To also make Autotools work inside an extracted git archive tarball,
 # add the VERSION file to your repository and update it when making a
-# commit that is intended to be used with git archive.
+# commit that is intended to provide a git archive tarball.
 #
 
 set -e
