@@ -18,9 +18,15 @@
 set -e
 trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2 ChangeLog.tmp3' EXIT
 
+if test -f ChangeLog.top.texi; then
+  makeinfo --plaintext ChangeLog.top.texi >ChangeLog.tmp1
+else
+  cp /dev/null ChangeLog.tmp1
+fi
+
 x='format:Commit: %H%nAuthor: %an <%ae>%nDate:   %ad UTC%n%n    %s%n'
 TZ=UTC git log --author-date-order --date=local \
-               --pretty="$x" >ChangeLog.tmp1
+               --pretty="$x" >ChangeLog.tmp2
 sed '/^Author:/s/ <>$//
      /^Date:/{
        s/... \(...\) \(.\{1,2\}\) \(..:..:..\) \(....\)/\4-\1-\2 \3/
@@ -37,14 +43,8 @@ sed '/^Author:/s/ <>$//
        s/Nov/11/
        s/Dec/12/
        s/-\(.\) /-0\1 /
-     }' ChangeLog.tmp1 >ChangeLog.tmp2
+     }' ChangeLog.tmp2 >>ChangeLog.tmp1
 
-if test -f ChangeLog.top.texi; then
-  makeinfo --plaintext ChangeLog.top.texi >ChangeLog.tmp3
-  cat ChangeLog.tmp3 ChangeLog.tmp2 >ChangeLog.tmp1
-else
-  mv ChangeLog.tmp2 ChangeLog.tmp1
-fi
 mv ChangeLog.tmp1 ChangeLog
 exit 0
 
