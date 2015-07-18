@@ -51,8 +51,7 @@ fi
 x='format:commit %H%nAuthor: %an <%ae>%nDate:   %ad +0000%n%n    %s%n'
 TZ=UTC git log --author-date-order --date=local \
                --pretty="$x" >ChangeLog.tmp2
-sed '/^Author:/s/ <>$//
-     /^Date:/{
+sed '/^Date:/{
        s/... \(...\) \(.\{1,2\}\) \(..:..:..\) \(....\)/\4-\1-\2 \3/
        s/Jan/01/
        s/Feb/02/
