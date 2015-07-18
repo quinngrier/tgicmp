@@ -48,7 +48,7 @@ fi
 #   -> 2015-07-01 12:34:56
 #
 
-x='format:Commit: %H%nAuthor: %an <%ae>%nDate:   %ad UTC%n%n    %s%n'
+x='format:Commit: %H%nAuthor: %an <%ae>%nDate:   %ad +0000%n%n    %s%n'
 TZ=UTC git log --author-date-order --date=local \
                --pretty="$x" >ChangeLog.tmp2
 sed '/^Author:/s/ <>$//
