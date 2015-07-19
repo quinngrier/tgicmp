@@ -44,7 +44,7 @@ for the full dedication. It may also be available at
 @node Introduction
 @chapter Introduction
 
-@include CC0-1.0-appendix.texi
+@include CC0-1.0.appendix.texi
 
 @bye
 
