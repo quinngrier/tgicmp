@@ -9,6 +9,20 @@
 set -e
 trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2' EXIT
 
+#
+# Process the AUTHORS.top(.texi) file.
+#
+
+if test -f AUTHORS.top; then
+  cp AUTHORS.top AUTHORS.tmp1
+  echo >>AUTHORS.tmp1
+elif test -f AUTHORS.top.texi; then
+  makeinfo --plaintext AUTHORS.top.texi >AUTHORS.tmp1
+  echo >>AUTHORS.tmp1
+else
+  cp /dev/null AUTHORS.tmp1
+fi
+
 git log --pretty='%an <%ae>' >AUTHORS.tmp2
 LC_ALL=C sort -u AUTHORS.tmp2 >AUTHORS.tmp1
 
