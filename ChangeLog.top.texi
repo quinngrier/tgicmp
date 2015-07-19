@@ -2,11 +2,16 @@
 @setfilename foo
 @settitle foo
 @documentencoding UTF-8
-This file contains a reverse chronological list of individual changes to
-tgicmp. For a shorter and more comprehensible list of major changes, see
-the NEWS file. For more details about individual changes, you will have
-to analyze the tgicmp Git repository, which should be easy to find by
-searching the Internet or by visiting one of the following mirrors:
+
+This file contains a list of individual changes to @code{tgicmp} from a
+developer perspective. If you're looking for a list of major changes by
+version, see the @code{NEWS} file or the News appendix of the manual.
+
+The list is generated from the @code{tgicmp} Git repository. It is
+mainly provided as a reference for when the repository is unavailable,
+but you may find it interesting to browse regardless. For more detail,
+see the repository, which should be easy to find by searching the
+Internet or by visiting one of the following mirrors:
 
 @itemize
 @item @url{http://sourceforge.net/p/quinngrier/tgicmp}
