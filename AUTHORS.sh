@@ -9,16 +9,16 @@
 set -e
 trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2' EXIT
 
-git log --pretty='%an <%ae>' >AUTHORS.tmp1
-sed 's/ <>$//' AUTHORS.tmp1 >AUTHORS.tmp2
-LC_ALL=C sort -u AUTHORS.tmp2 >AUTHORS.tmp1
+git log --pretty='%an <%ae>' >AUTHORS.tmp2
+sed 's/ <>$//' AUTHORS.tmp2 >AUTHORS.tmp1
+LC_ALL=C sort -u AUTHORS.tmp1 >AUTHORS.tmp2
 
 if test -f AUTHORS.top; then
-  cat AUTHORS.top AUTHORS.tmp1 >AUTHORS.tmp2
+  cat AUTHORS.top AUTHORS.tmp2 >AUTHORS.tmp1
 else
-  mv AUTHORS.tmp1 AUTHORS.tmp2
+  mv AUTHORS.tmp2 AUTHORS.tmp1
 fi
-mv AUTHORS.tmp2 AUTHORS
+mv AUTHORS.tmp1 AUTHORS
 
 exit 0
 
