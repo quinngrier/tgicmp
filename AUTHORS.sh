@@ -9,7 +9,7 @@
 set -e
 trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2' EXIT
 
-git log --pretty='tformat:%an <%ae>' >AUTHORS.tmp1
+git log --pretty='%an <%ae>' >AUTHORS.tmp1
 sed 's/ <>$//' AUTHORS.tmp1 >AUTHORS.tmp2
 LC_ALL=C sort -u AUTHORS.tmp2 >AUTHORS.tmp1
 
