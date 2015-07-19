@@ -21,5 +21,4 @@ Internet or by visiting one of the following mirrors:
 @end itemize
 
 The list follows.
-
 @bye
