@@ -10,8 +10,7 @@ set -e
 trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2' EXIT
 
 git log --pretty='%an <%ae>' >AUTHORS.tmp2
-sed 's/ <>$//' AUTHORS.tmp2 >AUTHORS.tmp1
-LC_ALL=C sort -u AUTHORS.tmp1 >AUTHORS.tmp2
+LC_ALL=C sort -u AUTHORS.tmp2 >AUTHORS.tmp1
 
 mv AUTHORS.tmp1 AUTHORS
 exit 0
