@@ -23,6 +23,10 @@ else
   cp /dev/null AUTHORS.tmp1
 fi
 
+#
+# Process the authors.
+#
+
 git log --pretty='%an <%ae>' >AUTHORS.tmp2
 LC_ALL=C sort -u AUTHORS.tmp2 >>AUTHORS.tmp1
 
