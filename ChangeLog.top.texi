@@ -8,7 +8,7 @@ the NEWS file. For more details about individual changes, you will have
 to analyze the tgicmp Git repository, which should be easy to find by
 searching the Internet or by visiting one of the following mirrors:
 
-@itemize @bullet
+@itemize
 @item @url{http://sourceforge.net/p/quinngrier/tgicmp}
 @item @url{https://bitbucket.org/quinngrier/tgicmp}
 @item @url{https://github.com/quinngrier/tgicmp}
