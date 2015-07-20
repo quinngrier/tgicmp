@@ -3,10 +3,14 @@
 @settitle foo
 @documentencoding UTF-8
 
-This file contains a list of authors who have worked on tgicmp. The list
-is sorted line by line. Authors with several aliases will appear several
-times. For more details about an author's work, you will have to analyze
-the tgicmp Git repository, which should be easy to find by searching the
+This file contains a list of authors who have worked on @code{tgicmp}.
+Authors who have used multiple names and/or email addresses are listed
+multiple times.
+
+The list is generated from the @code{tgicmp} Git repository. It is
+mainly provided as a reference for when the repository is unavailable,
+but you may find it interesting to browse regardless. For more detail,
+see the repository, which should be easy to find by searching the
 Internet or by visiting one of the following mirrors:
 
 @itemize
