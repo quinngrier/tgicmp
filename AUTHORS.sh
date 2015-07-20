@@ -31,6 +31,19 @@ git log --pretty='%an <%ae>' >AUTHORS.tmp2
 LC_ALL=C sort -u AUTHORS.tmp2 >>AUTHORS.tmp1
 
 #
+# Process the AUTHORS.bot(.texi) file.
+#
+
+if test -f AUTHORS.bot; then
+  echo >>AUTHORS.tmp1
+  cat AUTHORS.bot >>AUTHORS.tmp1
+elif test -f AUTHORS.bot.texi; then
+  makeinfo --plaintext AUTHORS.bot.texi >AUTHORS.tmp2
+  echo >>AUTHORS.tmp1
+  cat AUTHORS.tmp2 >>AUTHORS.tmp1
+fi
+
+#
 # Finish up.
 #
 
