@@ -1,3 +1,8 @@
+\input texinfo
+@setfilename foo
+@settitle foo
+@documentencoding UTF-8
+
 This file contains a list of authors who have worked on tgicmp. The list
 is sorted line by line. Authors with several aliases will appear several
 times. For more details about an author's work, you will have to analyze
@@ -11,3 +16,4 @@ Internet or by visiting one of the following mirrors:
 
 The list follows.
 
+@bye
