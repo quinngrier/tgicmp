@@ -1,9 +1,18 @@
 #
-# This script generates an AUTHORS file by using git log. Just add this
-# script to your repository, use it to generate your first AUTHORS file,
-# add that to your repository, and repeat as needed. You can also add a
-# file named AUTHORS.top that will be included at the beginning of the
-# AUTHORS file.
+# This script (AUTHORS.sh) creates an AUTHORS file for Autotools by
+# using git log to retrieve the authors induced by HEAD. Just add this
+# script to your repository, use it to create your first AUTHORS file,
+# add that to your repository, and update it when making a commit that
+# is intended to provide a distribution or git archive tarball.
+#
+# You can optionally add a file named AUTHORS.top, which will be
+# included at the top of the AUTHORS file with a blank line following
+# it. You can also write it in Texinfo by naming it AUTHORS.top.texi,
+# which will be fed through makeinfo --plaintext before being included.
+#
+# Similarly, you can optionally add an AUTHORS.bot(.texi) file, which
+# will be included at the bottom of the AUTHORS file with a blank line
+# preceding it.
 #
 
 set -e
