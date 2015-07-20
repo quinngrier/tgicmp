@@ -15,5 +15,4 @@ Internet or by visiting one of the following mirrors:
   https://gitlab.com/quinngrier/tgicmp
 
 The list follows.
-
 @bye
