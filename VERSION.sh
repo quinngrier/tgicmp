@@ -42,7 +42,7 @@ if git ls-files --error-unmatch VERSION.sh >/dev/null 2>&1; then
   #
 
   git describe --always --match='v[0-9]*' --tags >VERSION.tmp
-  x=$(sed 's/^v//' VERSION.tmp)
+  x=$(sed s/^v// VERSION.tmp)
   echo "$x" >VERSION.tmp
   mv VERSION.tmp VERSION
   echo "$x"
