@@ -16,7 +16,7 @@
 #
 
 set -e
-trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2' EXIT
+trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2 AUTHORS.tmp3' EXIT
 
 #
 # Process the AUTHORS.top(.texi) file.
