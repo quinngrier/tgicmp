@@ -75,7 +75,8 @@ fi
 
 #
 # If we get here, then we're not running inside your repository and we
-# couldn't read the DATE file, so we give up.
+# couldn't read the DATE file, so we give up. Here, our exit code will
+# be caught by the m4_assert(m4_sysval == 0) line in configure.ac.
 #
 
 echo 'DATE.sh: not in repository and DATE not found' >&2
