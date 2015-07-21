@@ -36,8 +36,24 @@ fi
 # Process the authors.
 #
 
-git log --author-date-order --pretty='%an <%ae>' --reverse >AUTHORS.tmp2
-LC_ALL=C sort -u AUTHORS.tmp2 >>AUTHORS.tmp1
+git log --author-date-order --pretty=%an%n%ae --reverse >AUTHORS.tmp2
+
+cat >AUTHORS.tmp3 <<'EOF'
+  NR % 2 == 1 {
+    name = $0
+  }
+  NR % 2 == 0 {
+    email = $0
+    combo = name "\n" email
+    if (!seen[combo]) {
+      seen[combo] = 1
+      print name " <" email ">"
+    }
+  }
+EOF
+
+LC_COLLATE=C LC_CTYPE=C \
+  awk -f AUTHORS.tmp3 AUTHORS.tmp2 >>AUTHORS.tmp1
 
 #
 # Process the AUTHORS.bot(.texi) file.
