@@ -64,7 +64,9 @@ fi
 # If we get here, then we're not running inside your repository and we
 # couldn't read the VERSION file, so we give up. autoconf doesn't care
 # about our exit code, but as long as we don't print anything then it
-# will get mad about being given an empty version string.
+# will get mad about being given an empty version string. It would
+# probably not be wise to try to check m4_sysval, as AC_INIT might
+# overwrite it by running other commands.
 #
 
 echo 'VERSION.sh: not in repository and VERSION not found' >&2
