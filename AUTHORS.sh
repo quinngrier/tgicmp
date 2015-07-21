@@ -36,7 +36,7 @@ fi
 # Process the authors.
 #
 
-git log --pretty='%an <%ae>' >AUTHORS.tmp2
+git log --author-date-order --pretty='%an <%ae>' --reverse >AUTHORS.tmp2
 LC_ALL=C sort -u AUTHORS.tmp2 >>AUTHORS.tmp1
 
 #
