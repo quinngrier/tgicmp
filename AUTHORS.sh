@@ -14,6 +14,21 @@
 # will be included at the bottom of the AUTHORS file with a blank line
 # preceding it.
 #
+# You can optionally add a file named AUTHORS.fix to sanitize names and
+# email addresses in the AUTHORS file. This is useful to repair strange
+# bytes that would cause the file to not be identified as UTF-8 text by
+# file type identification algorithms or to contain ill-formed UTF-8
+# byte sequences.
+#
+# The AUTHORS.fix file should contain some awk code that calls the
+# function fix(ere, repl) some number of times. The function behaves
+# like the gsub function and is applied to each name and email address.
+# Here is an example file that will replace each 0x01 or 0x02 byte with
+# the Unicode replacement character (U+FFFD):
+#
+#   fix("\001", "\357\277\275")
+#   fix("\002", "\357\277\275")
+#
 
 set -e
 trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2 AUTHORS.tmp3' EXIT
@@ -47,10 +62,22 @@ cat >AUTHORS.tmp3 <<'EOF'
     combo = name "\n" email
     if (!seen[combo]) {
       seen[combo] = 1
+      apply_fixes()
       print name " <" email ">"
     }
   }
+  function fix(ere, repl) {
+    gsub(ere, repl, name)
+    gsub(ere, repl, email)
+  }
+  function apply_fixes() {
 EOF
+
+if test -f AUTHORS.fix; then
+  cat AUTHORS.fix >>AUTHORS.tmp3
+fi
+
+echo } >>AUTHORS.tmp3
 
 LC_COLLATE=C LC_CTYPE=C \
   awk -f AUTHORS.tmp3 AUTHORS.tmp2 >>AUTHORS.tmp1
