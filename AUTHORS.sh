@@ -34,7 +34,8 @@ set -e
 trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2 AUTHORS.tmp3' EXIT
 
 #
-# Process the AUTHORS.top(.texi) file.
+# Process AUTHORS.top(.texi) into AUTHORS.tmp1. This is the file that
+# we'll be accumulating into and eventually renaming to AUTHORS.
 #
 
 if test -f AUTHORS.top; then
