@@ -3,6 +3,10 @@
 @settitle foo
 @documentencoding UTF-8
 
+@c
+@c See the ChangeLog.sh script for an explanation of this file.
+@c
+
 This file contains a list of individual changes to @code{tgicmp} from a
 developer perspective. If you're looking for a list of major changes by
 version, see the @code{NEWS} file or the News appendix of the manual.
