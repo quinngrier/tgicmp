@@ -3,6 +3,10 @@
 @settitle foo
 @documentencoding UTF-8
 
+@c
+@c See the AUTHORS.sh file for an explanation of this file.
+@c
+
 This file contains a list of authors who have worked on @code{tgicmp}.
 Authors who have used multiple names and/or email addresses are listed
 multiple times.
