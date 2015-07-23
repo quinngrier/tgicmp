@@ -20,7 +20,7 @@
 
 set -e
 trap 'rm -f DATE.tmp' EXIT
-# If we're in your repository, then this script file itself is tracked.
+# If we're in your repository, then this script itself is tracked.
 # The converse is not necessarily true, but it's the best we can do.
 if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
   # This is apparently the easiest way to get the date we want.
