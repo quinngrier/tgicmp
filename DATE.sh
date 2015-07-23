@@ -37,15 +37,13 @@ if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
   mv DATE.tmp DATE
   echo "$x"
   exit 0
-fi
-
-if test -f DATE; then
+elif test -f DATE; then
   cat DATE
   exit 0
+else
+  echo 'DATE.sh: not in repository and DATE not found' >&2
+  exit 1
 fi
-
-echo 'DATE.sh: not in repository and DATE not found' >&2
-exit 1
 
 #
 # The authors of this file have waived all copyright and
