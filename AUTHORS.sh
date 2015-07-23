@@ -103,6 +103,14 @@ fi
 
 echo } >>AUTHORS.tmp3
 
+#
+# We want awk to use plain old bytes for input, output, and string
+# comparisons. Setting LC_COLLATE=C and LC_CTYPE=C guarantees this. We
+# could lazily set LC_ALL=C to get a superset of this, but we'd rather
+# just set the LC_* variables that we need. In particular, LC_MESSAGES
+# affects error messages, so we want to leave that alone.
+#
+
 LC_COLLATE=C LC_CTYPE=C \
   awk -f AUTHORS.tmp3 AUTHORS.tmp2 >>AUTHORS.tmp1
 
