@@ -1,8 +1,8 @@
 #
-# This script (DATE.sh) helps to create a PACKAGE_DATE variable in
-# configure.ac by using git log to retrieve the date of HEAD. Just add
-# this script to your repository and adapt the following code for your
-# configure.ac and Makefile.am files:
+# This script (DATE.sh) helps to create an (AC_)PACKAGE_DATE variable
+# for Autotools by using git log to get the UTC author date of HEAD in
+# YYYY-MM-DD format. Add this script to your repository and adjust the
+# following code for your configure.ac and Makefile.am:
 #
 #   m4_define([AC_PACKAGE_DATE], m4_esyscmd_s([sh DATE.sh]))
 #   m4_assert(m4_sysval == 0)
