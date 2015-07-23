@@ -26,6 +26,11 @@ else
   cp /dev/null AUTHORS.texi.tmp1
 fi
 
+#
+# Finally, rename AUTHORS.texi.tmp1 to AUTHORS.texi.
+#
+
+mv AUTHORS.texi.tmp1 AUTHORS.texi
 exit 0
 
 #
