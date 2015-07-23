@@ -32,7 +32,7 @@
 #
 
 set -e
-trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2 AUTHORS.tmp3' EXIT
+trap 'for i in 1 2 3; do rm -f AUTHORS.tmp$i; done' EXIT
 
 #
 # Process AUTHORS.top(.texi) into AUTHORS.tmp1. This is the file that
