@@ -72,10 +72,10 @@ git log --author-date-order --pretty=%an%n%ae --reverse >AUTHORS.tmp2
 
 #
 # We use a single awk script to remove the duplicate authors, apply the
-# fixes from AUTHORS.fix, and do the formatting. Note the use of "\n" to
-# properly simulate a two-dimensional array: if we were to use something
-# that is permitted to appear in a name or email address, it could cause
-# two different authors to coalesce.
+# fixes, and do the formatting. Note the use of "\n" to properly provide
+# a two-dimensional array: if we were to use something that is permitted
+# to appear in a name or email address, we would risk having two authors
+# coalesce.
 #
 
 cat >AUTHORS.tmp3 <<'EOF'
