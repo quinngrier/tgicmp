@@ -27,7 +27,7 @@ set -e
 trap 'rm -f DATE.tmp' EXIT
 
 #
-# First we need to check if we're running inside your repository. We
+# First we need to check if we're running inside the repository. We
 # can't just consider any successful git command to mean that this is
 # true because we might be running inside an extracted tarball that's
 # inside another repository. The trick is to test if this script file
@@ -64,7 +64,7 @@ if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
 fi
 
 #
-# If we get here, then we're not running inside your repository, so we
+# If we get here, then we're not running inside the repository, so we
 # try to read the DATE file.
 #
 
@@ -74,7 +74,7 @@ if test -f DATE; then
 fi
 
 #
-# If we get here, then we're not running inside your repository and we
+# If we get here, then we're not running inside the repository and we
 # couldn't read the DATE file, so we give up. Here, our exit code will
 # be caught by the m4_assert(m4_sysval == 0) line in configure.ac.
 #
