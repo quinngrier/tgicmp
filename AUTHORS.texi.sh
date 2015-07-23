@@ -14,6 +14,22 @@
 # be included at the bottom of the AUTHORS.texi file with a blank line
 # preceding it.
 #
+# You can optionally add a file named AUTHORS.texi.fix to sanitize names
+# and email addresses in the AUTHORS.texi file. This is useful to repair
+# strange bytes that would cause the file to not be identified as UTF-8
+# text by file type identification algorithms or to contain ill-formed
+# UTF-8 byte sequences. It can also be used to repair otherwise valid
+# UTF-8 text that produces poor output from Texinfo.
+#
+# The AUTHORS.texi.fix file should contain some awk code that calls the
+# function fix(ere, repl) some number of times. The function behaves
+# like the gsub function and is applied to each name and email address.
+# Here is an example file that will replace each 0x01 or 0x02 byte with
+# the Unicode replacement character (U+FFFD):
+#
+#   fix("\001", "\357\277\275")
+#   fix("\002", "\357\277\275")
+#
 
 set -e
 trap 'for i in 1 2 3; do rm -f AUTHORS.texi.tmp$i; done' EXIT
