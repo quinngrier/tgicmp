@@ -10,6 +10,10 @@
 # included at the top of the AUTHORS.texi file with a blank line
 # following it.
 #
+# Similarly, you can optionally add an AUTHORS.texi.bot file, which will
+# be included at the bottom of the AUTHORS.texi file with a blank line
+# preceding it.
+#
 
 set -e
 trap 'for i in 1 2 3; do rm -f AUTHORS.texi.tmp$i; done' EXIT
@@ -24,6 +28,17 @@ if test -f AUTHORS.texi.top; then
   echo >>AUTHORS.texi.tmp1
 else
   cp /dev/null AUTHORS.texi.tmp1
+fi
+
+#
+# Process AUTHORS.texi.bot. This is the same as AUTHORS.texi.top except
+# that we add a leading newline instead of a trailing newline, and we
+# append to AUTHORS.texi.tmp1 instead of creating it.
+#
+
+if test -f AUTHORS.texi.bot; then
+  echo >>AUTHORS.texi.tmp1
+  cat AUTHORS.texi.bot >>AUTHORS.texi.tmp1
 fi
 
 #
