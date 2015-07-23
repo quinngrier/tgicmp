@@ -60,6 +60,12 @@ fi
 # git shortlog documentation). We don't want to use .mailmap because we
 # want our authors list to reflect history, not to be open to revisions.
 #
+# Note that git log will do its best to give us well-formed UTF-8 data
+# by default (see the git log documentation for --encoding), but there
+# are no guarantees. If a messy commit gets into our published history,
+# we're stuck with it. This is the reason for the .fix file: we can at
+# least stop the AUTHORS file from being permanently damaged.
+#
 
 git log --author-date-order --pretty=%an%n%ae --reverse >AUTHORS.tmp2
 
