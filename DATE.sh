@@ -29,17 +29,7 @@ trap 'rm -f DATE.tmp' EXIT
 if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
 
   #
-  # We want the author date of HEAD in YYYY-MM-DD UTC form, but it
-  # appears that git log only respects TZ=UTC when it is invoked with
-  # --date=local --pretty=%ad. This format is the same as the format of
-  # the asctime function except that single-digit day numbers have only
-  # one preceding space instead of two. We convert this format to our
-  # desired format as follows:
-  #
-  #      Wed Jul 1 12:34:56 2015
-  #   -> 2015-Jul-1
-  #   -> 2015-07-1
-  #   -> 2015-07-01
+  # This is apparently the easiest way to get the date we want.
   #
 
   TZ=UTC git log -1 --date=local --pretty=%ad >DATE.tmp
