@@ -16,7 +16,7 @@
 #
 
 set -e
-trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2' EXIT
+trap 'for i in 1 2; do rm -f ChangeLog.tmp$i; done' EXIT
 
 #
 # Process the ChangeLog.top(.texi) file.
