@@ -3,7 +3,7 @@
 # using git log to retrieve the authors induced by HEAD. Just add this
 # script to your repository, use it to create your first AUTHORS file,
 # add that to your repository, and update it when making a commit that
-# is intended to provide a distribution or git archive tarball.
+# is intended to provide a distribution tarball or git archive tarball.
 #
 # You can optionally add a file named AUTHORS.top, which will be
 # included at the top of the AUTHORS file with a blank line following
