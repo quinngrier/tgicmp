@@ -9,6 +9,7 @@
 # included at the top of the AUTHORS file with a blank line following
 # it. You can also write it in Texinfo by naming it AUTHORS.top.texi,
 # which will be fed through makeinfo --plaintext before being included.
+# Lines beginning with # will be removed from the AUTHORS.top file.
 #
 # Similarly, you can optionally add an AUTHORS.bot(.texi) file, which
 # will be included at the bottom of the AUTHORS file with a blank line
@@ -39,7 +40,7 @@ trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2 AUTHORS.tmp3' EXIT
 #
 
 if test -f AUTHORS.top; then
-  cp AUTHORS.top AUTHORS.tmp1
+  sed '/^#/d' AUTHORS.top >AUTHORS.tmp1
   echo >>AUTHORS.tmp1
 elif test -f AUTHORS.top.texi; then
   makeinfo --plaintext AUTHORS.top.texi >AUTHORS.tmp1
@@ -122,7 +123,7 @@ LC_COLLATE=C LC_CTYPE=C \
 
 if test -f AUTHORS.bot; then
   echo >>AUTHORS.tmp1
-  cat AUTHORS.bot >>AUTHORS.tmp1
+  sed '/^#/d' AUTHORS.bot >>AUTHORS.tmp1
 elif test -f AUTHORS.bot.texi; then
   makeinfo --plaintext AUTHORS.bot.texi >AUTHORS.tmp2
   echo >>AUTHORS.tmp1
