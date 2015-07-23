@@ -68,7 +68,8 @@ fi
 # least stop the AUTHORS file from being permanently damaged.
 #
 
-git log --author-date-order --pretty=%an%n%ae --reverse >AUTHORS.tmp2
+git log --author-date-order \
+        --pretty=%an%n%ae --reverse >AUTHORS.tmp2
 
 #
 # We use a single awk script to remove the duplicate authors, apply the
