@@ -130,7 +130,7 @@ elif test -f AUTHORS.bot.texi; then
 fi
 
 #
-# Finish up.
+# Finally, rename AUTHORS.tmp1 to AUTHORS.
 #
 
 mv AUTHORS.tmp1 AUTHORS
