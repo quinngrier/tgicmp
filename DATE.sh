@@ -27,11 +27,7 @@ trap 'rm -f DATE.tmp' EXIT
 #
 
 if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
-
-  #
   # This is apparently the easiest way to get the date we want.
-  #
-
   TZ=UTC git log -1 --date=local --pretty=%ad >DATE.tmp
   x=$(sed 's/... \(...\) \(.*\) ..:..:.. \(....\)/\3-\1-\2/
            s/Jan/01/; s/Feb/02/; s/Mar/03/; s/Apr/04/; s/May/05/
@@ -41,7 +37,6 @@ if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
   mv DATE.tmp DATE
   echo "$x"
   exit 0
-
 fi
 
 #
