@@ -39,11 +39,6 @@ if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
   exit 0
 fi
 
-#
-# If we get here, then we're not running inside the repository, so we
-# try to read the DATE file.
-#
-
 if test -f DATE; then
   cat DATE
   exit 0
