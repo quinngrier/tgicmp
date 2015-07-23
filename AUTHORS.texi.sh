@@ -8,6 +8,7 @@
 #
 
 set -e
+trap 'for i in 1 2 3; do rm -f AUTHORS.texi.tmp$i; done' EXIT
 
 exit 0
 
