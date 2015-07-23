@@ -6,9 +6,25 @@
 # when making a commit that is intended to provide a distribution
 # tarball or git archive tarball.
 #
+# You can optionally add a file named AUTHORS.texi.top, which will be
+# included at the top of the AUTHORS.texi file with a blank line
+# following it.
+#
 
 set -e
 trap 'for i in 1 2 3; do rm -f AUTHORS.texi.tmp$i; done' EXIT
+
+#
+# Process AUTHORS.texi.top into AUTHORS.texi.tmp1. This is the file that
+# we'll be accumulating into and eventually renaming to AUTHORS.texi.
+#
+
+if test -f AUTHORS.texi.top; then
+  cp AUTHORS.texi.top AUTHORS.texi.tmp1
+  echo >>AUTHORS.texi.tmp1
+else
+  cp /dev/null AUTHORS.texi.tmp1
+fi
 
 exit 0
 
