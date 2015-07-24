@@ -33,11 +33,6 @@ if git ls-files --error-unmatch VERSION.sh >/dev/null 2>&1; then
   exit 0
 fi
 
-#
-# If we get here, then we're not running inside the repository, so we
-# try to read the VERSION file.
-#
-
 if test -f VERSION; then
   cat VERSION
   exit 0
