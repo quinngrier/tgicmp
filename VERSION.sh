@@ -19,11 +19,8 @@ set -e
 trap 'rm -f VERSION.tmp' EXIT
 
 #
-# First we need to check if we're running inside the repository. We
-# can't just consider any successful git command to mean that this is
-# true because we might be running inside an extracted tarball that's
-# inside another repository. The trick is to test if this script file
-# itself is being tracked by the repository.
+# If we're in your repository, then this script itself is tracked.
+# The converse is not necessarily true, but it's the best we can do.
 #
 
 if git ls-files --error-unmatch VERSION.sh >/dev/null 2>&1; then
