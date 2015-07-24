@@ -2,14 +2,12 @@
 # This script (ChangeLog.sh) creates a ChangeLog file by using git log
 # to get the reverse chronological list of commits reachable from HEAD.
 #
-# You can optionally add a file named ChangeLog.top, which will be
-# included at the top of the ChangeLog file with a blank line following
-# it. You can also write it in Texinfo by naming it ChangeLog.top.texi,
-# which will be fed through makeinfo --plaintext before being included.
-#
-# Similarly, you can optionally add a ChangeLog.bot(.texi) file, which
-# will be included at the bottom of the ChangeLog file with a blank line
-# preceding it.
+# If the ChangeLog.top file exists, it will be added to the top of the
+# ChangeLog file with a trailing blank line and lines beginning with "#"
+# removed. Otherwise, if the ChangeLog.top.texi file exists, it will be
+# given to makeinfo --plaintext and added in the same way, but without
+# line removal. This also occurs for the ChangeLog.bot(.texi) files, but
+# adding to the bottom of the ChangeLog file with a leading blank line.
 #
 
 set -e
