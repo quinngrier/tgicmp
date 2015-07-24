@@ -7,6 +7,7 @@ set -e
 trap 'rm -f NEWS.tmp1 NEWS.tmp2' EXIT
 echo \\input texinfo >NEWS.tmp1
 echo @setfilename foo >>NEWS.tmp1
+echo @documentencoding UTF-8 >>NEWS.tmp1
 cat NEWS.texi >>NEWS.tmp1
 echo @bye >>NEWS.tmp1
 makeinfo --plaintext NEWS.tmp1 >NEWS.tmp2
