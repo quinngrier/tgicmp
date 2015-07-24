@@ -21,7 +21,7 @@ trap 'rm -f VERSION.tmp' EXIT
 # The converse is not necessarily true, but it's the best we can do.
 if git ls-files --error-unmatch VERSION.sh >/dev/null 2>&1; then
   git describe --always --match='v[0-9]*' --tags >VERSION.tmp
-  # Remove the "v" to follow the usual style.
+  # Remove the "v" to follow convention.
   x=$(sed s/^v// VERSION.tmp)
   echo "$x" >VERSION.tmp
   mv VERSION.tmp VERSION
