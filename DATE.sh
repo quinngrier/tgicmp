@@ -14,8 +14,7 @@
 #
 # When running in your repository, the script uses git log and also
 # writes the result to the DATE file. Elsewhere, the script reads the
-# DATE file. Add the DATE file to your repository to make git archive
-# tarballs work.
+# DATE file.
 #
 
 set -e
