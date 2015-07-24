@@ -1,3 +1,7 @@
+#
+# This script (NEWS.sh) creates a NEWS file from the NEWS.texi file by
+# adding housekeeping commands and using makeinfo --plaintext.
+#
 
 #
 # The authors of this file have waived all copyright and
