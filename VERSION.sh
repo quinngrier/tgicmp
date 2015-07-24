@@ -11,8 +11,7 @@
 #
 # When running in your repository, the script uses git describe and also
 # writes the result to the VERSION file. Elsewhere, the script reads the
-# VERSION file. Add the VERSION file to your repository to make git
-# archive tarballs work.
+# VERSION file.
 #
 
 set -e
