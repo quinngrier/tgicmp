@@ -31,15 +31,13 @@ if git ls-files --error-unmatch VERSION.sh >/dev/null 2>&1; then
   mv VERSION.tmp VERSION
   echo "$x"
   exit 0
-fi
-
-if test -f VERSION; then
+elif test -f VERSION; then
   cat VERSION
   exit 0
+else
+  echo 'VERSION.sh: not in repository and VERSION not found' >&2
+  exit 1
 fi
-
-echo 'VERSION.sh: not in repository and VERSION not found' >&2
-exit 1
 
 #
 # The authors of this file have waived all copyright and
