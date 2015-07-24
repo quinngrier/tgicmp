@@ -1,4 +1,4 @@
-AC_INIT([tgicmp], m4_esyscmd_s([sh VERSION.sh]),
+AC_INIT([tgicmp], m4_esyscmd_s([sh VERSION.sh])m4_assert(!m4_sysval),
         [quinn.grier@gmail.com])
 AC_CONFIG_SRCDIR([tgicmp.3.in])
 
