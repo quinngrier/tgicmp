@@ -4,8 +4,8 @@
 # YYYY-MM-DD format. Add this script to your repository and adjust the
 # following code for your configure.ac and Makefile.am:
 #
-#   m4_define([AC_PACKAGE_DATE], m4_esyscmd_s([sh DATE.sh]))
-#   m4_assert(m4_sysval == 0)
+#   m4_define([AC_PACKAGE_DATE],
+#             m4_esyscmd_s([sh DATE.sh])m4_assert(!m4_sysval))
 #   PACKAGE_DATE=AC_PACKAGE_DATE
 #   AC_SUBST([PACKAGE_DATE])
 #   AC_DEFINE([PACKAGE_DATE], "AC_PACKAGE_DATE")
