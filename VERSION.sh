@@ -20,8 +20,8 @@ trap 'rm -f VERSION.tmp' EXIT
 # If we're in your repository, then this script itself is tracked.
 # The converse is not necessarily true, but it's the best we can do.
 if git ls-files --error-unmatch VERSION.sh >/dev/null 2>&1; then
-  # Remove the "v" to follow the usual style.
   git describe --always --match='v[0-9]*' --tags >VERSION.tmp
+  # Remove the "v" to follow the usual style.
   x=$(sed s/^v// VERSION.tmp)
   echo "$x" >VERSION.tmp
   mv VERSION.tmp VERSION
