@@ -1,6 +1,6 @@
 #
-# This script (README.sh) creates a README file from a README.texi file
-# by using makeinfo --plaintext.
+# This script (README.sh) creates a README file from the README.texi
+# file by using makeinfo --plaintext.
 #
 
 set -e
