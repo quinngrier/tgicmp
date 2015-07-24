@@ -3,7 +3,7 @@
 # Autotools by using git describe to get the description of HEAD with
 # respect to tags that begin with "v" and a digit. Add this script to
 # your repository and adjust the following code for your configure.ac
-# and Makefile.am:
+# and Makefile.am files:
 #
 #   AC_INIT([foo], m4_esyscmd_s([sh VERSION.sh])m4_assert(!m4_sysval))
 #
