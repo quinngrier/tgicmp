@@ -1,9 +1,6 @@
 #
-# This script (ChangeLog.sh) creates a ChangeLog file for Autotools by
-# using git log to retrieve the commits induced by HEAD. Just add this
-# script to your repository, use it to create your first ChangeLog file,
-# add that to your repository, and update it when making a commit that
-# is intended to provide a distribution tarball or git archive tarball.
+# This script (ChangeLog.sh) creates a ChangeLog file by using git log
+# to get the reverse chronological list of commits reachable from HEAD.
 #
 # You can optionally add a file named ChangeLog.top, which will be
 # included at the top of the ChangeLog file with a blank line following
