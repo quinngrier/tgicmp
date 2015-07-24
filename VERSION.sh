@@ -38,11 +38,6 @@ if test -f VERSION; then
   exit 0
 fi
 
-#
-# If we get here, then we're not running inside the repository and we
-# couldn't read the VERSION file, so we give up.
-#
-
 echo 'VERSION.sh: not in repository and VERSION not found' >&2
 exit 1
 
