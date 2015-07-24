@@ -33,10 +33,8 @@ if git ls-files --error-unmatch DATE.sh >/dev/null 2>&1; then
   echo "$x" >DATE.tmp
   mv DATE.tmp DATE
   echo "$x"
-  exit 0
 elif test -f DATE; then
   cat DATE
-  exit 0
 else
   echo 'DATE.sh: not in repository and DATE not found' >&2
   exit 1
