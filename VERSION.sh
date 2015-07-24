@@ -26,10 +26,8 @@ if git ls-files --error-unmatch VERSION.sh >/dev/null 2>&1; then
   echo "$x" >VERSION.tmp
   mv VERSION.tmp VERSION
   echo "$x"
-  exit 0
 elif test -f VERSION; then
   cat VERSION
-  exit 0
 else
   echo 'VERSION.sh: not in repository and VERSION not found' >&2
   exit 1
