@@ -7,7 +7,6 @@ set -e
 trap 'rm -f README.tmp' EXIT
 makeinfo --plaintext README.texi >README.tmp
 mv README.tmp README
-exit 0
 
 #
 # The authors of this file have waived all copyright and
