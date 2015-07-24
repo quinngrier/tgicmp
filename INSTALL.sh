@@ -1,3 +1,7 @@
+#
+# This script (INSTALL.sh) creates an INSTALL file from the INSTALL.texi
+# file by adding housekeeping commands and using makeinfo --plaintext.
+#
 
 #
 # The authors of this file have waived all copyright and
