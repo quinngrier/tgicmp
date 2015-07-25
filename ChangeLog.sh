@@ -33,9 +33,8 @@ else
   cp /dev/null ChangeLog.tmp1
 fi
 
-x='%H%n%an%n%ae%n%ad%n%s'
 TZ=UTC git log --author-date-order --date=local \
-               --pretty="$x" >ChangeLog.tmp2
+               --pretty=%H%n%an%n%ae%n%ad%n%s >ChangeLog.tmp2
 sed '/^Date:/{
        s/... \(...\) \(.\{1,2\}\) \(..:..:..\) \(....\)/\4-\1-\2 \3/
        s/Jan/01/
