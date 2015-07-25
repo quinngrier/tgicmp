@@ -39,7 +39,14 @@ TZ=UTC git log --author-date-order --date=local \
 cat >ChangeLog.tmp3 <<'EOF'
   function fix(ere, repl) {
   }
+  function apply_fixes() {
 EOF
+
+if test -f ChangeLog.fix; then
+  cat ChangeLog.fix >>ChangeLog.tmp3
+fi
+
+echo } >>ChangeLog.tmp3
 
 sed '/^Date:/{
        s/... \(...\) \(.\{1,2\}\) \(..:..:..\) \(....\)/\4-\1-\2 \3/
