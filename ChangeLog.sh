@@ -33,22 +33,6 @@ else
   cp /dev/null ChangeLog.tmp1
 fi
 
-#
-# Process the commits.
-#
-# We want the author dates in YYYY-MM-DD HH:MM:SS UTC form, but it
-# appears that git log only respects TZ=UTC when it is invoked with
-# --date=local --pretty=%ad. This format is the same as the format of
-# the asctime function except that single-digit day numbers have only
-# one preceding space instead of two. We convert this format to our
-# desired format as follows:
-#
-#      Wed Jul 1 12:34:56 2015
-#   -> 2015-Jul-1 12:34:56
-#   -> 2015-07-1 12:34:56
-#   -> 2015-07-01 12:34:56
-#
-
 x='format:commit %H%nAuthor: %an <%ae>%nDate:   %ad +0000%n%n    %s%n'
 TZ=UTC git log --author-date-order --date=local \
                --pretty="$x" >ChangeLog.tmp2
