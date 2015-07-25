@@ -37,6 +37,9 @@ TZ=UTC git log --author-date-order --date=local \
                --pretty=%H%n%an%n%ae%n%ad%n%s >ChangeLog.tmp2
 
 cat >ChangeLog.tmp3 <<'EOF'
+  NR % 5 == 1 {
+    hash = $0
+  }
   function fix(ere, repl) {
   }
   function apply_fixes() {
