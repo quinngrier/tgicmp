@@ -2,15 +2,12 @@
 # This script (AUTHORS.sh) creates an AUTHORS file from the AUTHORS.texi
 # file by adding housekeeping commands and using makeinfo --plaintext.
 #
-# You can optionally add a file named AUTHORS.top, which will be
-# included at the top of the AUTHORS file with a blank line following
-# it. You can also write it in Texinfo by naming it AUTHORS.top.texi,
-# which will be fed through makeinfo --plaintext before being included.
-# Lines beginning with # will be removed from the AUTHORS.top file.
-#
-# Similarly, you can optionally add an AUTHORS.bot(.texi) file, which
-# will be included at the bottom of the AUTHORS file with a blank line
-# preceding it.
+# If the AUTHORS.top file exists, it will be added to the top of the
+# AUTHORS file with a trailing blank line and lines beginning with "#"
+# removed. Otherwise, if the AUTHORS.top.texi file exists, it will be
+# given to makeinfo --plaintext and added in the same way, but without
+# line removal. This also occurs for the AUTHORS.bot(.texi) files, but
+# adding to the bottom of the AUTHORS file with a leading blank line.
 #
 # You can optionally add a file named AUTHORS.fix to sanitize names and
 # email addresses in the AUTHORS file. This is useful to repair strange
