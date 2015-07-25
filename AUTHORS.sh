@@ -9,21 +9,6 @@
 # line removal. This also occurs for the AUTHORS.bot(.texi) files, but
 # adding to the bottom of the AUTHORS file with a leading blank line.
 #
-# You can optionally add a file named AUTHORS.fix to sanitize names and
-# email addresses in the AUTHORS file. This is useful to repair strange
-# bytes that would cause the file to not be identified as UTF-8 text by
-# file type identification algorithms or to contain ill-formed UTF-8
-# byte sequences.
-#
-# The AUTHORS.fix file should contain some awk code that calls the
-# function fix(ere, repl) some number of times. The function behaves
-# like the gsub function and is applied to each name and email address.
-# Here is an example file that will replace each 0x01 or 0x02 byte with
-# the Unicode replacement character (U+FFFD):
-#
-#   fix("\001", "\357\277\275")
-#   fix("\002", "\357\277\275")
-#
 
 set -e
 trap 'for i in 1 2 3; do rm -f AUTHORS.tmp$i; done' EXIT
