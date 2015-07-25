@@ -9,6 +9,16 @@
 # line removal. This also occurs for the ChangeLog.bot(.texi) files, but
 # adding to the bottom of the ChangeLog file with a leading blank line.
 #
+# If the ChangeLog.fix file exists, it will be used to sanitize names,
+# email addresses, and commit subjects in the ChangeLog file. It must
+# contain awk code that repeatedly calls the fix(ere, repl) function,
+# which acts like the gsub function but applies to each name, email
+# address, and commit subject. For example, the following calls will
+# change each 0x01 and 0x02 byte to U+FFFD:
+#
+#   fix("\001", "\357\277\275")
+#   fix("\002", "\357\277\275")
+#
 
 set -e
 trap 'for i in 1 2; do rm -f ChangeLog.tmp$i; done' EXIT
