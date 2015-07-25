@@ -10,7 +10,7 @@
 # and email addresses in the AUTHORS.texi file. It must contain awk code
 # that repeatedly calls the fix(ere, repl) function, which acts like the
 # gsub function but applies to each name and email address. For example,
-# the following calls will replace each 0x01 and 0x02 byte with U+FFFD:
+# the following code will replace each 0x01 and 0x02 byte with U+FFFD:
 #
 #   fix("\001", "\357\277\275")
 #   fix("\002", "\357\277\275")

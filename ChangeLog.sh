@@ -13,7 +13,7 @@
 # email addresses, and commit subjects in the ChangeLog file. It must
 # contain awk code that repeatedly calls the fix(ere, repl) function,
 # which acts like the gsub function but applies to each name, email
-# address, and commit subject. For example, the following calls will
+# address, and commit subject. For example, the following code will
 # replace each 0x01 and 0x02 byte with U+FFFD:
 #
 #   fix("\001", "\357\277\275")
