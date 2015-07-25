@@ -24,7 +24,7 @@ set -e
 trap 'for i in 1 2; do rm -f ChangeLog.tmp$i; done' EXIT
 
 if test -f ChangeLog.top; then
-  cp ChangeLog.top ChangeLog.tmp1
+  sed '/^#/d' ChangeLog.top >ChangeLog.tmp1
   echo >>ChangeLog.tmp1
 elif test -f ChangeLog.top.texi; then
   makeinfo --plaintext ChangeLog.top.texi >ChangeLog.tmp1
