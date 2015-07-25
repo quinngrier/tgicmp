@@ -33,7 +33,7 @@ else
   cp /dev/null ChangeLog.tmp1
 fi
 
-x='format:commit %H%nAuthor: %an <%ae>%nDate:   %ad +0000%n%n    %s%n'
+x='%H%n%an%n%ae%n%ad%n%s'
 TZ=UTC git log --author-date-order --date=local \
                --pretty="$x" >ChangeLog.tmp2
 sed '/^Date:/{
