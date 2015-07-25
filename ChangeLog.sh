@@ -23,11 +23,6 @@
 set -e
 trap 'for i in 1 2; do rm -f ChangeLog.tmp$i; done' EXIT
 
-#
-# Process ChangeLog.top(.texi) into ChangeLog.tmp1. This is the file
-# that we'll be accumulating into and eventually renaming to ChangeLog.
-#
-
 if test -f ChangeLog.top; then
   cp ChangeLog.top ChangeLog.tmp1
   echo >>ChangeLog.tmp1
