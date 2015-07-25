@@ -2,13 +2,9 @@
 # This script (AUTHORS.texi.sh) creates an AUTHORS.texi file by using
 # git log to get the chronological list of authors reachable from HEAD.
 #
-# You can optionally add a file named AUTHORS.texi.top, which will be
-# included at the top of the AUTHORS.texi file with a blank line
-# following it.
-#
-# Similarly, you can optionally add an AUTHORS.texi.bot file, which will
-# be included at the bottom of the AUTHORS.texi file with a blank line
-# preceding it.
+# If the AUTHORS.texi.top file exists, it will be added to the top of
+# the AUTHORS.texi file. If the AUTHORS.texi.bot file exists, it will be
+# added to the bottom of the AUTHORS.texi file.
 #
 # You can optionally add a file named AUTHORS.texi.fix to sanitize names
 # and email addresses in the AUTHORS.texi file. This is useful to repair
