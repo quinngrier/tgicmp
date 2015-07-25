@@ -21,7 +21,7 @@
 #
 
 set -e
-trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2' EXIT
+trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2 ChangeLog.tmp3' EXIT
 
 if test -f ChangeLog.top; then
   sed '/^#/d' ChangeLog.top >ChangeLog.tmp1
