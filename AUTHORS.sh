@@ -3,7 +3,7 @@
 # file by adding housekeeping commands and using makeinfo --plaintext.
 #
 # If the AUTHORS.top file exists, it will be added to the top of the
-# AUTHORS file with a trailing blank line and lines beginning with "#"
+# AUTHORS file with a trailing blank line and lines starting with "#"
 # removed. Otherwise, if the AUTHORS.top.texi file exists, it will be
 # given to makeinfo --plaintext and added in the same way, but without
 # line removal. This also occurs for the AUTHORS.bot(.texi) files, but

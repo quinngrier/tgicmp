@@ -3,7 +3,7 @@
 # to get the reverse chronological list of commits reachable from HEAD.
 #
 # If the ChangeLog.top file exists, it will be added to the top of the
-# ChangeLog file with a trailing blank line and lines beginning with "#"
+# ChangeLog file with a trailing blank line and lines starting with "#"
 # removed. Otherwise, if the ChangeLog.top.texi file exists, it will be
 # given to makeinfo --plaintext and added in the same way, but without
 # line removal. This also occurs for the ChangeLog.bot(.texi) files, but
