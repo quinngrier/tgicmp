@@ -42,7 +42,6 @@ elif test -f AUTHORS.bot.texi; then
 fi
 
 mv AUTHORS.tmp1 AUTHORS
-exit 0
 
 #
 # The authors of this file have waived all copyright and
