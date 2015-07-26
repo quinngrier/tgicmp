@@ -11,7 +11,7 @@
 #
 
 set -e
-trap 'for i in 1 2 3; do rm -f AUTHORS.tmp$i; done' EXIT
+trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2' EXIT
 
 if test -f AUTHORS.top; then
   LC_COLLATE=C LC_CTYPE=C \
