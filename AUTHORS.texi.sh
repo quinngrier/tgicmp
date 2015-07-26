@@ -36,6 +36,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
   NR % 3 == 2 { email = $0 }
   NR % 3 == 0 {
     year = $5
+    pair = name "\n" email
   }
   END {
     print "@end table"
