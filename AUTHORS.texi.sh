@@ -44,6 +44,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
       names[i] = name
       emails[i] = email
     }
+    years[i, year] = 1
   }
   END {
     print "@end table"
