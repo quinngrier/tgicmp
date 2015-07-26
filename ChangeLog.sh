@@ -40,6 +40,9 @@ cat >ChangeLog.tmp3 <<'EOF'
   NR % 5 == 1 {
     hash = $0
   }
+  NR % 5 == 2 {
+    name = $0
+  }
   function fix(ere, repl) {
   }
   function apply_fixes() {
