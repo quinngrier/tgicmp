@@ -61,6 +61,9 @@ cat >ChangeLog.tmp3 <<'EOF'
     subject = $0
   }
   function fix(ere, repl) {
+    gsub(ere, repl, name)
+    gsub(ere, repl, email)
+    gsub(ere, repl, subject)
   }
   function apply_fixes() {
 EOF
