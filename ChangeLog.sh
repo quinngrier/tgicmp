@@ -35,7 +35,7 @@ else
 fi
 
 TZ=UTC git log --author-date-order --date=local \
-               --pretty=%H%n%an%n%ae%n%ad%n%s >ChangeLog.tmp2
+               --pretty=%H%n%aN%n%aE%n%ad%n%s >ChangeLog.tmp2
 
 cat >ChangeLog.tmp3 <<'EOF'
   BEGIN {
