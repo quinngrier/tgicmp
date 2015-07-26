@@ -24,6 +24,13 @@ else
   cp /dev/null AUTHORS.tmp1
 fi
 
+echo \\input texinfo >AUTHORS.tmp2
+echo @setfilename foo >>AUTHORS.tmp2
+echo @documentencoding UTF-8 >>AUTHORS.tmp2
+cat AUTHORS.texi >>AUTHORS.tmp2
+echo @bye >>AUTHORS.tmp2
+makeinfo --plaintext AUTHORS.tmp2 >>AUTHORS.tmp1
+
 if test -f AUTHORS.bot; then
   echo >>AUTHORS.tmp1
   LC_COLLATE=C LC_CTYPE=C \
