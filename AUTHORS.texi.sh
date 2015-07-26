@@ -21,7 +21,6 @@ trap 'rm -f AUTHORS.texi.tmp1 AUTHORS.texi.tmp2 AUTHORS.texi.tmp3' EXIT
 
 if test -f AUTHORS.texi.top; then
   cp AUTHORS.texi.top AUTHORS.texi.tmp1
-  echo >>AUTHORS.texi.tmp1
 else
   cp /dev/null AUTHORS.texi.tmp1
 fi
