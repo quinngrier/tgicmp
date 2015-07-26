@@ -32,6 +32,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
   BEGIN {
     print "@table @asis"
   }
+  NR % 3 == 1 { name = $0 }
   END {
     print "@end table"
   }
