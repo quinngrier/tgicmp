@@ -59,6 +59,11 @@ cat >ChangeLog.tmp3 <<'EOF'
   }
   NR % 5 == 0 {
     subject = $0
+    print "commit " hash
+    print "Author: " name " <" email ">"
+    print "Date:   " year "-" month "-" day " +0000"
+    print ""
+    print "    " subject
   }
   function fix(ere, repl) {
     gsub(ere, repl, name)
