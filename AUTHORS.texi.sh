@@ -56,6 +56,8 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
       max_years[i] = year
     }
     years[i, year] = 1
+    ++commits[i]
+    ++total
   }
   END {
     for (i = 1; i <= n; ++i) {
