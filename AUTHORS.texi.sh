@@ -34,6 +34,9 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
   }
   NR % 3 == 1 { name = $0 }
   NR % 3 == 2 { email = $0 }
+  NR % 3 == 0 {
+    year = $5
+  }
   END {
     print "@end table"
   }
