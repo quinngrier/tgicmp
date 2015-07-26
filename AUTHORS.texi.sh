@@ -25,8 +25,8 @@ else
   cp /dev/null AUTHORS.texi.tmp1
 fi
 
-git log --author-date-order \
-        --pretty=%an%n%ae --reverse >AUTHORS.texi.tmp2
+TZ=UTC git log --author-date-order --date=local \
+               --pretty=%an%n%ae%n%ad --reverse >AUTHORS.texi.tmp2
 
 if test -f AUTHORS.texi.bot; then
   cat AUTHORS.texi.bot >>AUTHORS.texi.tmp1
