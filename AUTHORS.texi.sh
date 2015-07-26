@@ -37,8 +37,9 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
   NR % 3 == 0 {
     year = $5
     pair = name "\n" email
-    i = map[pair]
-    if (!i) {
+    if (map[pair]) {
+      i = map[pair]
+    } else {
       i = map[pair] = ++n
       apply_fixes()
       names[i] = name
