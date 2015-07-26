@@ -48,7 +48,6 @@ git log --author-date-order \
         --pretty=%an%n%ae --reverse >AUTHORS.texi.tmp2
 
 if test -f AUTHORS.texi.bot; then
-  echo >>AUTHORS.texi.tmp1
   cat AUTHORS.texi.bot >>AUTHORS.texi.tmp1
 fi
 
