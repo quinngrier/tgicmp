@@ -24,7 +24,8 @@ set -e
 trap 'rm -f ChangeLog.tmp1 ChangeLog.tmp2 ChangeLog.tmp3' EXIT
 
 if test -f ChangeLog.top; then
-  LC_COLLATE=C LC_CTYPE=C sed '/^#/d' ChangeLog.top >ChangeLog.tmp1
+  LC_COLLATE=C LC_CTYPE=C \
+    sed '/^#/d' ChangeLog.top >ChangeLog.tmp1
   echo >>ChangeLog.tmp1
 elif test -f ChangeLog.top.texi; then
   makeinfo --plaintext ChangeLog.top.texi >ChangeLog.tmp1
@@ -71,12 +72,13 @@ fi
 
 echo } >>ChangeLog.tmp3
 
-LC_COLLATE=C LC_CTYPE=C awk -f ChangeLog.tmp3 \
-                            ChangeLog.tmp2 >>ChangeLog.tmp1
+LC_COLLATE=C LC_CTYPE=C \
+  awk -f ChangeLog.tmp3 ChangeLog.tmp2 >>ChangeLog.tmp1
 
 if test -f ChangeLog.bot; then
   echo >>ChangeLog.tmp1
-  LC_COLLATE=C LC_CTYPE=C sed '/^#/d' ChangeLog.bot >>ChangeLog.tmp1
+  LC_COLLATE=C LC_CTYPE=C \
+    sed '/^#/d' ChangeLog.bot >>ChangeLog.tmp1
 elif test -f ChangeLog.bot.texi; then
   makeinfo --plaintext ChangeLog.bot.texi >ChangeLog.tmp2
   echo >>ChangeLog.tmp1
