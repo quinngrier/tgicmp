@@ -51,10 +51,6 @@ if test -f AUTHORS.texi.bot; then
   cat AUTHORS.texi.bot >>AUTHORS.texi.tmp1
 fi
 
-#
-# Finally, rename AUTHORS.texi.tmp1 to AUTHORS.texi.
-#
-
 mv AUTHORS.texi.tmp1 AUTHORS.texi
 exit 0
 
