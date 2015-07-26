@@ -84,10 +84,6 @@ echo } >>ChangeLog.tmp3
 LC_COLLATE=C LC_CTYPE=C awk -f ChangeLog.tmp3 \
                             ChangeLog.tmp2 >>ChangeLog.tmp1
 
-#
-# Process the ChangeLog.bot(.texi) file.
-#
-
 if test -f ChangeLog.bot; then
   echo >>ChangeLog.tmp1
   cat ChangeLog.bot >>ChangeLog.tmp1
