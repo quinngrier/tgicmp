@@ -69,7 +69,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
         if (!years[i, y]) continue
         else if (!years[i, y - 1]) printf ", %d", y
         else if (!years[i, y + 1]) printf "--%d", y
-      printf "\n"
+      print ""
     }
     print "@end table"
   }
