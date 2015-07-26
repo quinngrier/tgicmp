@@ -46,6 +46,11 @@ cat >ChangeLog.tmp3 <<'EOF'
   NR % 5 == 3 {
     email = $0
   }
+  NR % 5 == 4 {
+    year = $5
+    month = $2
+    day = $3
+  }
   function fix(ere, repl) {
   }
   function apply_fixes() {
