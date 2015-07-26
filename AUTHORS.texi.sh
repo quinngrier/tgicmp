@@ -40,12 +40,14 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
     if (map[pair]) {
       i = map[pair]
       if (year < min_years[i]) min_years[i] = year
+      if (year > max_years[i]) max_years[i] = year
     } else {
       i = map[pair] = ++n
       apply_fixes()
       names[i] = name
       emails[i] = email
       min_years[i] = year
+      max_years[i] = year
     }
     years[i, year] = 1
   }
