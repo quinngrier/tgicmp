@@ -61,6 +61,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
   }
   END {
     for (i = 1; i <= n; ++i) {
+      if (i > 1) print ""
       print "@item " names[i] " --- @email{" emails[i] "}"
       printf "%d commits", commits[i]
       printf " (%.2f%%)", commits[i] / total * 100
