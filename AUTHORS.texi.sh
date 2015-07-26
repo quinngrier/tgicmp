@@ -58,6 +58,9 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
     years[i, year] = 1
   }
   END {
+    for (i = 1; i <= n; ++i) {
+      print "@item " names[i] " --- @email{" emails[i] "}"
+    }
     print "@end table"
   }
   function fix(ere, repl) {
