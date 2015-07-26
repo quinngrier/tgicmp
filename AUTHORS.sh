@@ -14,7 +14,8 @@ set -e
 trap 'for i in 1 2 3; do rm -f AUTHORS.tmp$i; done' EXIT
 
 if test -f AUTHORS.top; then
-  sed '/^#/d' AUTHORS.top >AUTHORS.tmp1
+  LC_COLLATE=C LC_CTYPE=C \
+    sed '/^#/d' AUTHORS.top >AUTHORS.tmp1
   echo >>AUTHORS.tmp1
 elif test -f AUTHORS.top.texi; then
   makeinfo --plaintext AUTHORS.top.texi >AUTHORS.tmp1
@@ -98,7 +99,8 @@ LC_COLLATE=C LC_CTYPE=C \
 
 if test -f AUTHORS.bot; then
   echo >>AUTHORS.tmp1
-  sed '/^#/d' AUTHORS.bot >>AUTHORS.tmp1
+  LC_COLLATE=C LC_CTYPE=C \
+    sed '/^#/d' AUTHORS.bot >>AUTHORS.tmp1
 elif test -f AUTHORS.bot.texi; then
   makeinfo --plaintext AUTHORS.bot.texi >AUTHORS.tmp2
   echo >>AUTHORS.tmp1
