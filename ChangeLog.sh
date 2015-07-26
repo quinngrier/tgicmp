@@ -94,7 +94,6 @@ elif test -f ChangeLog.bot.texi; then
 fi
 
 mv ChangeLog.tmp1 ChangeLog
-exit 0
 
 #
 # The authors of this file have waived all copyright and
