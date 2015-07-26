@@ -41,6 +41,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
     if (!i) {
       i = map[pair] = ++n
       names[i] = name
+      emails[i] = email
     }
   }
   END {
