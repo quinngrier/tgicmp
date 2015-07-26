@@ -26,7 +26,7 @@ else
 fi
 
 TZ=UTC git log --author-date-order --date=local \
-               --pretty=%an%n%ae%n%ad --reverse >AUTHORS.texi.tmp2
+               --pretty=%aN%n%aE%n%ad --reverse >AUTHORS.texi.tmp2
 
 cat >AUTHORS.texi.tmp3 <<'EOF'
   BEGIN {
