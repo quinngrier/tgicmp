@@ -47,10 +47,11 @@ cat >ChangeLog.tmp3 <<'EOF'
   NR % 5 == 1 { hash = $0 }
   NR % 5 == 2 { name = $0 }
   NR % 5 == 3 { email = $0 }
-  NR % 5 == 4 { year = $5; month = map[$2]; day = $3; time = $4 }
+  NR % 5 == 4 { year = $5; month = $2; day = $3; time = $4 }
   NR % 5 == 0 {
     subject = $0
     apply_fixes()
+    month = map[month]
     if (day < 10) day = "0" day
     if (NR > 5) print ""
     print "commit " hash
