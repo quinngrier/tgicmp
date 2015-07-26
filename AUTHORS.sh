@@ -13,11 +13,6 @@
 set -e
 trap 'for i in 1 2 3; do rm -f AUTHORS.tmp$i; done' EXIT
 
-#
-# Process AUTHORS.top(.texi) into AUTHORS.tmp1. This is the file that
-# we'll be accumulating into and eventually renaming to AUTHORS.
-#
-
 if test -f AUTHORS.top; then
   sed '/^#/d' AUTHORS.top >AUTHORS.tmp1
   echo >>AUTHORS.tmp1
