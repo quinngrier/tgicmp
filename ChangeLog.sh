@@ -57,6 +57,9 @@ cat >ChangeLog.tmp3 <<'EOF'
     month = map[$2]
     day = $3
   }
+  NR % 5 == 0 {
+    subject = $0
+  }
   function fix(ere, repl) {
   }
   function apply_fixes() {
