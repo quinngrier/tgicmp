@@ -47,12 +47,6 @@ fi
 git log --author-date-order \
         --pretty=%an%n%ae --reverse >AUTHORS.texi.tmp2
 
-#
-# Process AUTHORS.texi.bot. This is the same as AUTHORS.texi.top except
-# that we add a leading newline instead of a trailing newline, and we
-# append to AUTHORS.texi.tmp1 instead of creating it.
-#
-
 if test -f AUTHORS.texi.bot; then
   echo >>AUTHORS.texi.tmp1
   cat AUTHORS.texi.bot >>AUTHORS.texi.tmp1
