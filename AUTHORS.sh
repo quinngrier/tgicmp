@@ -101,10 +101,6 @@ elif test -f AUTHORS.bot.texi; then
   cat AUTHORS.tmp2 >>AUTHORS.tmp1
 fi
 
-#
-# Finally, rename AUTHORS.tmp1 to AUTHORS.
-#
-
 mv AUTHORS.tmp1 AUTHORS
 exit 0
 
