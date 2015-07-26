@@ -40,6 +40,9 @@ fi
 
 echo } >>AUTHORS.texi.tmp3
 
+LC_COLLATE=C LC_CTYPE=C \
+  awk -f AUTHORS.texi.tmp3 AUTHORS.texi.tmp2 >>AUTHORS.texi.tmp1
+
 if test -f AUTHORS.texi.bot; then
   cat AUTHORS.texi.bot >>AUTHORS.texi.tmp1
 fi
