@@ -37,6 +37,12 @@ TZ=UTC git log --author-date-order --date=local \
                --pretty=%H%n%an%n%ae%n%ad%n%s >ChangeLog.tmp2
 
 cat >ChangeLog.tmp3 <<'EOF'
+  BEGIN {
+    map["Jan"] = "01"; map["Feb"] = "02"; map["Mar"] = "03"
+    map["Apr"] = "04"; map["May"] = "05"; map["Jun"] = "06"
+    map["Jul"] = "07"; map["Aug"] = "08"; map["Sep"] = "09"
+    map["Oct"] = "10"; map["Nov"] = "11"; map["Dec"] = "12"
+  }
   NR % 5 == 1 {
     hash = $0
   }
@@ -48,7 +54,7 @@ cat >ChangeLog.tmp3 <<'EOF'
   }
   NR % 5 == 4 {
     year = $5
-    month = $2
+    month = map[$2]
     day = $3
   }
   function fix(ere, repl) {
