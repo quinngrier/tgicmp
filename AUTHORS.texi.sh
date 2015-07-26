@@ -42,6 +42,8 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
     print "@end table"
   }
   function fix(ere, repl) {
+    gsub(ere, repl, name)
+    gsub(ere, repl, email)
   }
   function apply_fixes() {
 EOF
