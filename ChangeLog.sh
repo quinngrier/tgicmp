@@ -93,10 +93,6 @@ elif test -f ChangeLog.bot.texi; then
   cat ChangeLog.tmp2 >>ChangeLog.tmp1
 fi
 
-#
-# Finish up.
-#
-
 mv ChangeLog.tmp1 ChangeLog
 exit 0
 
