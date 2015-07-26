@@ -1,6 +1,6 @@
 #
 # This script (ChangeLog.sh) creates a ChangeLog file by using git log
-# --author-date-order to list the commits below HEAD.
+# --author-date-order to list the commits reachable from HEAD.
 #
 # If the ChangeLog.top file exists, it will be added to the top of the
 # ChangeLog file with a trailing blank line and lines starting with "#"

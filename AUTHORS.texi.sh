@@ -1,6 +1,6 @@
 #
 # This script (AUTHORS.texi.sh) creates an AUTHORS.texi file by using
-# git log --author-date-order to list the authors below HEAD.
+# git log --author-date-order to list the authors reachable from HEAD.
 #
 # If the AUTHORS.texi.top file exists, it will be added to the top of
 # the AUTHORS.texi file. If the AUTHORS.texi.bot file exists, it will be
