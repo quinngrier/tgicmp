@@ -40,6 +40,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
     i = map[pair]
     if (!i) {
       i = map[pair] = ++n
+      apply_fixes()
       names[i] = name
       emails[i] = email
     }
