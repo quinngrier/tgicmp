@@ -60,6 +60,7 @@ cat >ChangeLog.tmp3 <<'EOF'
   }
   NR % 5 == 0 {
     subject = $0
+    apply_fixes()
     if (NR > 5) print ""
     print "commit " hash
     print "Author: " name " <" email ">"
