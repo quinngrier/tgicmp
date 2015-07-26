@@ -62,6 +62,8 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
   END {
     for (i = 1; i <= n; ++i) {
       print "@item " names[i] " --- @email{" emails[i] "}"
+      printf "%d commits", commits[i]
+      printf "\n"
     }
     print "@end table"
   }
