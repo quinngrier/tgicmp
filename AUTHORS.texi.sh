@@ -63,7 +63,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
     for (i = 1; i <= n; ++i) {
       if (i > 1) print ""
       print "@item " names[i] " --- @email{" emails[i] "}"
-      printf "%d commits", commits[i]
+      printf "%d commit%s", commits[i], (commits[i] > 1 ? "s" : "")
       printf " (%.2f%%)", commits[i] / total * 100
       printf " in %d", min_years[i]
       for (y = min_years[i] + 1; y <= max_years[i]; ++y)
