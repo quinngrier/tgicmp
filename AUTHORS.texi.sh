@@ -19,11 +19,6 @@
 set -e
 trap 'rm -f AUTHORS.texi.tmp1 AUTHORS.texi.tmp2 AUTHORS.texi.tmp3' EXIT
 
-#
-# Process AUTHORS.texi.top into AUTHORS.texi.tmp1. This is the file that
-# we'll be accumulating into and eventually renaming to AUTHORS.texi.
-#
-
 if test -f AUTHORS.texi.top; then
   cp AUTHORS.texi.top AUTHORS.texi.tmp1
   echo >>AUTHORS.texi.tmp1
