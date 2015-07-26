@@ -74,7 +74,7 @@ fi
 
 echo } >>ChangeLog.tmp3
 
-LC_COLLATE=C LC_CTYPE=C \
+LC_COLLATE=C LC_CTYPE=C LC_NUMERIC=C \
   awk -f ChangeLog.tmp3 ChangeLog.tmp2 >>ChangeLog.tmp1
 
 if test -f ChangeLog.bot; then
