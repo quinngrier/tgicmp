@@ -52,7 +52,6 @@ if test -f AUTHORS.texi.bot; then
 fi
 
 mv AUTHORS.texi.tmp1 AUTHORS.texi
-exit 0
 
 #
 # The authors of this file have waived all copyright and
