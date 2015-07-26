@@ -29,6 +29,12 @@ TZ=UTC git log --author-date-order --date=local \
                --pretty=%an%n%ae%n%ad --reverse >AUTHORS.texi.tmp2
 
 cat >AUTHORS.texi.tmp3 <<'EOF'
+  BEGIN {
+    print "@table @asis"
+  }
+  END {
+    print "@end table"
+  }
   function fix(ere, repl) {
   }
   function apply_fixes() {
