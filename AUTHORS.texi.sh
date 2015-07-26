@@ -40,6 +40,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
     i = map[pair]
     if (!i) {
       i = map[pair] = ++n
+      names[i] = name
     }
   }
   END {
