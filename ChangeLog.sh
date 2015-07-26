@@ -59,6 +59,7 @@ cat >ChangeLog.tmp3 <<'EOF'
   }
   NR % 5 == 0 {
     subject = $0
+    if (NR > 5) print ""
     print "commit " hash
     print "Author: " name " <" email ">"
     print "Date:   " year "-" month "-" day " +0000"
