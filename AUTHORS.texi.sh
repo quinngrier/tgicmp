@@ -17,7 +17,7 @@
 #
 
 set -e
-trap 'for i in 1 2 3; do rm -f AUTHORS.texi.tmp$i; done' EXIT
+trap 'rm -f AUTHORS.texi.tmp1 AUTHORS.texi.tmp2 AUTHORS.texi.tmp3' EXIT
 
 #
 # Process AUTHORS.texi.top into AUTHORS.texi.tmp1. This is the file that
