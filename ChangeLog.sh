@@ -79,22 +79,8 @@ fi
 
 echo } >>ChangeLog.tmp3
 
-sed '/^Date:/{
-       s/... \(...\) \(.\{1,2\}\) \(..:..:..\) \(....\)/\4-\1-\2 \3/
-       s/Jan/01/
-       s/Feb/02/
-       s/Mar/03/
-       s/Apr/04/
-       s/May/05/
-       s/Jun/06/
-       s/Jul/07/
-       s/Aug/08/
-       s/Sep/09/
-       s/Oct/10/
-       s/Nov/11/
-       s/Dec/12/
-       s/-\(.\) /-0\1 /
-     }' ChangeLog.tmp2 >>ChangeLog.tmp1
+LC_COLLATE=C LC_CTYPE=C awk -f ChangeLog.tmp3 \
+                            ChangeLog.tmp2 >>ChangeLog.tmp1
 
 #
 # Process the ChangeLog.bot(.texi) file.
