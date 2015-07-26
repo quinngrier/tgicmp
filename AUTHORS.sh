@@ -91,12 +91,6 @@ echo } >>AUTHORS.tmp3
 LC_COLLATE=C LC_CTYPE=C \
   awk -f AUTHORS.tmp3 AUTHORS.tmp2 >>AUTHORS.tmp1
 
-#
-# Process AUTHORS.bot(.texi). This is the same as AUTHORS.top(.texi)
-# except that we add a leading newline instead of a trailing newline,
-# and we append to AUTHORS.tmp1 instead of creating it.
-#
-
 if test -f AUTHORS.bot; then
   echo >>AUTHORS.tmp1
   LC_COLLATE=C LC_CTYPE=C \
