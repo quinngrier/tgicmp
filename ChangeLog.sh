@@ -56,13 +56,14 @@ cat >ChangeLog.tmp3 <<'EOF'
     year = $5
     month = map[$2]
     day = $3
+    time = $4
   }
   NR % 5 == 0 {
     subject = $0
     if (NR > 5) print ""
     print "commit " hash
     print "Author: " name " <" email ">"
-    print "Date:   " year "-" month "-" day " +0000"
+    print "Date:   " year "-" month "-" day " " time " +0000"
     print ""
     print "    " subject
   }
