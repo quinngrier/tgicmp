@@ -86,7 +86,7 @@ LC_COLLATE=C LC_CTYPE=C awk -f ChangeLog.tmp3 \
 
 if test -f ChangeLog.bot; then
   echo >>ChangeLog.tmp1
-  cat ChangeLog.bot >>ChangeLog.tmp1
+  sed '/^#/d' ChangeLog.bot >>ChangeLog.tmp1
 elif test -f ChangeLog.bot.texi; then
   makeinfo --plaintext ChangeLog.bot.texi >ChangeLog.tmp2
   echo >>ChangeLog.tmp1
