@@ -43,21 +43,10 @@ cat >ChangeLog.tmp3 <<'EOF'
     map["Jul"] = "07"; map["Aug"] = "08"; map["Sep"] = "09"
     map["Oct"] = "10"; map["Nov"] = "11"; map["Dec"] = "12"
   }
-  NR % 5 == 1 {
-    hash = $0
-  }
-  NR % 5 == 2 {
-    name = $0
-  }
-  NR % 5 == 3 {
-    email = $0
-  }
-  NR % 5 == 4 {
-    year = $5
-    month = map[$2]
-    day = $3
-    time = $4
-  }
+  NR % 5 == 1 { hash = $0 }
+  NR % 5 == 2 { name = $0 }
+  NR % 5 == 3 { email = $0 }
+  NR % 5 == 4 { year = $5; month = map[$2]; day = $3; time = $4 }
   NR % 5 == 0 {
     subject = $0
     apply_fixes()
