@@ -51,6 +51,7 @@ cat >ChangeLog.tmp3 <<'EOF'
   NR % 5 == 0 {
     subject = $0
     apply_fixes()
+    if (day < 10) day = "0" day
     if (NR > 5) print ""
     print "commit " hash
     print "Author: " name " <" email ">"
