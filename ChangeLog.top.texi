@@ -1,6 +1,5 @@
 \input texinfo
 @setfilename foo
-@settitle foo
 @documentencoding UTF-8
 
 @c
