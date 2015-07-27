@@ -6,9 +6,12 @@
 @c See the AUTHORS.sh script for an explanation of this file.
 @c
 
-This file contains a chronological list of authors who have worked on
-@code{tgicmp}. Authors who have used multiple names and/or email
-addresses are listed multiple times.
+This file contains a list of people who have worked on TGICMP.
+The list is sorted chronologically and summarizes each person's work.
+Commit counts generally indicate how much work a person has done, but
+should be taken with a grain of salt as some people divide their work
+into smaller commits than others. The intent is only to give a general
+picture of the authorship history.
 
 The list is generated from the @code{tgicmp} Git repository. It is
 mainly provided as a reference for when the repository is unavailable,
