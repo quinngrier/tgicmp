@@ -12,11 +12,10 @@ developer perspective. For a shorter list of only the major changes that
 were introduced in each version of the project, see the @code{NEWS} file
 or the News appendix of the manual.
 
-The list is generated from the @code{tgicmp} Git repository. It is
-mainly provided as a reference for when the repository is unavailable,
-but you may find it interesting to browse regardless. For more detail,
-see the repository, which should be easy to find by searching the
-Internet or by visiting one of the following mirrors:
+The list is generated from the TGICMP Git repository,
+which contains the complete historical record of the project. The
+repository should be easy to find by searching the Internet or by
+visiting one of the following mirrors:
 
 @itemize
 @item @url{http://sourceforge.net/p/quinngrier/tgicmp}
