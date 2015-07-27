@@ -25,11 +25,6 @@ visiting one of the following mirrors:
 @item @url{https://gitlab.com/quinngrier/tgicmp}
 @end itemize
 
-@c
-@c We don't put any blank lines before @bye because they seem to be
-@c maintained by makeinfo --plaintext.
-@c
-
 The list follows.
 @bye
 
