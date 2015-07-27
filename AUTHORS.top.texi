@@ -6,7 +6,7 @@
 @c See the AUTHORS.sh script for an explanation of this file.
 @c
 
-This file contains a list of people who have worked on TGICMP.
+This file contains a list of people who have worked on TGICMP@.
 The list is sorted chronologically and summarizes each person's work.
 Commit counts generally indicate how much work a person has done, but
 should be taken with a grain of salt as some people divide their work
