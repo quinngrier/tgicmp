@@ -3,8 +3,9 @@
 # git log --author-date-order to list the authors reachable from HEAD.
 #
 # If the AUTHORS.texi.top file exists, it will be added to the top of
-# the AUTHORS.texi file. If the AUTHORS.texi.bot file exists, it will be
-# added to the bottom of the AUTHORS.texi file.
+# the AUTHORS.texi file with lines starting with "#" removed. This also
+# occurs for the AUTHORS.texi.bot file, but adding to the bottom of the
+# AUTHORS.texi file.
 #
 # If the AUTHORS.texi.fix file exists, it will be used to sanitize names
 # and email addresses in the AUTHORS.texi file. It must contain awk code
@@ -20,7 +21,8 @@ set -e
 trap 'rm -f AUTHORS.texi.tmp1 AUTHORS.texi.tmp2 AUTHORS.texi.tmp3' EXIT
 
 if test -f AUTHORS.texi.top; then
-  cp AUTHORS.texi.top AUTHORS.texi.tmp1
+  LC_COLLATE=C LC_CTYPE=C \
+    sed '/^#/d' AUTHORS.texi.top >AUTHORS.texi.tmp1
 else
   cp /dev/null AUTHORS.texi.tmp1
 fi
@@ -89,7 +91,8 @@ LC_COLLATE=C LC_CTYPE=C LC_NUMERIC=C \
   awk -f AUTHORS.texi.tmp3 AUTHORS.texi.tmp2 >>AUTHORS.texi.tmp1
 
 if test -f AUTHORS.texi.bot; then
-  cat AUTHORS.texi.bot >>AUTHORS.texi.tmp1
+  LC_COLLATE=C LC_CTYPE=C \
+    sed '/^#/d' AUTHORS.texi.bot >>AUTHORS.texi.tmp1
 fi
 
 mv AUTHORS.texi.tmp1 AUTHORS.texi
