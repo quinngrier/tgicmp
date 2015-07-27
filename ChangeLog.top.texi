@@ -6,9 +6,11 @@
 @c See the ChangeLog.sh script for an explanation of this file.
 @c
 
-This file contains a list of individual changes to @code{tgicmp} from a
-developer perspective. If you're looking for a list of major changes by
-version, see the @code{NEWS} file or the News appendix of the manual.
+This file contains a list of individual changes to TGICMP@.
+The list is reverse chronological and summarizes each change from a
+developer perspective. For a shorter list of only the major changes that
+were introduced in each version of the project, see the @code{NEWS} file
+or the News appendix of the manual.
 
 The list is generated from the @code{tgicmp} Git repository. It is
 mainly provided as a reference for when the repository is unavailable,
