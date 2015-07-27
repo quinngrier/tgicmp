@@ -17,12 +17,7 @@ which contains the complete historical record of the project. The
 repository should be easy to find by searching the Internet or by
 visiting one of the following mirrors:
 
-@itemize
-@item @url{http://sourceforge.net/p/quinngrier/tgicmp}
-@item @url{https://bitbucket.org/quinngrier/tgicmp}
-@item @url{https://github.com/quinngrier/tgicmp}
-@item @url{https://gitlab.com/quinngrier/tgicmp}
-@end itemize
+@include mirrors.texi
 
 @c
 @c We don't put any blank lines before @bye because they seem to be
