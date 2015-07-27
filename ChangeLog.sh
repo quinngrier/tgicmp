@@ -47,7 +47,7 @@ cat >ChangeLog.tmp3 <<'EOF'
   NR % 5 == 1 { hash = $0 }
   NR % 5 == 2 { name = $0 }
   NR % 5 == 3 { email = $0 }
-  NR % 5 == 4 { year = $5; month = $2; day = $3; time = $4 }
+  NR % 5 == 4 { month = $2; day = $3; time = $4; year = $5 }
   NR % 5 == 0 {
     subject = $0
     apply_fixes()
