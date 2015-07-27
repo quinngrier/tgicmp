@@ -13,11 +13,10 @@ should be taken with a grain of salt as some people divide their work
 into smaller commits than others. The intent is only to give a general
 picture of the authorship history.
 
-The list is generated from the @code{tgicmp} Git repository. It is
-mainly provided as a reference for when the repository is unavailable,
-but you may find it interesting to browse regardless. For more detail,
-see the repository, which should be easy to find by searching the
-Internet or by visiting one of the following mirrors:
+The list is generated from the TGICMP Git repository,
+which contains the complete historical record of the project. The
+repository should be easy to find by searching the Internet or by
+visiting one of the following mirrors:
 
 @itemize
 @item @url{http://sourceforge.net/p/quinngrier/tgicmp}
