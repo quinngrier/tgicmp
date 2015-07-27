@@ -19,11 +19,6 @@ visiting one of the following mirrors:
 
 @include mirrors.texi
 
-@c
-@c We don't put any blank lines before @bye because they seem to be
-@c maintained by makeinfo --plaintext.
-@c
-
 The list follows.
 @bye
 
