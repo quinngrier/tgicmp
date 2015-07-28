@@ -44,12 +44,9 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
     } else {
       i = map[pair] = ++n
       apply_fixes()
-      gsub("@",   "@@", name)
-      gsub("\\{", "@{", name)
-      gsub("}",   "@}", name)
-      gsub("@",   "@@", email)
-      gsub("\\{", "@{", email)
-      gsub("}",   "@}", email)
+      gsub("@",   "@@", name); gsub("@",   "@@", email)
+      gsub("\\{", "@{", name); gsub("\\{", "@{", email)
+      gsub("}",   "@}", name); gsub("}",   "@}", email)
       names[i] = name
       emails[i] = email
       min_years[i] = year
