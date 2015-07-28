@@ -1,3 +1,18 @@
+@c
+@c This input file (PACKAGE.texi.in) helps to create DATE and VERSION
+@c variables for Texinfo by using the PACKAGE_DATE and PACKAGE_VERSION
+@c variables from Autotools (note that the PACKAGE_DATE variable is not
+@c predefined). Adjust the following code for your Makefile.am file and
+@c use @include PACKAGE.texi:
+@c
+@c   $(builddir)/PACKAGE.texi: $(srcdir)/PACKAGE.texi.in
+@c   	sed -e 's|@PACKAGE_DATE[@]|$(PACKAGE_DATE)|g'       \
+@c   	    -e 's|@PACKAGE_VERSION[@]|$(PACKAGE_VERSION)|g' \
+@c   	    $? >$@
+@c
+@c   EXTRA_DIST += $(srcdir)/PACKAGE.texi.in
+@c
+
 @set DATE @PACKAGE_DATE@
 @set VERSION @PACKAGE_VERSION@
 
