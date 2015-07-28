@@ -7,10 +7,10 @@
 @c
 
 This file contains a list of individual changes to TGICMP@.
-The list is reverse chronological and summarizes each change from a
-developer perspective. For a shorter list of only the major changes that
-were introduced in each version of the project, see the @code{NEWS} file
-or the News appendix of the manual.
+The list is in reverse chronological order and describes each change
+from a developer's perspective. For a shorter list of only the major
+changes introduced in each version of the project, see the @code{NEWS}
+file or the News appendix of the manual.
 
 The list is generated from the TGICMP Git repository,
 which contains the complete historical record of the project. The
