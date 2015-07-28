@@ -1,13 +1,13 @@
 include_HEADERS = $(srcdir)/tgicmp.h
 
 $(builddir)/tgicmp.3: $(srcdir)/tgicmp.3.in
-	sed -e 's|[@]PACKAGE_DATE@|$(PACKAGE_DATE)|g'       \
-	    -e 's|[@]PACKAGE_VERSION@|$(PACKAGE_VERSION)|g' \
-	    -e 's|[@]docdir@|$(docdir)|g'                   \
-	    -e 's|[@]dvidir@|$(dvidir)|g'                   \
-	    -e 's|[@]htmldir@|$(htmldir)|g'                 \
-	    -e 's|[@]pdfdir@|$(pdfdir)|g'                   \
-	    -e 's|[@]psdir@|$(psdir)|g'                     \
+	sed -e 's|@PACKAGE_DATE[@]|$(PACKAGE_DATE)|g'       \
+	    -e 's|@PACKAGE_VERSION[@]|$(PACKAGE_VERSION)|g' \
+	    -e 's|@docdir[@]|$(docdir)|g'                   \
+	    -e 's|@dvidir[@]|$(dvidir)|g'                   \
+	    -e 's|@htmldir[@]|$(htmldir)|g'                 \
+	    -e 's|@pdfdir[@]|$(pdfdir)|g'                   \
+	    -e 's|@psdir[@]|$(psdir)|g'                     \
 	    $? >$@
 $(builddir)/tgicmp.h.3: $(builddir)/tgicmp.3; cp $? $@
 $(builddir)/TGILT.3:    $(builddir)/tgicmp.3; cp $? $@
@@ -37,8 +37,8 @@ EXTRA_DIST += $(srcdir)/VERSION.sh
 EXTRA_DIST += $(srcdir)/tgicmp.3.in
 
 $(builddir)/PACKAGE.texi: $(srcdir)/PACKAGE.texi.in
-	sed -e 's|[@]PACKAGE_DATE@|$(PACKAGE_DATE)|g'       \
-	    -e 's|[@]PACKAGE_VERSION@|$(PACKAGE_VERSION)|g' \
+	sed -e 's|@PACKAGE_DATE[@]|$(PACKAGE_DATE)|g'       \
+	    -e 's|@PACKAGE_VERSION[@]|$(PACKAGE_VERSION)|g' \
 	    $? >$@
 EXTRA_DIST += $(srcdir)/PACKAGE.texi.in
 
