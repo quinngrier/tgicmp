@@ -7,11 +7,11 @@
 @c
 
 This file contains a list of people who have worked on TGICMP@.
-The list is chronological and summarizes each person's activity. Each
-person's commit count generally indicates how much work they have done,
-but this should be taken with a grain of salt as some people prefer to
-divide their work into smaller, more numerous commits than others. The
-intent is only to paint an overall picture of the project's authorship.
+The list is in chronological order and also summarizes each person's
+activity. A person's commit count generally indicates how much work they
+have done but should be taken with a grain of salt as some people divide
+their work into smaller commits than others. The commit count is also
+shown as the percentage of all commits.
 
 The list is generated from the TGICMP Git repository,
 which contains the complete historical record of the project. The
