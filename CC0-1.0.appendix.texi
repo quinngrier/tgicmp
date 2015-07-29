@@ -128,6 +128,7 @@ express Statement of Purpose.
 
 @item
 @strong{Limitations and Disclaimers.}
+
 @enumerate a
 @item
     No trademark or patent rights held by Affirmer are waived, abandoned,
