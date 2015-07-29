@@ -39,8 +39,9 @@ library for performing type-generic integer comparisons in C.
 The authors of @code{tgicmp} have waived all copyright and
 related or neighboring rights to the extent permitted by
 law as described by the CC0 1.0 Universal Public Domain
-Dedication. @xref{The CC0 1-0 Universal Public Domain Dedication},
-for the full dedication. It may also be available at
+Dedication. For the full dedication,
+@pxref{The CC0 1-0 Universal Public Domain Dedication}.
+It may also be available at
 @url{https://creativecommons.org/publicdomain/zero/1.0/}.
 
 @node Introduction
