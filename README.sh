@@ -11,31 +11,31 @@
 #
 
 set -e
-trap 'rm -f README.tmp1' EXIT
+trap 'rm -f README.tmp' EXIT
 
 if test -f README.top; then
   LC_COLLATE=C LC_CTYPE=C \
-    sed '/^#/d' README.top >README.tmp1
-  echo >>README.tmp1
+    sed '/^#/d' README.top >README.tmp
+  echo >>README.tmp
 elif test -f README.top.texi; then
-  makeinfo --plaintext README.top.texi >README.tmp1
-  echo >>README.tmp1
+  makeinfo --plaintext README.top.texi >README.tmp
+  echo >>README.tmp
 else
-  cp /dev/null README.tmp1
+  cp /dev/null README.tmp
 fi
 
-makeinfo --plaintext README.texi >>README.tmp1
+makeinfo --plaintext README.texi >>README.tmp
 
 if test -f README.bot; then
-  echo >>README.tmp1
+  echo >>README.tmp
   LC_COLLATE=C LC_CTYPE=C \
-    sed '/^#/d' README.bot >>README.tmp1
+    sed '/^#/d' README.bot >>README.tmp
 elif test -f README.bot.texi; then
-  echo >>README.tmp1
-  makeinfo --plaintext README.bot.texi >>README.tmp1
+  echo >>README.tmp
+  makeinfo --plaintext README.bot.texi >>README.tmp
 fi
 
-mv README.tmp1 README
+mv README.tmp README
 
 #
 # The authors of this file have waived all copyright and
