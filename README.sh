@@ -11,7 +11,7 @@
 #
 
 set -e
-trap 'rm -f README.tmp1 README.tmp2' EXIT
+trap 'rm -f README.tmp1' EXIT
 
 if test -f README.top; then
   LC_COLLATE=C LC_CTYPE=C \
