@@ -2,7 +2,7 @@
 @setfilename tgicmp.info
 @documentencoding UTF-8
 @include PACKAGE.texi
-@settitle @code{tgicmp}
+@settitle TGICMP @value{VERSION}
 
 @include CC0-1.0.copying.texi
 
