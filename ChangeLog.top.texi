@@ -17,7 +17,7 @@ which contains the complete historical record of the project. The
 repository should be easy to find by searching the Internet or by
 visiting one of the following mirrors:
 
-@include mirrors.texi
+@include MIRRORS.texi
 
 The list follows.
 @bye
