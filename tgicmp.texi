@@ -19,7 +19,7 @@
 
 @ifnottex
 @node Top
-@top @code{tgicmp}
+@top TGICMP
 
 This manual is for @code{tgicmp v@value{VERSION}} (@value{DATE}), a
 library for performing type-generic integer comparisons in C.
