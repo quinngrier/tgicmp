@@ -2,11 +2,41 @@
 # This script (README.sh) creates a README file from the README.texi
 # file by using makeinfo --plaintext.
 #
+# If the README.top file exists, it will be added to the top of the
+# README file with a trailing blank line and lines starting with "#"
+# removed. Otherwise, if the README.top.texi file exists, it will be
+# given to makeinfo --plaintext and added in the same way, but without
+# line removal. This also occurs for the README.bot(.texi) files, but
+# adding to the bottom of the README file with a leading blank line.
+#
 
 set -e
-trap 'rm -f README.tmp' EXIT
-makeinfo --plaintext README.texi >README.tmp
-mv README.tmp README
+trap 'rm -f README.tmp1 README.tmp2' EXIT
+
+if test -f README.top; then
+  LC_COLLATE=C LC_CTYPE=C \
+    sed '/^#/d' README.top >README.tmp1
+  echo >>README.tmp1
+elif test -f README.top.texi; then
+  makeinfo --plaintext README.top.texi >README.tmp1
+  echo >>README.tmp1
+else
+  cp /dev/null README.tmp1
+fi
+
+makeinfo --plaintext README.texi >>README.tmp1
+
+if test -f README.bot; then
+  echo >>README.tmp1
+  LC_COLLATE=C LC_CTYPE=C \
+    sed '/^#/d' README.bot >>README.tmp1
+elif test -f README.bot.texi; then
+  makeinfo --plaintext README.bot.texi >README.tmp2
+  echo >>README.tmp1
+  cat README.tmp2 >>README.tmp1
+fi
+
+mv README.tmp1 README
 
 #
 # The authors of this file have waived all copyright and
