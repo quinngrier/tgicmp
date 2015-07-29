@@ -1,7 +1,8 @@
 @unnumberedsec YYYY-MM-DD --- TGICMP 1.0.0
 
 @itemize
-@item First stable version.
+@item
+First stable version.
 @end itemize
 @c
 @c The authors of this file have waived all copyright and
