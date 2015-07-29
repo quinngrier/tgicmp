@@ -1,6 +1,6 @@
 #
-# This script (NEWS.sh) creates a NEWS file from the NEWS.texi file by
-# adding housekeeping commands and using makeinfo --plaintext.
+# This script (NEWS.sh) creates a NEWS file from the NEWS.texi
+# file by adding housekeeping commands and using makeinfo --plaintext.
 #
 # If the NEWS.top file exists, it will be added to the top of the
 # NEWS file with a trailing blank line and lines starting with "#"
