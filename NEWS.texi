@@ -1,4 +1,5 @@
 @unnumberedsec (YYYY-MM-DD) @code{tgicmp v1.0.0}
+
 @itemize
 @item First stable version.
 @end itemize
