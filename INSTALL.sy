@@ -1,5 +1,5 @@
 #
-# This script (INSTALL.ss) creates an INSTALL file from the INSTALL.texi
+# This script (INSTALL.sy) creates an INSTALL file from the INSTALL.texi
 # file by adding housekeeping commands and using makeinfo --plaintext.
 #
 # If the INSTALL.top file exists, it will be added to the top of the
