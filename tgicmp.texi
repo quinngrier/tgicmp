@@ -7,7 +7,7 @@
 @include CC0-1.0.copying.texi
 
 @titlepage
-@title @code{tgicmp}
+@title TGICMP
 @subtitle Type-generic integer comparisons in C
 @subtitle @code{v@value{VERSION}} (@value{DATE})
 @page
