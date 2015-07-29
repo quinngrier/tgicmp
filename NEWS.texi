@@ -1,4 +1,4 @@
-@unnumberedsec (YYYY-MM-DD) @code{tgicmp v1.0.0}
+@unnumberedsec (YYYY-MM-DD) TGICMP 1.0.0
 
 @itemize
 @item First stable version.
