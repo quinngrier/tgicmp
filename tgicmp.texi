@@ -29,6 +29,7 @@ library for performing type-generic integer comparisons in C.
 @menu
 * Copyright information::
 * Introduction::
+* Authors::
 * The CC0 1.0 Universal Public Domain Dedication: The CC0 1-0 Universal Public Domain Dedication.
 @end menu
 
@@ -44,6 +45,11 @@ for the full dedication. It may also be available at
 
 @node Introduction
 @chapter Introduction
+
+@node Authors
+@appendix Authors
+
+@include AUTHORS.texi
 
 @include CC0-1.0.appendix.texi
 
