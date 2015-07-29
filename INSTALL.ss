@@ -36,9 +36,8 @@ if test -f INSTALL.bot; then
   LC_COLLATE=C LC_CTYPE=C \
     sed '/^#/d' INSTALL.bot >>INSTALL.tmp1
 elif test -f INSTALL.bot.texi; then
-  makeinfo --plaintext INSTALL.bot.texi >INSTALL.tmp2
   echo >>INSTALL.tmp1
-  cat INSTALL.tmp2 >>INSTALL.tmp1
+  makeinfo --plaintext INSTALL.bot.texi >>INSTALL.tmp1
 fi
 
 mv INSTALL.tmp1 INSTALL

@@ -36,9 +36,8 @@ if test -f NEWS.bot; then
   LC_COLLATE=C LC_CTYPE=C \
     sed '/^#/d' NEWS.bot >>NEWS.tmp1
 elif test -f NEWS.bot.texi; then
-  makeinfo --plaintext NEWS.bot.texi >NEWS.tmp2
   echo >>NEWS.tmp1
-  cat NEWS.tmp2 >>NEWS.tmp1
+  makeinfo --plaintext NEWS.bot.texi >>NEWS.tmp1
 fi
 
 mv NEWS.tmp1 NEWS

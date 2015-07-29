@@ -31,9 +31,8 @@ if test -f README.bot; then
   LC_COLLATE=C LC_CTYPE=C \
     sed '/^#/d' README.bot >>README.tmp1
 elif test -f README.bot.texi; then
-  makeinfo --plaintext README.bot.texi >README.tmp2
   echo >>README.tmp1
-  cat README.tmp2 >>README.tmp1
+  makeinfo --plaintext README.bot.texi >>README.tmp1
 fi
 
 mv README.tmp1 README

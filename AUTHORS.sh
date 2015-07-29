@@ -36,9 +36,8 @@ if test -f AUTHORS.bot; then
   LC_COLLATE=C LC_CTYPE=C \
     sed '/^#/d' AUTHORS.bot >>AUTHORS.tmp1
 elif test -f AUTHORS.bot.texi; then
-  makeinfo --plaintext AUTHORS.bot.texi >AUTHORS.tmp2
   echo >>AUTHORS.tmp1
-  cat AUTHORS.tmp2 >>AUTHORS.tmp1
+  makeinfo --plaintext AUTHORS.bot.texi >>AUTHORS.tmp1
 fi
 
 mv AUTHORS.tmp1 AUTHORS

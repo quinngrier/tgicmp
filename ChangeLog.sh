@@ -82,9 +82,8 @@ if test -f ChangeLog.bot; then
   LC_COLLATE=C LC_CTYPE=C \
     sed '/^#/d' ChangeLog.bot >>ChangeLog.tmp1
 elif test -f ChangeLog.bot.texi; then
-  makeinfo --plaintext ChangeLog.bot.texi >ChangeLog.tmp2
   echo >>ChangeLog.tmp1
-  cat ChangeLog.tmp2 >>ChangeLog.tmp1
+  makeinfo --plaintext ChangeLog.bot.texi >>ChangeLog.tmp1
 fi
 
 mv ChangeLog.tmp1 ChangeLog
