@@ -6,7 +6,6 @@ Dedication. @xref{The CC0 1-0 Universal Public Domain Dedication},
 for the full dedication. It may also be available at
 @url{https://creativecommons.org/publicdomain/zero/1.0/}.
 @end copying
-
 @c
 @c The authors of this file have waived all copyright and
 @c related or neighboring rights to the extent permitted by
