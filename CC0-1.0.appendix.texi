@@ -46,33 +46,39 @@ terms, with knowledge of his or her Copyright and Related Rights in the
 Work and the meaning and intended legal effect of CC0 on those rights.
 
 @enumerate
-
 @item
 @strong{Copyright and Related Rights.} A Work made available under CC0 may be
 protected by copyright and related or neighboring rights (``Copyright and
 Related Rights''). Copyright and Related Rights include, but are not
 limited to, the following:
+
 @enumerate a
 @item
      the right to reproduce, adapt, distribute, perform, display,
      communicate, and translate a Work;
+
 @item
      moral rights retained by the original author(s) and/or performer(s);
+
 @item
      publicity and privacy rights pertaining to a person's image or
      likeness depicted in a Work;
+
 @item
      rights protecting against unfair competition in regards to a Work,
      subject to the limitations in paragraph 4(a), below;
+
 @item
      rights protecting the extraction, dissemination, use and reuse of data
      in a Work;
+
 @item
      database rights (such as those arising under Directive 96/9/EC of the
      European Parliament and of the Council of 11 March 1996 on the legal
      protection of databases, and under any national implementation
      thereof, including any amended or successor version of such
      directive); and
+
 @item
      other similar, equivalent or corresponding rights throughout the
      world based on applicable law or treaty, and any national
@@ -126,6 +132,7 @@ express Statement of Purpose.
 @item
     No trademark or patent rights held by Affirmer are waived, abandoned,
     surrendered, licensed or otherwise affected by this document.
+
 @item
     Affirmer offers the Work as-is and makes no representations or
     warranties of any kind concerning the Work, express, implied,
@@ -134,6 +141,7 @@ express Statement of Purpose.
     infringement, or the absence of latent or other defects, accuracy, or
     the present or absence of errors, whether or not discoverable, all to
     the greatest extent permissible under applicable law.
+
 @item
     Affirmer disclaims responsibility for clearing rights of other persons
     that may apply to the Work or any use thereof, including without
@@ -141,14 +149,13 @@ express Statement of Purpose.
     Further, Affirmer disclaims responsibility for obtaining any necessary
     consents, permissions or other rights required for any use of the
     Work.
+
 @item
     Affirmer understands and acknowledges that Creative Commons is not a
     party to this document and has no duty or obligation with respect to
     this CC0 or use of the Work.
 @end enumerate
-
 @end enumerate
-
 @c
 @c The authors of this file have waived all copyright and
 @c related or neighboring rights to the extent permitted by
