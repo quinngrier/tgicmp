@@ -44,10 +44,10 @@ EXTRA_DIST += $(srcdir)/PACKAGE.texi.in
 
 info_TEXINFOS = tgicmp.texi
 tgicmp_TEXINFOS =
-tgicmp_TEXINFOS += $(srcdir)/CC0-1.0.appendix.texi
-tgicmp_TEXINFOS += $(srcdir)/CC0-1.0.copying.texi
 tgicmp_TEXINFOS += $(builddir)/PACKAGE.texi
 tgicmp_TEXINFOS += $(srcdir)/AUTHORS.texi
+tgicmp_TEXINFOS += $(srcdir)/CC0-1.0.appendix.texi
+tgicmp_TEXINFOS += $(srcdir)/CC0-1.0.copying.texi
 tgicmp_TEXINFOS += $(srcdir)/NEWS.texi
 
 ##
