@@ -29,7 +29,7 @@ performing type-generic integer comparisons in C@.
 
 @menu
 * Introduction::
-* Authors::
+* Authors:: People who have worked on TGICMP@.
 * Copying::
 * Mirrors::
 * News::
