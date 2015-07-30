@@ -71,6 +71,13 @@ The list follows.
 @node Mirrors
 @appendix Mirrors
 
+This appendix contains a list of mirrors from which the TGICMP
+Git repository can be obtained. The list may or may not be up to date.
+In any case, the repository should be easy to find simply by searching
+the Internet.
+
+The list follows.
+
 @include MIRRORS.texi
 
 @node News
