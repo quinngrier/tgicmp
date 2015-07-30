@@ -7,9 +7,9 @@
 @c
 
 This file contains a list of mirrors from which the TGICMP
-Git repository can be obtained. The list may or may not be up to date.
-In any case, the repository should be easy to find simply by searching
-the Internet.
+Git repository can be downloaded. The list is in no particular order.
+Most mirrors also provide a web interface for browsing the repository
+with only a web browser.
 
 The list follows.
 @bye
