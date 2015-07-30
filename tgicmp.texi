@@ -52,6 +52,19 @@ It may also be available at
 @node Authors
 @appendix Authors
 
+This appendix contains a list of people who have worked on TGICMP@.
+The list is in chronological order and also summarizes each person's
+activity. A person's commit count generally indicates how much work they
+have done but should be taken with a grain of salt as some people spread
+equal work over more commits than others. The commit count is also shown
+as the percentage of all commits.
+
+The list is generated from the TGICMP Git repository,
+which contains the complete historical record of the project. For
+information on obtaining a copy of the repository, @pxref{Mirrors}.
+
+The list follows.
+
 @include AUTHORS.texi
 
 @node Mirrors
