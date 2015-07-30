@@ -1,46 +1,10 @@
 #
 # This script (AUTHORS.sh) creates an AUTHORS file from the AUTHORS.texi
-# file by adding housekeeping commands and using makeinfo --plaintext.
-#
-# If the AUTHORS.top file exists, it will be added to the top of the
-# AUTHORS file with a trailing blank line and lines starting with "#"
-# removed. Otherwise, if the AUTHORS.top.texi file exists, it will be
-# given to makeinfo --plaintext and added in the same way, but without
-# line removal. This also occurs for the AUTHORS.bot(.texi) files, but
-# adding to the bottom of the AUTHORS file with a leading blank line.
+# file by using the texti.sh script.
 #
 
 set -e
-trap 'rm -f AUTHORS.tmp1 AUTHORS.tmp2' EXIT
-
-if test -f AUTHORS.top; then
-  LC_COLLATE=C LC_CTYPE=C \
-    sed '/^#/d' AUTHORS.top >AUTHORS.tmp1
-  echo >>AUTHORS.tmp1
-elif test -f AUTHORS.top.texi; then
-  makeinfo --plaintext AUTHORS.top.texi >AUTHORS.tmp1
-  echo >>AUTHORS.tmp1
-else
-  cp /dev/null AUTHORS.tmp1
-fi
-
-echo \\input texinfo >AUTHORS.tmp2
-echo @setfilename foo >>AUTHORS.tmp2
-echo @documentencoding UTF-8 >>AUTHORS.tmp2
-cat AUTHORS.texi >>AUTHORS.tmp2
-echo @bye >>AUTHORS.tmp2
-makeinfo --plaintext AUTHORS.tmp2 >>AUTHORS.tmp1
-
-if test -f AUTHORS.bot; then
-  echo >>AUTHORS.tmp1
-  LC_COLLATE=C LC_CTYPE=C \
-    sed '/^#/d' AUTHORS.bot >>AUTHORS.tmp1
-elif test -f AUTHORS.bot.texi; then
-  echo >>AUTHORS.tmp1
-  makeinfo --plaintext AUTHORS.bot.texi >>AUTHORS.tmp1
-fi
-
-mv AUTHORS.tmp1 AUTHORS
+sh texti.sh AUTHORS
 
 #
 # The authors of this file have waived all copyright and
