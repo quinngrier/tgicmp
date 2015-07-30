@@ -1,0 +1,28 @@
+\input texinfo
+@setfilename foo
+@documentencoding UTF-8
+
+@c
+@c See the NEWS.sh script for an explanation of this file.
+@c
+
+This file contains a list of the major changes introduced in each
+version of TGICMP@.
+The list is in reverse chronological order. For a more detailed list of
+individual changes, see the @file{ChangeLog} file or the Git repository,
+which contains the complete history of the project. For information on
+downloading the repository, see the @file{MIRRORS} file or the Mirrors
+appendix of the manual.
+
+The list follows.
+@bye
+
+@c
+@c The authors of this file have waived all copyright and
+@c related or neighboring rights to the extent permitted by
+@c law as described by the CC0 1.0 Universal Public Domain
+@c Dedication. You should have received a copy of the full
+@c dedication along with this file, typically as a file
+@c named <CC0-1.0.txt>. If not, it may be available at
+@c <https://creativecommons.org/publicdomain/zero/1.0/>.
+@c
