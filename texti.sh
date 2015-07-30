@@ -1,7 +1,7 @@
 #
 # This script (texti.sh) creates a $target file from the $target.texi
 # file by adding housekeeping commands and using makeinfo --plaintext.
-# $target is set to $1 at startup.
+# $target is always set to $1.
 #
 # If the $target.top file exists, it will be added to the top of the
 # $target file with a trailing blank line and lines starting with "#"
