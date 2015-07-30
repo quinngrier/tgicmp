@@ -23,8 +23,8 @@
 @node Top
 @top TGICMP
 
-This manual is for @code{tgicmp v@value{VERSION}} (@value{DATE}), a
-library for performing type-generic integer comparisons in C.
+This manual is for TGICMP @value{VERSION} (@value{DATE}), a collection
+of type-generic integer comparison macros for C.
 @end ifnottex
 
 @menu
