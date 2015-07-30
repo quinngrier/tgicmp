@@ -11,6 +11,7 @@
 @subtitle Type-Generic Integer Comparison Macros for C
 @subtitle Version @value{VERSION}
 @subtitle @value{DATE}
+@vskip 0pt plus 1filll
 @page
 @vskip 0pt plus 1filll
 @insertcopying
