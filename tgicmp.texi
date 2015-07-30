@@ -8,7 +8,7 @@
 
 @titlepage
 @title TGICMP
-@subtitle Type-Generic Integer Comparison Macros for C
+@subtitle Type-Generic Integer Comparisons in C
 @subtitle Version @value{VERSION}
 @subtitle @value{DATE}
 @vskip 0pt plus 1filll
@@ -23,8 +23,8 @@
 @node Top
 @top TGICMP
 
-This manual is for TGICMP @value{VERSION} (@value{DATE}), a collection
-of type-generic integer comparison macros for C.
+This manual is for TGICMP @value{VERSION} (@value{DATE}), a library for
+performing type-generic integer comparisons in C.
 @end ifnottex
 
 @menu
