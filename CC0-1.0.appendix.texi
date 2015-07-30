@@ -1,4 +1,4 @@
-@node The CC0 1-0 Universal Public Domain Dedication
+@node CC0
 @appendix The CC0 1.0 Universal Public Domain Dedication
 
 @quotation
