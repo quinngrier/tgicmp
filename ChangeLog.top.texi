@@ -13,11 +13,9 @@ changes introduced in each version of the project, see the @file{NEWS}
 file or the News appendix of the manual.
 
 The list is generated from the TGICMP Git repository,
-which contains the complete historical record of the project. The
-repository should be easy to find by searching the Internet or by
-visiting one of the following mirrors:
-
-@include MIRRORS.texi
+which contains the complete historical record of the project. For
+information on obtaining a copy of the repository, see the
+@file{MIRRORS} file or the Mirrors appendix of the manual.
 
 The list follows.
 @bye
