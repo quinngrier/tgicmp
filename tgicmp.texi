@@ -9,7 +9,8 @@
 @titlepage
 @title TGICMP
 @subtitle Type-Generic Integer Comparison Macros for C
-@subtitle @code{v@value{VERSION}} (@value{DATE})
+@subtitle Version @value{VERSION}
+@subtitle @value{DATE}
 @page
 @vskip 0pt plus 1filll
 @insertcopying
