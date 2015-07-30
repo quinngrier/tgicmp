@@ -83,6 +83,15 @@ The list follows.
 @node News
 @appendix News
 
+This appendix contains a list of the major changes introduced in each
+version of TGICMP@.
+The list is in reverse chronological order. For a more detailed list of
+individual changes, see the @file{ChangeLog} file or the Git repository,
+which contains the complete history of the project. For information on
+downloading the repository, @pxref{Mirrors}.
+
+The list follows.
+
 @include NEWS.texi
 
 @include CC0-1.0.appendix.texi
