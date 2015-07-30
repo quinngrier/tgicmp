@@ -33,7 +33,7 @@ performing type-generic integer comparisons in C@.
 * Copying::
 * Mirrors::
 * News::
-* The CC0 1.0 Universal Public Domain Dedication: CC0.
+* CC0:: The CC0 1.0 Universal Public Domain Dedication.
 @end menu
 
 @node Introduction
