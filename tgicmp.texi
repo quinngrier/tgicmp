@@ -74,7 +74,7 @@ It may also be available at
 This appendix contains a list of mirrors from which the TGICMP
 Git repository can be downloaded. The list is in no particular order.
 Most mirrors also provide a web interface for browsing the repository
-with only a web browser.
+with a web browser.
 
 The list follows.
 
