@@ -59,8 +59,8 @@ equal work over more commits than others. The commit count is also shown
 as the percentage of all commits.
 
 The list is generated from the TGICMP Git repository,
-which contains the complete historical record of the project. For
-information on obtaining a copy of the repository, @pxref{Mirrors}.
+which contains the complete history of the project. For information on
+obtaining a copy of the repository, @pxref{Mirrors}.
 
 The list follows.
 
