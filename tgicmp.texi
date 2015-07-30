@@ -26,7 +26,7 @@ library for performing type-generic integer comparisons in C.
 @end ifnottex
 
 @menu
-* Copyright information::
+* Copying::
 * Introduction::
 * Authors::
 * Mirrors::
@@ -34,8 +34,8 @@ library for performing type-generic integer comparisons in C.
 * The CC0 1.0 Universal Public Domain Dedication: The CC0 1-0 Universal Public Domain Dedication.
 @end menu
 
-@node Copyright information
-@unnumbered Copyright information
+@node Copying
+@unnumbered Copying
 
 The authors of TGICMP have waived all copyright and
 related or neighboring rights to the extent permitted by
