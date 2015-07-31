@@ -53,7 +53,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
       max_years[i] = year
     }
     years[i, year] = 1
-    ++commits[i]
+    ++count[i]
     ++total
   }
   END {
@@ -62,8 +62,8 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
       print "@frenchspacing on"
       print "@item " names[i] " --- @email{" emails[i] "}"
       print "@frenchspacing off"
-      printf "%d commit%s", commits[i], (commits[i] > 1 ? "s" : "")
-      printf " (%.2f%%)", commits[i] / total * 100
+      printf "%d commit%s", count[i], (count[i] > 1 ? "s" : "")
+      printf " (%.2f%%)", count[i] / total * 100
       printf " in %d", min_years[i]
       for (y = min_years[i] + 1; y <= max_years[i]; ++y)
         if (!years[i, y]) continue
