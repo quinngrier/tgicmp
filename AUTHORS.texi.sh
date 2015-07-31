@@ -39,7 +39,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
     pair = name "\n" email
     if (map[pair]) {
       i = map[pair]
-      if (year < min_years[i]) min_years[i] = year
+      if (year < minyears[i]) minyears[i] = year
       if (year > max_years[i]) max_years[i] = year
     } else {
       i = map[pair] = ++n
@@ -49,7 +49,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
       fix("}", "@}")
       names[i] = name
       emails[i] = email
-      min_years[i] = year
+      minyears[i] = year
       max_years[i] = year
     }
     years[i, year] = 1
@@ -64,8 +64,8 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
       print "@frenchspacing off"
       printf "%d commit%s", count[i], (count[i] > 1 ? "s" : "")
       printf " (%.2f%%)", count[i] / total * 100
-      printf " in %d", min_years[i]
-      for (y = min_years[i] + 1; y <= max_years[i]; ++y)
+      printf " in %d", minyears[i]
+      for (y = minyears[i] + 1; y <= max_years[i]; ++y)
         if (!years[i, y]) continue
         else if (!years[i, y - 1]) printf ", %d", y
         else if (!years[i, y + 1]) printf "--%d", y
