@@ -47,10 +47,6 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
       gsub("@",   "@@",  name); gsub("@",   "@@",  email)
       gsub("\\{", "@{",  name); gsub("\\{", "@{",  email)
       gsub("}",   "@}",  name); gsub("}",   "@}",  email)
-      gsub(":",   ":@:", name); gsub(":",   ":@:", email)
-      gsub("!",   "!@:", name); gsub("!",   "!@:", email)
-      gsub("\\.", ".@:", name); gsub("\\.", ".@:", email)
-      gsub("\\?", "?@:", name); gsub("\\?", "?@:", email)
       names[i] = name
       emails[i] = email
       min_years[i] = year
@@ -63,7 +59,9 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
   END {
     for (i = 1; i <= n; ++i) {
       if (i > 1) print ""
+      print "@frenchspacing on"
       print "@item " names[i] " --- @email{" emails[i] "}"
+      print "@frenchspacing off"
       printf "%d commit%s", commits[i], (commits[i] > 1 ? "s" : "")
       printf " (%.2f%%)", commits[i] / total * 100
       printf " in %d", min_years[i]
