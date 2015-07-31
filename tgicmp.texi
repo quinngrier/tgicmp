@@ -39,6 +39,21 @@ performing type-generic integer comparisons in C@.
 @node Introduction
 @chapter Introduction
 
+@allowcodebreaks false
+@dfn{TGICMP} (pronunciation: tee-jee-eye-KOMP) is a library for
+performing type-generic integer comparisons in C@. Normal integer
+comparisons can sometimes have surprising results for integers with
+different types. For example, one might expect @code{-1@tie{}<@tie{}0U}
+to be true, but it is actually false. This is because of the @dfn{usual
+arithmetic conversions}, which are the rules for consolidating operands
+with different types. When one integer has signed type and the other has
+unsigned type, these rules can sometimes change the value of the signed
+integer and flip the result of the comparison. TGICMP provides a means
+to avoid this behavior and always compute the conceptual result of an
+integer comparison regardless of the types involved. For this example,
+the @code{TGILT} macro can be used: @code{TGILT(-1,@tie{}0U)} is true.
+@allowcodebreaks true
+
 @node Authors
 @appendix Authors
 
