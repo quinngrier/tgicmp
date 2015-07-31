@@ -50,7 +50,7 @@ cat >ChangeLog.tmp3 <<'EOF'
   NR % 5 == 4 { month = $2; day = $3; time = $4; year = $5 }
   NR % 5 == 0 {
     subject = $0
-    apply_fixes()
+    apply_fix_file()
     month = map[month]
     if (day < 10) day = "0" day
     if (NR > 5) print ""
@@ -65,7 +65,7 @@ cat >ChangeLog.tmp3 <<'EOF'
     gsub(ere, repl, email)
     gsub(ere, repl, subject)
   }
-  function apply_fixes() {
+  function apply_fix_file() {
 EOF
 
 if test -f ChangeLog.fix; then

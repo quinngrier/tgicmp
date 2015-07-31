@@ -43,7 +43,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
       if (year > max_years[i]) max_years[i] = year
     } else {
       i = map[pair] = ++n
-      apply_fixes()
+      apply_fix_file()
       fix("@", "@@")
       fix("\\{", "@{")
       fix("}", "@}")
@@ -77,7 +77,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
     gsub(ere, repl, name)
     gsub(ere, repl, email)
   }
-  function apply_fixes() {
+  function apply_fix_file() {
 EOF
 
 if test -f AUTHORS.texi.fix; then
