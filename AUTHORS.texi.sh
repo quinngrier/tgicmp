@@ -40,7 +40,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
     if (map[pair]) {
       i = map[pair]
       if (year < minyears[i]) minyears[i] = year
-      if (year > max_years[i]) max_years[i] = year
+      if (year > maxyears[i]) maxyears[i] = year
     } else {
       i = map[pair] = ++n
       apply_fix_file()
@@ -50,7 +50,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
       names[i] = name
       emails[i] = email
       minyears[i] = year
-      max_years[i] = year
+      maxyears[i] = year
     }
     years[i, year] = 1
     ++count[i]
@@ -65,7 +65,7 @@ cat >AUTHORS.texi.tmp3 <<'EOF'
       printf "%d commit%s", count[i], (count[i] > 1 ? "s" : "")
       printf " (%.2f%%)", count[i] / total * 100
       printf " in %d", minyears[i]
-      for (y = minyears[i] + 1; y <= max_years[i]; ++y)
+      for (y = minyears[i] + 1; y <= maxyears[i]; ++y)
         if (!years[i, y]) continue
         else if (!years[i, y - 1]) printf ", %d", y
         else if (!years[i, y + 1]) printf "--%d", y
