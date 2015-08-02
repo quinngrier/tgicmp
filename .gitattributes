@@ -1,8 +1,8 @@
 #
-# When end-of-line normalization is enabled, line endings are quietly
-# adjusted when files are checked in and out. This can be problematic
-# and should generally be disabled, but some versions of Git enable it
-# by default. The following line ensures that it is disabled. For more
+# When end-of-line normalization is enabled, Git quietly adjusts line
+# endings as files are checked in and out. This can be a problem and
+# should generally be disabled, but some flavors of Git enable it by
+# default. The following line ensures that it is disabled. For more
 # information, see the gitattributes documentation.
 #
 
