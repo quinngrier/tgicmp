@@ -3,6 +3,7 @@ AC_INIT([tgicmp],
         [quinn.grier@gmail.com],
         [tgicmp],
         [https://github.com/quinngrier/tgicmp])
+
 AC_CONFIG_SRCDIR([tgicmp.3.in])
 
 m4_define([AC_PACKAGE_DATE],
