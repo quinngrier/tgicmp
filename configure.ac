@@ -1,9 +1,9 @@
-AC_INIT([tgicmp], m4_esyscmd_s([sh VERSION.sh])m4_assert(!m4_sysval),
+AC_INIT([tgicmp], m4_esyscmd_s([sh VERSION.sh])m4_assert(m4_sysval == 0),
         [quinn.grier@gmail.com])
 AC_CONFIG_SRCDIR([tgicmp.3.in])
 
 m4_define([AC_PACKAGE_DATE],
-          m4_esyscmd_s([sh DATE.sh])m4_assert(!m4_sysval))
+          m4_esyscmd_s([sh DATE.sh])m4_assert(m4_sysval == 0))
 PACKAGE_DATE=AC_PACKAGE_DATE
 AC_SUBST([PACKAGE_DATE])
 AC_DEFINE([PACKAGE_DATE], "AC_PACKAGE_DATE")
