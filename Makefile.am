@@ -1,4 +1,5 @@
-include_HEADERS = $(srcdir)/tgicmp.h
+include_HEADERS =
+include_HEADERS += tgicmp.h
 
 $(builddir)/tgicmp.3: $(srcdir)/tgicmp.3.in
 	sed -e 's|@PACKAGE_DATE[@]|$(PACKAGE_DATE)|g'       \
