@@ -14,7 +14,12 @@ PACKAGE_DATE=AC_PACKAGE_DATE
 AC_SUBST([PACKAGE_DATE])
 AC_DEFINE([PACKAGE_DATE], "AC_PACKAGE_DATE")
 
-AM_INIT_AUTOMAKE([-Wall -Werror info-in-builddir])
+AM_INIT_AUTOMAKE([
+  -Wall
+  -Werror
+  info-in-builddir
+])
+
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
 
