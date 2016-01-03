@@ -43,7 +43,9 @@ $(builddir)/PACKAGE.texi: $(srcdir)/PACKAGE.texi.in
 	    $? >$@
 EXTRA_DIST += $(srcdir)/PACKAGE.texi.in
 
-info_TEXINFOS = tgicmp.texi
+info_TEXINFOS =
+info_TEXINFOS += tgicmp.texi
+
 tgicmp_TEXINFOS =
 tgicmp_TEXINFOS += $(builddir)/PACKAGE.texi
 tgicmp_TEXINFOS += $(srcdir)/AUTHORS.texi
