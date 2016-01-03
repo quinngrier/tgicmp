@@ -1,6 +1,6 @@
 AC_INIT([TGICMP],
         m4_esyscmd_s(
-          [sh VERSION.sh]
+          [sh build-aux/VERSION.sh]
         )m4_assert(m4_sysval == 0),
         [quinn.grier@gmail.com],
         [tgicmp],

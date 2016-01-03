@@ -34,8 +34,8 @@ EXTRA_DIST =
 EXTRA_DIST += $(srcdir)/DATE
 EXTRA_DIST += $(srcdir)/DATE.sh
 EXTRA_DIST += $(srcdir)/VERSION
-EXTRA_DIST += $(srcdir)/VERSION.sh
 EXTRA_DIST += $(srcdir)/tgicmp.3.in
+EXTRA_DIST += build-aux/VERSION.sh
 
 $(builddir)/PACKAGE.texi: $(srcdir)/PACKAGE.texi.in
 	sed -e 's|@PACKAGE_DATE[@]|$(PACKAGE_DATE)|g'       \
