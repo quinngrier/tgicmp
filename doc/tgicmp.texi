@@ -1,0 +1,61 @@
+\input texinfo
+@setfilename tgicmp.info
+
+@ifclear insertascii
+@documentencoding UTF-8
+@end ifclear
+
+@include PACKAGEVERSION.texi
+
+@settitle TGICMP @value{PACKAGEVERSION}
+
+@include CC0-1.0-copying.texi
+@include PACKAGEDATE.texi
+
+@set fullmanual
+
+@ifplaintext
+@chapheading TGICMP @w{@value{PACKAGEVERSION}}
+@end ifplaintext
+
+@titlepage
+@title TGICMP @w{@value{PACKAGEVERSION}}
+@subtitle @w{@value{PACKAGEDATE}}
+@vskip 0pt plus 1filll
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+
+@include bothcontents.texi
+
+@ifnottex
+@node Top
+@top TGICMP @w{@value{PACKAGEVERSION}}
+
+This manual is for
+TGICMP @w{@value{PACKAGEVERSION}},
+which was released on @w{@value{PACKAGEDATE}}@.
+@ifplaintext
+
+@insertcopying
+@end ifplaintext
+
+@menu
+* Copyright Information::
+@end menu
+@end ifnottex
+
+@include Copyright-Information.texi
+@ifxml
+@c
+@c The authors of this file have waived all copyright and
+@c related or neighboring rights to the extent permitted by
+@c law as described by the CC0 1.0 Universal Public Domain
+@c Dedication. You should have received a copy of the full
+@c dedication along with this file, typically as a file
+@c named <CC0-1.0.txt>. If not, it may be available at
+@c <https://creativecommons.org/publicdomain/zero/1.0/>.
+@c
+@end ifxml
+@bye
