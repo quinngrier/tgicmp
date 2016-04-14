@@ -33,9 +33,10 @@
 @node Top
 @top TGICMP @w{@value{PACKAGEVERSION}}
 
-This manual is for
-TGICMP @w{@value{PACKAGEVERSION}},
-which was released on @w{@value{PACKAGEDATE}}@.
+This manual is for TGICMP
+@w{@value{PACKAGEVERSION}@comma{}}
+which was released on
+@w{@value{PACKAGEDATE}@.}
 @ifplaintext
 
 @insertcopying
