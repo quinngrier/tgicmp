@@ -18,6 +18,7 @@ AM_INIT_AUTOMAKE([
   -Wall
   -Werror
   info-in-builddir
+  tar-ustar
 ])
 
 AC_CONFIG_FILES([Makefile])
