@@ -3,8 +3,6 @@
 include_HEADERS =
 include_HEADERS += tgicmp.h
 
-dist_doc_DATA = $(srcdir)/CC0-1.0.txt
-
 EXTRA_DIST =
 EXTRA_DIST += $(srcdir)/DATE
 EXTRA_DIST += $(srcdir)/DATE.sh
