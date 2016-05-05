@@ -4,10 +4,10 @@ include_HEADERS =
 include_HEADERS += tgicmp.h
 
 EXTRA_DIST =
-EXTRA_DIST += $(srcdir)/DATE
-EXTRA_DIST += $(srcdir)/DATE.sh
-EXTRA_DIST += $(srcdir)/VERSION
-EXTRA_DIST += $(srcdir)/tgicmp.3.in
+EXTRA_DIST += CC0-1.0.txt
+EXTRA_DIST += DATE
+EXTRA_DIST += VERSION
+EXTRA_DIST += build-aux/DATE.sh
 EXTRA_DIST += build-aux/VERSION.sh
 
 ## end_variables
