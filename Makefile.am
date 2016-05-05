@@ -58,6 +58,10 @@ tgicmp_TEXINFOS += $(srcdir)/NEWS.texi
 
 ## end_variables
 
+## begin_includes
+
+## end_includes
+
 ##
 ## The authors of this file have waived all copyright and
 ## related or neighboring rights to the extent permitted by
