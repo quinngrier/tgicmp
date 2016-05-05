@@ -27,6 +27,9 @@ AM_INIT_AUTOMAKE([
   tar-ustar
 ])
 
+AT='@'
+AC_SUBST([AT])
+
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
 
