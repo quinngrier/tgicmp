@@ -1,3 +1,5 @@
+## begin_variables
+
 include_HEADERS =
 include_HEADERS += tgicmp.h
 
@@ -53,6 +55,8 @@ tgicmp_TEXINFOS += $(srcdir)/CC0-1.0.appendix.texi
 tgicmp_TEXINFOS += $(srcdir)/CC0-1.0.copying.texi
 tgicmp_TEXINFOS += $(srcdir)/MIRRORS.texi
 tgicmp_TEXINFOS += $(srcdir)/NEWS.texi
+
+## end_variables
 
 ##
 ## The authors of this file have waived all copyright and
