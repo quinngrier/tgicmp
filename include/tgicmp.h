@@ -1,28 +1,28 @@
-#ifndef TGILT
-  #define TGILT(x, y) \
+#ifndef TGICMPLT
+  #define TGICMPLT(x, y) \
     ((x) % 1 == 0 && /* allow only integers */ \
      (y) % 1 == 0 && /* allow only integers */ \
      (((x) < 0) == ((y) < 0) ? (x) < (y) : (x) < 0))
 #endif
 
-#ifndef TGIGT
-  #define TGIGT(x, y) TGILT(y, x)
+#ifndef TGICMPGT
+  #define TGICMPGT(x, y) TGICMPLT(y, x)
 #endif
 
-#ifndef TGILE
-  #define TGILE(x, y) (!TGIGT(x, y))
+#ifndef TGICMPLE
+  #define TGICMPLE(x, y) (!TGICMPGT(x, y))
 #endif
 
-#ifndef TGIGE
-  #define TGIGE(x, y) (!TGILT(x, y))
+#ifndef TGICMPGE
+  #define TGICMPGE(x, y) (!TGICMPLT(x, y))
 #endif
 
-#ifndef TGIEQ
-  #define TGIEQ(x, y) (TGILE(x, y) && TGIGE(x, y))
+#ifndef TGICMPEQ
+  #define TGICMPEQ(x, y) (TGICMPLE(x, y) && TGICMPGE(x, y))
 #endif
 
-#ifndef TGINE
-  #define TGINE(x, y) (!TGIEQ(x, y))
+#ifndef TGICMPNE
+  #define TGICMPNE(x, y) (!TGICMPEQ(x, y))
 #endif
 
 /*
