@@ -7,7 +7,10 @@ AC_INIT(
   [tgicmp],
   [https://github.com/quinngrier/tgicmp])
 
-AC_CONFIG_SRCDIR([tgicmp.3.in])
+AC_CONFIG_AUX_DIR([build-aux])
+AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_MACRO_DIRS([m4])
+AC_CONFIG_SRCDIR([doc/tgicmp.texi])
 
 m4_define([AC_PACKAGE_DATE],
           m4_esyscmd_s([sh DATE.sh])m4_assert(m4_sysval == 0))
