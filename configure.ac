@@ -32,6 +32,8 @@ m4_include([build-aux/CC0-1.0-AC-COPYRIGHT.ac])
 AT='@'
 AC_SUBST([AT])
 
+AC_SUBST([TEXI2DVIFLAGS])
+
 AC_CONFIG_FILES([Makefile])
 
 AC_OUTPUT
