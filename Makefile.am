@@ -12,23 +12,6 @@ EXTRA_DIST += $(srcdir)/VERSION
 EXTRA_DIST += $(srcdir)/tgicmp.3.in
 EXTRA_DIST += build-aux/VERSION.sh
 
-$(builddir)/PACKAGE.texi: $(srcdir)/PACKAGE.texi.in
-	sed -e 's|@PACKAGE_DATE[@]|$(PACKAGE_DATE)|g'       \
-	    -e 's|@PACKAGE_VERSION[@]|$(PACKAGE_VERSION)|g' \
-	    $? >$@
-EXTRA_DIST += $(srcdir)/PACKAGE.texi.in
-
-info_TEXINFOS =
-info_TEXINFOS += tgicmp.texi
-
-tgicmp_TEXINFOS =
-tgicmp_TEXINFOS += $(builddir)/PACKAGE.texi
-tgicmp_TEXINFOS += $(srcdir)/AUTHORS.texi
-tgicmp_TEXINFOS += $(srcdir)/CC0-1.0.appendix.texi
-tgicmp_TEXINFOS += $(srcdir)/CC0-1.0.copying.texi
-tgicmp_TEXINFOS += $(srcdir)/MIRRORS.texi
-tgicmp_TEXINFOS += $(srcdir)/NEWS.texi
-
 ## end_variables
 
 ## begin_includes
