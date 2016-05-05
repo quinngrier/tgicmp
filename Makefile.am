@@ -1,14 +1,14 @@
 ## begin_variables
 
-include_HEADERS =
-include_HEADERS += tgicmp.h
-
 EXTRA_DIST =
 EXTRA_DIST += CC0-1.0.txt
 EXTRA_DIST += DATE
 EXTRA_DIST += VERSION
 EXTRA_DIST += build-aux/DATE.sh
 EXTRA_DIST += build-aux/VERSION.sh
+
+include_HEADERS =
+include_HEADERS += tgicmp.h
 
 ## end_variables
 
