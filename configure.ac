@@ -27,6 +27,8 @@ AM_INIT_AUTOMAKE([
   tar-ustar
 ])
 
+m4_include([build-aux/CC0-1.0-AC-COPYRIGHT.ac])
+
 AT='@'
 AC_SUBST([AT])
 
