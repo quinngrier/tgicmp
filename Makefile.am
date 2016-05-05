@@ -60,6 +60,8 @@ tgicmp_TEXINFOS += $(srcdir)/NEWS.texi
 
 ## begin_includes
 
+include $(srcdir)/build-aux/GATBPS_CONFIG_FILE_RULES.am
+
 ## end_includes
 
 include $(srcdir)/build-aux/CC0-1.0-AM-COPYRIGHT.am
