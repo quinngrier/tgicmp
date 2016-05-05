@@ -31,6 +31,7 @@ AT='@'
 AC_SUBST([AT])
 
 AC_CONFIG_FILES([Makefile])
+
 AC_OUTPUT
 
 dnl
