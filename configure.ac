@@ -1,10 +1,11 @@
-AC_INIT([TGICMP],
-        m4_esyscmd_s(
-          [sh build-aux/VERSION.sh]
-        )m4_assert(m4_sysval == 0),
-        [quinn.grier@gmail.com],
-        [tgicmp],
-        [https://github.com/quinngrier/tgicmp])
+AC_INIT(
+  [TGICMP],
+  m4_esyscmd_s([{ ':'
+    'sh' 'build-aux/VERSION.sh'
+  }])m4_if(m4_sysval, [0], [], [m4_fatal([VERSION.sh failed])]),
+  [quinn.grier@gmail.com],
+  [tgicmp],
+  [https://github.com/quinngrier/tgicmp])
 
 AC_CONFIG_SRCDIR([tgicmp.3.in])
 
