@@ -1,8 +1,8 @@
 #if (!defined(TGICMPLT))
   #define TGICMPLT(x, y) ( \
-    (x) % 1 == 0 /* allow only integers */ \
+    (x) % 1 == 0 /* only allow integers */ \
     && \
-    (y) % 1 == 0 /* allow only integers */ \
+    (y) % 1 == 0 /* only allow integers */ \
     && \
     (((x) < 0) == ((y) < 0) ? (x) < (y) : (x) < 0) \
   )
