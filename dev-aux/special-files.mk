@@ -14,6 +14,7 @@ all:
 	$(GATBPS) '--' 'CC0-1.0.txt'
 	$(GATBPS) '--' 'build-aux/CC0-1.0-AC-COPYRIGHT.ac'
 	$(GATBPS) '--' 'build-aux/DATE.sh'
+	$(GATBPS) '--' 'build-aux/GATBPS_CONFIG_FILE_RULES.am'
 	$(GATBPS) '--' 'build-aux/VERSION.sh'
 	$(GATBPS) '--' 'dev-aux/CC0-1.0-commit.txt'
 	$(GATBPS) '--' 'm4/GATBPS_DEFINE_DATE.m4'
