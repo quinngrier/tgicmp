@@ -20,8 +20,9 @@ AC_DEFINE([PACKAGE_DATE], "AC_PACKAGE_DATE")
 
 AM_INIT_AUTOMAKE([
   -Wall
-  -Werror
-  info-in-builddir
+  foreign
+  nostdinc
+  subdir-objects
   tar-ustar
 ])
 
