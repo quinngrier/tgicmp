@@ -62,6 +62,8 @@ tgicmp_TEXINFOS += $(srcdir)/NEWS.texi
 
 ## end_includes
 
+include $(srcdir)/build-aux/CC0-1.0-AM-COPYRIGHT.am
+
 ##
 ## The authors of this file have waived all copyright and
 ## related or neighboring rights to the extent permitted by
