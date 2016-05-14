@@ -5,7 +5,7 @@ AC_INIT(
   }])m4_if(m4_sysval, [0], [], [m4_fatal([VERSION.sh failed])]),
   [quinn.grier@gmail.com],
   [tgicmp],
-  [https://github.com/quinngrier/tgicmp])
+  [http://tgicmp.quinngrier.com])
 
 GATBPS_DEFINE_DATE(
   [AC_],
