@@ -5,7 +5,7 @@
 @documentencoding UTF-8
 @end ifclear
 
-@documentlanguage en_US
+@documentlanguage en
 
 @include PACKAGEVERSION.texi
 
