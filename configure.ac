@@ -14,6 +14,8 @@ GATBPS_DEFINE_DATE(
     'sh' '-' 'build-aux/DATE.sh'
   ])m4_if(m4_sysval, [0], [], [m4_fatal([DATE.sh failed])]))
 
+m4_include([build-aux/CC0-1.0-AC-COPYRIGHT.ac])
+
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_MACRO_DIRS([m4])
@@ -26,8 +28,6 @@ AM_INIT_AUTOMAKE([
   subdir-objects
   tar-ustar
 ])
-
-m4_include([build-aux/CC0-1.0-AC-COPYRIGHT.ac])
 
 AT='@'
 AC_SUBST([AT])
