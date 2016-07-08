@@ -1,3 +1,19 @@
+#if (!defined(TGICMPEQ))
+  #define TGICMPEQ(x, y) (TGICMPLE(x, y) && TGICMPGE(x, y))
+#endif
+
+#if (!defined(TGICMPGE))
+  #define TGICMPGE(x, y) (!TGICMPLT(x, y))
+#endif
+
+#if (!defined(TGICMPGT))
+  #define TGICMPGT(x, y) TGICMPLT(y, x)
+#endif
+
+#if (!defined(TGICMPLE))
+  #define TGICMPLE(x, y) (!TGICMPGT(x, y))
+#endif
+
 #if (!defined(TGICMPLT))
   #define TGICMPLT(x, y) ( \
     (x) % 1 == 0 /* only allow integers */ \
@@ -10,22 +26,6 @@
       (x) < 0 \
     ) \
   )
-#endif
-
-#if (!defined(TGICMPGT))
-  #define TGICMPGT(x, y) TGICMPLT(y, x)
-#endif
-
-#if (!defined(TGICMPLE))
-  #define TGICMPLE(x, y) (!TGICMPGT(x, y))
-#endif
-
-#if (!defined(TGICMPGE))
-  #define TGICMPGE(x, y) (!TGICMPLT(x, y))
-#endif
-
-#if (!defined(TGICMPEQ))
-  #define TGICMPEQ(x, y) (TGICMPLE(x, y) && TGICMPGE(x, y))
 #endif
 
 #if (!defined(TGICMPNE))
