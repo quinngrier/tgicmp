@@ -5,7 +5,17 @@
 #endif
 
 #if (!defined(TGICMPGE))
-  #define TGICMPGE(x, y) (!TGICMPLT(x, y))
+  #define TGICMPGE(x, y) ( \
+    (x) % 1 == 0 /* allow only integers */ \
+    && \
+    (y) % 1 == 0 /* allow only integers */ \
+    && \
+    ( \
+      WFICMPLT(x, 0) == WFICMPLT(y, 0) ? \
+      WFICMPGE(x, y) : \
+      WFICMPLT(y, 0) \
+    ) \
+  )
 #endif
 
 #if (!defined(TGICMPGT))
