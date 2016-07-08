@@ -9,7 +9,17 @@
 #endif
 
 #if (!defined(TGICMPGT))
-  #define TGICMPGT(x, y) TGICMPLT(y, x)
+  #define TGICMPGT(x, y) ( \
+    (x) % 1 == 0 /* allow only integers */ \
+    && \
+    (y) % 1 == 0 /* allow only integers */ \
+    && \
+    ( \
+      WFICMPLT(x, 0) == WFICMPLT(y, 0) ? \
+      WFICMPGT(x, y) : \
+      WFICMPLT(y, 0) \
+    ) \
+  )
 #endif
 
 #if (!defined(TGICMPLE))
