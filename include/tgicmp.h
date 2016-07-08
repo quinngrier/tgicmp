@@ -1,3 +1,5 @@
+#include <wficmp.h>
+
 #if (!defined(TGICMPEQ))
   #define TGICMPEQ(x, y) (TGICMPLE(x, y) && TGICMPGE(x, y))
 #endif
