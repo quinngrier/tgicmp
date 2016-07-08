@@ -1,7 +1,17 @@
 #include <wficmp.h>
 
 #if (!defined(TGICMPEQ))
-  #define TGICMPEQ(x, y) (TGICMPLE(x, y) && TGICMPGE(x, y))
+  #define TGICMPEQ(x, y) ( \
+    (x) % 1 == 0 /* allow only integers */ \
+    && \
+    (y) % 1 == 0 /* allow only integers */ \
+    && \
+    ( \
+      WFICMPLT(x, 0) == WFICMPLT(y, 0) ? \
+      WFICMPEQ(x, y) : \
+      0 \
+    ) \
+  )
 #endif
 
 #if (!defined(TGICMPGE))
