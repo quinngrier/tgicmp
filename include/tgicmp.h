@@ -71,7 +71,17 @@
 #endif
 
 #if (!defined(TGICMPNE))
-  #define TGICMPNE(x, y) (!TGICMPEQ(x, y))
+  #define TGICMPNE(x, y) ( \
+    (x) % 1 == 0 /* allow only integers */ \
+    && \
+    (y) % 1 == 0 /* allow only integers */ \
+    && \
+    ( \
+      WFICMPLT(x, 0) == WFICMPLT(y, 0) ? \
+      WFICMPNE(x, y) : \
+      1 \
+    ) \
+  )
 #endif
 
 /*
