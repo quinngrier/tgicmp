@@ -23,9 +23,9 @@
     (y) % 1 == 0 /* only allow integers */ \
     && \
     ( \
-      ((x) < 0) == ((y) < 0) ? \
-      (x) < (y) : \
-      (x) < 0 \
+      WFICMPLT(x, 0) == WFICMPLT(y, 0) ? \
+      WFICMPLT(x, y) : \
+      WFICMPLT(x, 0) \
     ) \
   )
 #endif
