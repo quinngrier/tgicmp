@@ -36,9 +36,9 @@
 @top TGICMP@tie{}@w{@value{PACKAGEVERSION}}
 
 This manual is for
-TGICMP@tie{}@w{@value{PACKAGEVERSION}@comma{}}
+TGICMP@tie{}@w{@value{PACKAGEVERSION}},
 which was released
-on@tie{}@w{@value{PACKAGEDATE}@.}
+on@tie{}@w{@value{PACKAGEDATE}}@.
 @ifplaintext
 
 @insertcopying
