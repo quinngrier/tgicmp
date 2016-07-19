@@ -17,11 +17,11 @@
 @set fullmanual
 
 @ifplaintext
-@chapheading TGICMP @w{@value{PACKAGEVERSION}}
+@chapheading TGICMP@tie{}@w{@value{PACKAGEVERSION}}
 @end ifplaintext
 
 @titlepage
-@title TGICMP @w{@value{PACKAGEVERSION}}
+@title TGICMP@tie{}@w{@value{PACKAGEVERSION}}
 @subtitle @w{@value{PACKAGEDATE}}
 @vskip 0pt plus 1filll
 @page
@@ -33,12 +33,12 @@
 
 @ifnottex
 @node Top
-@top TGICMP @w{@value{PACKAGEVERSION}}
+@top TGICMP@tie{}@w{@value{PACKAGEVERSION}}
 
-This manual is for TGICMP
-@w{@value{PACKAGEVERSION}@comma{}}
-which was released on
-@w{@value{PACKAGEDATE}@.}
+This manual is for
+TGICMP@tie{}@w{@value{PACKAGEVERSION}@comma{}}
+which was released
+on@tie{}@w{@value{PACKAGEDATE}@.}
 @ifplaintext
 
 @insertcopying
