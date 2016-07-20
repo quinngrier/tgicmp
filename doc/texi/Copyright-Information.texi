@@ -6,6 +6,25 @@
 @unnumbered Copyright Information
 @end ifclear
 
+@noindent
+All parts of TGICMP are original work@.
+The authors have waived all copyright and related or neighboring rights
+to the extent permitted by law as described by the Creative Commons Zero
+(CC0)@tie{}1.@:0
+Universal Public Domain Dedication@.
+@ifset fullmanual
+For the full dedication,
+@pxref{Creative Commons Zero@tie{}@w{1-0}}@.
+It may also be available at
+@url{https://creativecommons.org/publicdomain/zero/1.0/}@.
+@end ifset
+@ifclear fullmanual
+You should have received a copy of the full dedication along with this
+file, typically as a file named
+@url{CC0-1.0.txt}@.
+If not, it may be available at
+@url{https://creativecommons.org/publicdomain/zero/1.0/}@.
+@end ifclear
 @ifxml
 @ifnotxml
 @c
