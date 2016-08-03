@@ -6,6 +6,8 @@ GATBPS = 'gatbps'
 
 GATBPSFLAGS =
 
+GENERATE = $(GATBPS) $(GATBPSFLAGS) '--'
+
 ## end_variables
 
 ## begin_rules
@@ -13,17 +15,17 @@ GATBPSFLAGS =
 .PHONY: all
 
 all:
-	$(GATBPS) $(GATBPSFLAGS) '--' 'CC0-1.0.txt'
-	$(GATBPS) $(GATBPSFLAGS) '--' 'build-aux/CC0-1.0-AC-COPYRIGHT.ac'
-	$(GATBPS) $(GATBPSFLAGS) '--' 'build-aux/CC0-1.0-AM-COPYRIGHT.am'
-	$(GATBPS) $(GATBPSFLAGS) '--' 'build-aux/DATE.sh'
-	$(GATBPS) $(GATBPSFLAGS) '--' 'build-aux/GATBPS_CONFIG_FILE_RULES.am'
-	$(GATBPS) $(GATBPSFLAGS) '--' 'build-aux/VERSION.sh'
-	$(GATBPS) $(GATBPSFLAGS) '--' 'dev-aux/CC0-1.0-commit.txt'
-	$(GATBPS) $(GATBPSFLAGS) '--' 'dev-aux/Makefile.am.vim'
-	$(GATBPS) $(GATBPSFLAGS) '--' 'm4/GATBPS_CONFIG_FILE.m4'
-	$(GATBPS) $(GATBPSFLAGS) '--' 'm4/GATBPS_CONFIG_FILE_SUBST.m4'
-	$(GATBPS) $(GATBPSFLAGS) '--' 'm4/GATBPS_DEFINE_DATE.m4'
+	$(GENERATE) 'CC0-1.0.txt'
+	$(GENERATE) 'build-aux/CC0-1.0-AC-COPYRIGHT.ac'
+	$(GENERATE) 'build-aux/CC0-1.0-AM-COPYRIGHT.am'
+	$(GENERATE) 'build-aux/DATE.sh'
+	$(GENERATE) 'build-aux/GATBPS_CONFIG_FILE_RULES.am'
+	$(GENERATE) 'build-aux/VERSION.sh'
+	$(GENERATE) 'dev-aux/CC0-1.0-commit.txt'
+	$(GENERATE) 'dev-aux/Makefile.am.vim'
+	$(GENERATE) 'm4/GATBPS_CONFIG_FILE.m4'
+	$(GENERATE) 'm4/GATBPS_CONFIG_FILE_SUBST.m4'
+	$(GENERATE) 'm4/GATBPS_DEFINE_DATE.m4'
 
 ## end_rules
 
