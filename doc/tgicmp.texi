@@ -9,7 +9,7 @@
 
 @include PACKAGEVERSION.texi
 
-@settitle TGICMP @value{PACKAGEVERSION}
+@settitle TGICMP @value{PACKAGEVERSION} Manual
 
 @include CC0-1.0-copying.texi
 @include PACKAGEDATE.texi
@@ -17,11 +17,11 @@
 @set fullmanual
 
 @ifplaintext
-@chapheading TGICMP@tie{}@w{@value{PACKAGEVERSION}}
+@chapheading TGICMP@tie{}@w{@value{PACKAGEVERSION}} Manual
 @end ifplaintext
 
 @titlepage
-@title TGICMP@tie{}@w{@value{PACKAGEVERSION}}
+@title TGICMP@tie{}@w{@value{PACKAGEVERSION}} Manual
 @subtitle @w{@value{PACKAGEDATE}}
 @vskip 0pt plus 1filll
 @page
@@ -33,7 +33,7 @@
 
 @ifnottex
 @node Top
-@top TGICMP@tie{}@w{@value{PACKAGEVERSION}}
+@top TGICMP@tie{}@w{@value{PACKAGEVERSION}} Manual
 
 This manual is for
 TGICMP@tie{}@w{@value{PACKAGEVERSION}},
