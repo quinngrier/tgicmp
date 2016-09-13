@@ -1,4 +1,6 @@
-AC_INIT(
+[
+
+]AC_INIT(
   [[TGICMP]],
   m4_esyscmd_s([
     'sh' '-' 'build-aux/VERSION.sh'
