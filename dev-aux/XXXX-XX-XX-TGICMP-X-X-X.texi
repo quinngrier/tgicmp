@@ -1,9 +1,9 @@
 @ifset fullmanual
-@node @w{YYYY-MM-DD}@tie{}--- TGICMP@tie{}@w{X-Y-Z}
-@unnumbered @w{YYYY-MM-DD}@tie{}--- TGICMP@tie{}@w{X.@:Y.@:Z}
+@node @w{XXXX-XX-XX}@tie{}--- TGICMP@tie{}@w{X-X-X}
+@unnumbered @w{XXXX-XX-XX}@tie{}--- TGICMP@tie{}@w{X.@:X.@:X}
 @end ifset
 @ifclear fullmanual
-@unnumbered @w{YYYY-MM-DD}@tie{}--- TGICMP@tie{}@w{X.@:Y.@:Z}
+@unnumbered @w{XXXX-XX-XX}@tie{}--- TGICMP@tie{}@w{X.@:X.@:X}
 @end ifclear
 
 @ifxml
