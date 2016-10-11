@@ -2,9 +2,9 @@
 
 #if (!defined(TGICMPEQ))
   #define TGICMPEQ(x, y) ( \
-    (x) % 1 == 0 /* allow only integers */ \
+    (x) % 1 == 0 /* reject expressions not of integer type */ \
     && \
-    (y) % 1 == 0 /* allow only integers */ \
+    (y) % 1 == 0 /* reject expressions not of integer type */ \
     && \
     ( \
       WFICMPLT(x, 0) == WFICMPLT(y, 0) ? \
@@ -16,9 +16,9 @@
 
 #if (!defined(TGICMPGE))
   #define TGICMPGE(x, y) ( \
-    (x) % 1 == 0 /* allow only integers */ \
+    (x) % 1 == 0 /* reject expressions not of integer type */ \
     && \
-    (y) % 1 == 0 /* allow only integers */ \
+    (y) % 1 == 0 /* reject expressions not of integer type */ \
     && \
     ( \
       WFICMPLT(x, 0) == WFICMPLT(y, 0) ? \
@@ -30,9 +30,9 @@
 
 #if (!defined(TGICMPGT))
   #define TGICMPGT(x, y) ( \
-    (x) % 1 == 0 /* allow only integers */ \
+    (x) % 1 == 0 /* reject expressions not of integer type */ \
     && \
-    (y) % 1 == 0 /* allow only integers */ \
+    (y) % 1 == 0 /* reject expressions not of integer type */ \
     && \
     ( \
       WFICMPLT(x, 0) == WFICMPLT(y, 0) ? \
@@ -44,9 +44,9 @@
 
 #if (!defined(TGICMPLE))
   #define TGICMPLE(x, y) ( \
-    (x) % 1 == 0 /* allow only integers */ \
+    (x) % 1 == 0 /* reject expressions not of integer type */ \
     && \
-    (y) % 1 == 0 /* allow only integers */ \
+    (y) % 1 == 0 /* reject expressions not of integer type */ \
     && \
     ( \
       WFICMPLT(x, 0) == WFICMPLT(y, 0) ? \
@@ -58,9 +58,9 @@
 
 #if (!defined(TGICMPLT))
   #define TGICMPLT(x, y) ( \
-    (x) % 1 == 0 /* allow only integers */ \
+    (x) % 1 == 0 /* reject expressions not of integer type */ \
     && \
-    (y) % 1 == 0 /* allow only integers */ \
+    (y) % 1 == 0 /* reject expressions not of integer type */ \
     && \
     ( \
       WFICMPLT(x, 0) == WFICMPLT(y, 0) ? \
@@ -72,9 +72,9 @@
 
 #if (!defined(TGICMPNE))
   #define TGICMPNE(x, y) ( \
-    (x) % 1 == 0 /* allow only integers */ \
+    (x) % 1 == 0 /* reject expressions not of integer type */ \
     && \
-    (y) % 1 == 0 /* allow only integers */ \
+    (y) % 1 == 0 /* reject expressions not of integer type */ \
     && \
     ( \
       WFICMPLT(x, 0) == WFICMPLT(y, 0) ? \
