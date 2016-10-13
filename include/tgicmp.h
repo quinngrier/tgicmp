@@ -1,5 +1,10 @@
 #include <wficmp.h>
 
+/**
+ *
+ * @hideinitializer
+ */
+
 #if (!defined(TGICMPEQ))
   #define TGICMPEQ(x, y) ( \
     (x) % 1 == 0 /* reject expressions not of integer type */ \
@@ -13,6 +18,11 @@
     ) \
   )
 #endif
+
+/**
+ *
+ * @hideinitializer
+ */
 
 #if (!defined(TGICMPGE))
   #define TGICMPGE(x, y) ( \
@@ -28,6 +38,11 @@
   )
 #endif
 
+/**
+ *
+ * @hideinitializer
+ */
+
 #if (!defined(TGICMPGT))
   #define TGICMPGT(x, y) ( \
     (x) % 1 == 0 /* reject expressions not of integer type */ \
@@ -41,6 +56,11 @@
     ) \
   )
 #endif
+
+/**
+ *
+ * @hideinitializer
+ */
 
 #if (!defined(TGICMPLE))
   #define TGICMPLE(x, y) ( \
@@ -56,6 +76,11 @@
   )
 #endif
 
+/**
+ *
+ * @hideinitializer
+ */
+
 #if (!defined(TGICMPLT))
   #define TGICMPLT(x, y) ( \
     (x) % 1 == 0 /* reject expressions not of integer type */ \
@@ -69,6 +94,11 @@
     ) \
   )
 #endif
+
+/**
+ *
+ * @hideinitializer
+ */
 
 #if (!defined(TGICMPNE))
   #define TGICMPNE(x, y) ( \
