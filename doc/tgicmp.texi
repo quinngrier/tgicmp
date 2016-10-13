@@ -49,7 +49,7 @@ on@tie{}@w{@value{PACKAGEDATE}}@.
 @end menu
 @end ifnottex
 
-@include Copyright-Information.texi
+@include tgicmp/Copyright-Information.texi
 @ifxml
 @c
 @c The authors of this file have waived all copyright and
