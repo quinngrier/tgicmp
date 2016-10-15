@@ -1,3 +1,11 @@
+/**
+ * @file
+ *
+ * @brief
+ * Defines macros for performing type-generic integer comparisons.
+ *
+ */
+
 #include <wficmp.h>
 
 /**
