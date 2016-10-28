@@ -5,7 +5,7 @@
 " is being used, your changes may be automatically lost.
 " A short description of this file follows.
 "
-" Special file: Makefile.am.vim
+" Special file: format.am.vim
 "
 " For more information, see the GATBPS manual.
 "
