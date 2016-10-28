@@ -23,6 +23,7 @@ all:
 	$(GENERATE) 'build-aux/GATBPS_RECIPE_MARKER.am'
 	$(GENERATE) 'build-aux/GATBPS_V_PAD.am'
 	$(GENERATE) 'build-aux/VERSION.sh'
+	$(GENERATE) 'build-aux/doxygen.am'
 	$(GENERATE) 'build-aux/echo.sh'
 	$(GENERATE) 'dev-aux/CC0-1.0-commit.txt'
 	$(GENERATE) 'dev-aux/format.ac.vim'
