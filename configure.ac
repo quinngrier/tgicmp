@@ -31,6 +31,8 @@
   tar-ustar
 ])
 
+DEFINE_ALL
+
 AT='@'
 AC_SUBST([AT])
 
