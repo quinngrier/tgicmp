@@ -28,6 +28,14 @@ m4_if(
 ]dnl end_prerequisites
 [
 
+]dnl begin_prerequisites
+[
+
+]AC_REQUIRE([DEFINE_AT])[
+
+]dnl end_prerequisites
+[
+
 :;}]])[]dnl
 dnl
 dnl The authors of this file have waived all copyright and
