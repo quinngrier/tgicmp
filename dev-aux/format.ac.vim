@@ -5,7 +5,7 @@
 " is being used, your changes may be automatically lost.
 " A short description of this file follows.
 "
-" Special file: configure.ac.vim
+" Special file: format.ac.vim
 "
 " For more information, see the GATBPS manual.
 "
