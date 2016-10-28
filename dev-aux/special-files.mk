@@ -28,6 +28,7 @@ all:
 	$(GENERATE) 'm4/GATBPS_CONFIG_FILE.m4'
 	$(GENERATE) 'm4/GATBPS_CONFIG_FILE_SUBST.m4'
 	$(GENERATE) 'm4/GATBPS_DEFINE_DATE.m4'
+	$(GENERATE) 'm4/gatbps_notice.m4'
 
 ## end_rules
 
