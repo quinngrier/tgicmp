@@ -29,9 +29,9 @@
   nostdinc
   subdir-objects
   tar-ustar
-])
+])[
 
-DEFINE_ALL
+]DEFINE_ALL
 
 AT='@'
 AC_SUBST([AT])
