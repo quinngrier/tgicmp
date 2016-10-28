@@ -15,6 +15,7 @@ include_HEADERS += include/tgicmp.h
 ## begin_includes
 
 include $(srcdir)/build-aux/GATBPS_CONFIG_FILE_RULES.am
+include $(srcdir)/build-aux/GATBPS_RECIPE_MARKER.am
 include $(srcdir)/build-aux/GATBPS_V_PAD.am
 
 ## end_includes

@@ -20,6 +20,7 @@ all:
 	$(GENERATE) 'build-aux/CC0-1.0-AM-COPYRIGHT.am'
 	$(GENERATE) 'build-aux/DATE.sh'
 	$(GENERATE) 'build-aux/GATBPS_CONFIG_FILE_RULES.am'
+	$(GENERATE) 'build-aux/GATBPS_RECIPE_MARKER.am'
 	$(GENERATE) 'build-aux/GATBPS_V_PAD.am'
 	$(GENERATE) 'build-aux/VERSION.sh'
 	$(GENERATE) 'build-aux/echo.sh'
