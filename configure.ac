@@ -9,6 +9,8 @@
   [[tgicmp]],
   [[https://www.quinngrier.com/tgicmp]])[
 
+]gatbps_check_for_missing_gatbps_macros[ || 'exit' "${?}"
+
 ]GATBPS_DEFINE_DATE(
   [AC_],
   [PACKAGE_DATE],
