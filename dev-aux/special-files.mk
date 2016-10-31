@@ -40,7 +40,7 @@ MKDIR_P = 'mkdir' '-p'
 
 CC0-1.0.txt:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 all: CC0-1.0.txt
 all: build-aux/CC0-1.0-AC-COPYRIGHT.ac
@@ -67,87 +67,87 @@ all: m4/gatbps_notice.m4
 
 build-aux/CC0-1.0-AC-COPYRIGHT.ac:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 build-aux/CC0-1.0-AM-COPYRIGHT.am:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 build-aux/DATE.sh:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 build-aux/GATBPS_CONFIG_FILE_RULES.am:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 build-aux/GATBPS_RECIPE_MARKER.am:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 build-aux/GATBPS_V_PAD.am:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 build-aux/VERSION.sh:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 build-aux/doxygen.am:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 build-aux/echo.sh:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 dev-aux/CC0-1.0-commit.txt:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 dev-aux/format.ac.vim:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 dev-aux/format.am.vim:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 m4/GATBPS_CONFIG_FILE.m4:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 m4/GATBPS_CONFIG_FILE_SUBST.m4:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 m4/GATBPS_DEFINE_AT.m4:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 m4/GATBPS_DEFINE_DATE.m4:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 m4/GATBPS_MSG_NOTICE.m4:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 m4/GATBPS_PROG_AWK.m4:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 m4/GATBPS_PROG_DOXYGEN.m4:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 m4/gatbps_fatal.m4:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 m4/gatbps_notice.m4:
 	@$(MKDIR_P) './'$(@D)
-	$(GENERATE) $@
+	$(GENERATE) './'$@
 
 ## end_rules
 
