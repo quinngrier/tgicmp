@@ -5,7 +5,7 @@
   m4_esyscmd_s([
     'sh' '-' 'build-aux/VERSION.sh'
   ])m4_if(m4_sysval, [0], [], [m4_fatal([VERSION.sh failed])]),
-  [[quinn.grier@gmail.com]],
+  [[quinn@quinngrier.com]],
   [[tgicmp]],
   [[https://www.quinngrier.com/tgicmp]])[
 
