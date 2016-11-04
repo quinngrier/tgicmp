@@ -10,6 +10,9 @@ EXTRA_DIST += build-aux/VERSION.sh
 doxygen_dst =
 doxygen_dst += doc/tgicmp-doxygen
 
+doxygen_src =
+doxygen_src += build-src/Doxyfile-tgicmp
+
 include_HEADERS =
 include $(srcdir)/build-src/include_HEADERS.am
 
