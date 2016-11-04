@@ -8,7 +8,7 @@ EXTRA_DIST += build-aux/DATE.sh
 EXTRA_DIST += build-aux/VERSION.sh
 
 include_HEADERS =
-include_HEADERS += include/tgicmp.h
+include $(srcdir)/build-src/include_HEADERS.am
 
 ## end_variables
 
