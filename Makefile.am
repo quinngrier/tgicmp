@@ -29,6 +29,7 @@ include $(srcdir)/build-src/include_HEADERS.am
 include $(srcdir)/build-aux/GATBPS_CONFIG_FILE_RULES.am
 include $(srcdir)/build-aux/GATBPS_RECIPE_MARKER.am
 include $(srcdir)/build-aux/GATBPS_V_PAD.am
+include $(srcdir)/build-aux/doxygen.am
 
 ## end_includes
 
