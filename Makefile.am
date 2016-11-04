@@ -10,6 +10,9 @@ EXTRA_DIST += build-aux/VERSION.sh
 doxygen_dep =
 include $(srcdir)/build-src/doxygen_dep.am
 
+doxygen_depv =
+include $(srcdir)/build-src/doxygen_depv.am
+
 doxygen_dst =
 doxygen_dst += doc/tgicmp-doxygen
 
