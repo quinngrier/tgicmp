@@ -7,6 +7,9 @@ EXTRA_DIST += VERSION
 EXTRA_DIST += build-aux/DATE.sh
 EXTRA_DIST += build-aux/VERSION.sh
 
+doxygen_dst =
+doxygen_dst += doc/tgicmp-doxygen
+
 include_HEADERS =
 include $(srcdir)/build-src/include_HEADERS.am
 
