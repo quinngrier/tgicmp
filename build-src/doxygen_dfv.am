@@ -1,6 +1,6 @@
 ## begin_variables
 
-doxygen_dfv += build-src/include_HEADERS.df
+doxygen_dfv += build-src/include_HEADERS.dfv
 
 ## end_variables
 
