@@ -17,6 +17,7 @@ files = \
   build-aux/DATE.sh \
   build-aux/GATBPS_CONFIG_FILE_RULES.am \
   build-aux/GATBPS_RECIPE_MARKER.am \
+  build-aux/GATBPS_VPATH_SEARCH.am \
   build-aux/GATBPS_V_PAD.am \
   build-aux/VERSION.sh \
   build-aux/doxygen.am \
