@@ -19,6 +19,7 @@ files = \
   build-aux/GATBPS_RECIPE_MARKER.am \
   build-aux/GATBPS_VPATH_SEARCH.am \
   build-aux/GATBPS_V_PAD.am \
+  build-aux/PACKAGE_STRING.df.in \
   build-aux/VERSION.sh \
   build-aux/doxygen.am \
   build-aux/echo.sh \
