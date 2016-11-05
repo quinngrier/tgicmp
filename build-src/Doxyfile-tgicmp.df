@@ -17,6 +17,7 @@ STRIP_FROM_INC_PATH += "include"
 ## begin_includes
 
 @INCLUDE = "build-src/include_HEADERS.dfv"
+@INCLUDE = VPATH_SEARCH:build-aux/PACKAGE_STRING.df
 
 ## end_includes
 
