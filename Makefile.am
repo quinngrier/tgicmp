@@ -19,7 +19,7 @@ doxygen_dst =
 doxygen_dst += doc/tgicmp-doxygen
 
 doxygen_src =
-doxygen_src += build-src/Doxyfile-tgicmp
+doxygen_src += build-src/Doxyfile-tgicmp.dfv
 
 include_HEADERS =
 include $(srcdir)/build-src/include_HEADERS.am
