@@ -4,7 +4,7 @@ INPUT =
 
 JAVADOC_AUTOBRIEF = "YES"
 
-OUTPUT_DIRECTORY = "doc/tgicmp-doxygen"
+OUTPUT_DIRECTORY = "doc/tgicmp-doxygen.tmp"
 
 PREDEFINED =
 PREDEFINED += "TGICMP_DOXYGEN"
