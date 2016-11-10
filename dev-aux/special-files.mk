@@ -24,6 +24,7 @@ files = \
   build-aux/VERSION.sh \
   build-aux/doxygen.am \
   build-aux/echo.sh \
+  build-aux/sh-form.sh \
   dev-aux/CC0-1.0-commit.txt \
   dev-aux/format.ac.vim \
   dev-aux/format.am.vim \
