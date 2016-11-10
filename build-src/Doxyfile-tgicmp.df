@@ -2,6 +2,8 @@
 
 INPUT =
 
+INPUT_FILTER = VPATH_SEARCH:"$(SHELL) build-aux/INPUT_FILTER.sh"
+
 JAVADOC_AUTOBRIEF = "YES"
 
 OUTPUT_DIRECTORY = "doc/tgicmp-doxygen.tmp"
